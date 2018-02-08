@@ -1,0 +1,898 @@
+<!-- NOTICE:  Copyright [1999-2001] Adobe Systems Incorporated.  Adobe hereby grants you the rights to reproduce, modify and distribute this file and its contents, not including any fonts, audio files or raster images included or embedded in or linked to this file, (the "Software"), and to grant such rights to other parties subject to the following:  This notice shall be included in any copy of the Software or any portion thereof.  THE SOFTWARE IS PROVIDED TO YOU AS-IS, WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT.  IN NO EVENT SHALL ADOBE BE LIABLE TO YOU OR ANY OTHER PARTY FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE.
+-->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20001102//EN" "http://www.w3.org/TR/2000/CR-SVG-20001102/DTD/svg-20001102.dtd" [
+]>
+<svg width="350" height="300" viewBox="0 0 350 300" xml:space="preserve" onload="Initialize(evt)" onmousedown="MouseDown(evt)" onmousemove="MouseMove(evt)" onmouseup="MouseUp(evt)">
+<title>riboflavin.svg</title>
+<desc>An interactive 3d model of riboflavin</desc>
+<defs>
+<script language="Javascript" xlink:href="chemeleon.js" />
+<script language="Javascript">
+          
+          function GenerateStructure()
+            {
+              
+              x =       -4.7200;
+              y =       -3.7880;
+              z =       -0.2120;
+              charge =  0;
+              isotope = -1;
+        
+              var riboflavin_karne_a_1 = new Atom(x, y, z, "C", charge, isotope);
+  
+              x =       -4.4360;
+              y =       -0.8480;
+              z =       0.2560;
+              charge =  0;
+              isotope = -1;
+        
+              var riboflavin_karne_a_2 = new Atom(x, y, z, "C", charge, isotope);
+  
+              x =       4.9120;
+              y =       -2.6120;
+              z =       1.4440;
+              charge =  0;
+              isotope = -1;
+        
+              var riboflavin_karne_a_3 = new Atom(x, y, z, "O", charge, isotope);
+  
+              x =       1.5200;
+              y =       4.6120;
+              z =       -0.4160;
+              charge =  0;
+              isotope = -1;
+        
+              var riboflavin_karne_a_4 = new Atom(x, y, z, "C", charge, isotope);
+  
+              x =       1.8760;
+              y =       3.1200;
+              z =       -0.5360;
+              charge =  0;
+              isotope = -1;
+        
+              var riboflavin_karne_a_5 = new Atom(x, y, z, "C", charge, isotope);
+  
+              x =       1.1720;
+              y =       2.2240;
+              z =       0.5160;
+              charge =  0;
+              isotope = -1;
+        
+              var riboflavin_karne_a_6 = new Atom(x, y, z, "C", charge, isotope);
+  
+              x =       1.2280;
+              y =       0.7120;
+              z =       0.1880;
+              charge =  0;
+              isotope = -1;
+        
+              var riboflavin_karne_a_7 = new Atom(x, y, z, "C", charge, isotope);
+  
+              x =       0.7320;
+              y =       -0.1640;
+              z =       1.3640;
+              charge =  0;
+              isotope = -1;
+        
+              var riboflavin_karne_a_8 = new Atom(x, y, z, "C", charge, isotope);
+  
+              x =       2.6920;
+              y =       -2.1560;
+              z =       1.2040;
+              charge =  0;
+              isotope = -1;
+        
+              var riboflavin_karne_a_9 = new Atom(x, y, z, "N", charge, isotope);
+  
+              x =       3.8160;
+              y =       -3.0440;
+              z =       1.1760;
+              charge =  0;
+              isotope = -1;
+        
+              var riboflavin_karne_a_10 = new Atom(x, y, z, "C", charge, isotope);
+  
+              x =       3.5400;
+              y =       -4.3560;
+              z =       0.8280;
+              charge =  0;
+              isotope = -1;
+        
+              var riboflavin_karne_a_11 = new Atom(x, y, z, "N", charge, isotope);
+  
+              x =       2.2360;
+              y =       -4.7640;
+              z =       0.5320;
+              charge =  0;
+              isotope = -1;
+        
+              var riboflavin_karne_a_12 = new Atom(x, y, z, "C", charge, isotope);
+  
+              x =       0.0240;
+              y =       -4.2560;
+              z =       0.3160;
+              charge =  0;
+              isotope = -1;
+        
+              var riboflavin_karne_a_13 = new Atom(x, y, z, "N", charge, isotope);
+  
+              x =       1.2080;
+              y =       -3.8600;
+              z =       0.5840;
+              charge =  0;
+              isotope = -1;
+        
+              var riboflavin_karne_a_14 = new Atom(x, y, z, "C", charge, isotope);
+  
+              x =       1.5000;
+              y =       -2.5280;
+              z =       0.9280;
+              charge =  0;
+              isotope = -1;
+        
+              var riboflavin_karne_a_15 = new Atom(x, y, z, "C", charge, isotope);
+  
+              x =       0.4520;
+              y =       -1.5520;
+              z =       0.9840;
+              charge =  0;
+              isotope = -1;
+        
+              var riboflavin_karne_a_16 = new Atom(x, y, z, "N", charge, isotope);
+  
+              x =       -1.9680;
+              y =       -1.2560;
+              z =       0.5960;
+              charge =  0;
+              isotope = -1;
+        
+              var riboflavin_karne_a_17 = new Atom(x, y, z, "C", charge, isotope);
+  
+              x =       -0.8280;
+              y =       -2.0800;
+              z =       0.6440;
+              charge =  0;
+              isotope = -1;
+        
+              var riboflavin_karne_a_18 = new Atom(x, y, z, "C", charge, isotope);
+  
+              x =       -0.9600;
+              y =       -3.4480;
+              z =       0.3400;
+              charge =  0;
+              isotope = -1;
+        
+              var riboflavin_karne_a_19 = new Atom(x, y, z, "C", charge, isotope);
+  
+              x =       -2.2320;
+              y =       -3.9680;
+              z =       0.0560;
+              charge =  0;
+              isotope = -1;
+        
+              var riboflavin_karne_a_20 = new Atom(x, y, z, "C", charge, isotope);
+  
+              x =       -3.3800;
+              y =       -3.1600;
+              z =       0.0560;
+              charge =  0;
+              isotope = -1;
+        
+              var riboflavin_karne_a_21 = new Atom(x, y, z, "C", charge, isotope);
+  
+              x =       -3.2440;
+              y =       -1.7760;
+              z =       0.3000;
+              charge =  0;
+              isotope = -1;
+        
+              var riboflavin_karne_a_22 = new Atom(x, y, z, "C", charge, isotope);
+  
+              x =       -4.6560;
+              y =       -4.8960;
+              z =       -0.2680;
+              charge =  0;
+              isotope = -1;
+        
+              var riboflavin_karne_a_23 = new Atom(x, y, z, "H", charge, isotope);
+  
+              x =       -5.1400;
+              y =       -3.4320;
+              z =       -1.1800;
+              charge =  0;
+              isotope = -1;
+        
+              var riboflavin_karne_a_24 = new Atom(x, y, z, "H", charge, isotope);
+  
+              x =       -5.4480;
+              y =       -3.5400;
+              z =       0.5920;
+              charge =  0;
+              isotope = -1;
+        
+              var riboflavin_karne_a_25 = new Atom(x, y, z, "H", charge, isotope);
+  
+              x =       -5.0400;
+              y =       -1.0080;
+              z =       -0.6600;
+              charge =  0;
+              isotope = -1;
+        
+              var riboflavin_karne_a_26 = new Atom(x, y, z, "H", charge, isotope);
+  
+              x =       -4.1360;
+              y =       0.2200;
+              z =       0.2520;
+              charge =  0;
+              isotope = -1;
+        
+              var riboflavin_karne_a_27 = new Atom(x, y, z, "H", charge, isotope);
+  
+              x =       -5.1080;
+              y =       -0.9960;
+              z =       1.1320;
+              charge =  0;
+              isotope = -1;
+        
+              var riboflavin_karne_a_28 = new Atom(x, y, z, "H", charge, isotope);
+  
+              x =       2.2040;
+              y =       5.2200;
+              z =       -1.0480;
+              charge =  0;
+              isotope = -1;
+        
+              var riboflavin_karne_a_29 = new Atom(x, y, z, "H", charge, isotope);
+  
+              x =       1.6320;
+              y =       4.9840;
+              z =       0.6280;
+              charge =  0;
+              isotope = -1;
+        
+              var riboflavin_karne_a_30 = new Atom(x, y, z, "H", charge, isotope);
+  
+              x =       0.1960;
+              y =       4.8160;
+              z =       -0.8800;
+              charge =  0;
+              isotope = -1;
+        
+              var riboflavin_karne_a_31 = new Atom(x, y, z, "O", charge, isotope);
+  
+              x =       1.4800;
+              y =       -0.1320;
+              z =       2.1880;
+              charge =  0;
+              isotope = -1;
+        
+              var riboflavin_karne_a_32 = new Atom(x, y, z, "H", charge, isotope);
+  
+              x =       -0.1680;
+              y =       0.3040;
+              z =       1.8080;
+              charge =  0;
+              isotope = -1;
+        
+              var riboflavin_karne_a_33 = new Atom(x, y, z, "H", charge, isotope);
+  
+              x =       -1.8840;
+              y =       -0.1800;
+              z =       0.7920;
+              charge =  0;
+              isotope = -1;
+        
+              var riboflavin_karne_a_34 = new Atom(x, y, z, "H", charge, isotope);
+  
+              x =       -2.3360;
+              y =       -5.0440;
+              z =       -0.1680;
+              charge =  0;
+              isotope = -1;
+        
+              var riboflavin_karne_a_35 = new Atom(x, y, z, "H", charge, isotope);
+  
+              x =       0.5760;
+              y =       0.5280;
+              z =       -0.6960;
+              charge =  0;
+              isotope = -1;
+        
+              var riboflavin_karne_a_36 = new Atom(x, y, z, "H", charge, isotope);
+  
+              x =       2.5600;
+              y =       0.3560;
+              z =       -0.1480;
+              charge =  0;
+              isotope = -1;
+        
+              var riboflavin_karne_a_37 = new Atom(x, y, z, "O", charge, isotope);
+  
+              x =       1.7560;
+              y =       2.4200;
+              z =       1.7960;
+              charge =  0;
+              isotope = -1;
+        
+              var riboflavin_karne_a_38 = new Atom(x, y, z, "O", charge, isotope);
+  
+              x =       0.0960;
+              y =       2.5120;
+              z =       0.5640;
+              charge =  0;
+              isotope = -1;
+        
+              var riboflavin_karne_a_39 = new Atom(x, y, z, "H", charge, isotope);
+  
+              x =       1.5800;
+              y =       2.7680;
+              z =       -1.5560;
+              charge =  0;
+              isotope = -1;
+        
+              var riboflavin_karne_a_40 = new Atom(x, y, z, "H", charge, isotope);
+  
+              x =       3.2840;
+              y =       3.0280;
+              z =       -0.3880;
+              charge =  0;
+              isotope = -1;
+        
+              var riboflavin_karne_a_41 = new Atom(x, y, z, "O", charge, isotope);
+  
+              x =       -0.4000;
+              y =       4.7760;
+              z =       -0.1440;
+              charge =  0;
+              isotope = -1;
+        
+              var riboflavin_karne_a_42 = new Atom(x, y, z, "H", charge, isotope);
+  
+              x =       3.6520;
+              y =       2.7040;
+              z =       -1.1960;
+              charge =  0;
+              isotope = -1;
+        
+              var riboflavin_karne_a_43 = new Atom(x, y, z, "H", charge, isotope);
+  
+              x =       1.4200;
+              y =       3.2200;
+              z =       2.1800;
+              charge =  0;
+              isotope = -1;
+        
+              var riboflavin_karne_a_44 = new Atom(x, y, z, "H", charge, isotope);
+  
+              x =       3.1240;
+              y =       0.6000;
+              z =       0.5720;
+              charge =  0;
+              isotope = -1;
+        
+              var riboflavin_karne_a_45 = new Atom(x, y, z, "H", charge, isotope);
+  
+              x =       2.0000;
+              y =       -5.9160;
+              z =       0.2280;
+              charge =  0;
+              isotope = -1;
+        
+              var riboflavin_karne_a_46 = new Atom(x, y, z, "O", charge, isotope);
+  
+              x =       4.3120;
+              y =       -5.0400;
+              z =       0.7880;
+              charge =  0;
+              isotope = -1;
+        
+              var riboflavin_karne_a_47 = new Atom(x, y, z, "H", charge, isotope);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = riboflavin_karne_a_41;
+              right = left;
+              left = riboflavin_karne_a_43;
+              
+              strength = 1;
+               var riboflavin_karne_b_1 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = riboflavin_karne_a_38;
+              right = left;
+              left = riboflavin_karne_a_44;
+              
+              strength = 1;
+               var riboflavin_karne_b_2 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = riboflavin_karne_a_37;
+              right = left;
+              left = riboflavin_karne_a_45;
+              
+              strength = 1;
+               var riboflavin_karne_b_3 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = riboflavin_karne_a_31;
+              right = left;
+              left = riboflavin_karne_a_42;
+              
+              strength = 1;
+               var riboflavin_karne_b_4 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = riboflavin_karne_a_21;
+              right = left;
+              left = riboflavin_karne_a_22;
+              
+              strength = 1;
+               var riboflavin_karne_b_5 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = riboflavin_karne_a_20;
+              right = left;
+              left = riboflavin_karne_a_35;
+              
+              strength = 1;
+               var riboflavin_karne_b_6 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = riboflavin_karne_a_20;
+              right = left;
+              left = riboflavin_karne_a_21;
+              
+              strength = 2;
+               var riboflavin_karne_b_7 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = riboflavin_karne_a_19;
+              right = left;
+              left = riboflavin_karne_a_20;
+              
+              strength = 1;
+               var riboflavin_karne_b_8 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = riboflavin_karne_a_18;
+              right = left;
+              left = riboflavin_karne_a_19;
+              
+              strength = 2;
+               var riboflavin_karne_b_9 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = riboflavin_karne_a_17;
+              right = left;
+              left = riboflavin_karne_a_34;
+              
+              strength = 1;
+               var riboflavin_karne_b_10 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = riboflavin_karne_a_17;
+              right = left;
+              left = riboflavin_karne_a_22;
+              
+              strength = 2;
+               var riboflavin_karne_b_11 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = riboflavin_karne_a_17;
+              right = left;
+              left = riboflavin_karne_a_18;
+              
+              strength = 1;
+               var riboflavin_karne_b_12 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = riboflavin_karne_a_16;
+              right = left;
+              left = riboflavin_karne_a_18;
+              
+              strength = 1;
+               var riboflavin_karne_b_13 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = riboflavin_karne_a_15;
+              right = left;
+              left = riboflavin_karne_a_16;
+              
+              strength = 1;
+               var riboflavin_karne_b_14 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = riboflavin_karne_a_14;
+              right = left;
+              left = riboflavin_karne_a_15;
+              
+              strength = 1;
+               var riboflavin_karne_b_15 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = riboflavin_karne_a_13;
+              right = left;
+              left = riboflavin_karne_a_19;
+              
+              strength = 1;
+               var riboflavin_karne_b_16 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = riboflavin_karne_a_13;
+              right = left;
+              left = riboflavin_karne_a_14;
+              
+              strength = 2;
+               var riboflavin_karne_b_17 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = riboflavin_karne_a_12;
+              right = left;
+              left = riboflavin_karne_a_46;
+              
+              strength = 2;
+               var riboflavin_karne_b_18 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = riboflavin_karne_a_12;
+              right = left;
+              left = riboflavin_karne_a_14;
+              
+              strength = 1;
+               var riboflavin_karne_b_19 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = riboflavin_karne_a_11;
+              right = left;
+              left = riboflavin_karne_a_47;
+              
+              strength = 1;
+               var riboflavin_karne_b_20 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = riboflavin_karne_a_11;
+              right = left;
+              left = riboflavin_karne_a_12;
+              
+              strength = 1;
+               var riboflavin_karne_b_21 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = riboflavin_karne_a_10;
+              right = left;
+              left = riboflavin_karne_a_11;
+              
+              strength = 1;
+               var riboflavin_karne_b_22 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = riboflavin_karne_a_9;
+              right = left;
+              left = riboflavin_karne_a_15;
+              
+              strength = 2;
+               var riboflavin_karne_b_23 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = riboflavin_karne_a_9;
+              right = left;
+              left = riboflavin_karne_a_10;
+              
+              strength = 1;
+               var riboflavin_karne_b_24 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = riboflavin_karne_a_8;
+              right = left;
+              left = riboflavin_karne_a_33;
+              
+              strength = 1;
+               var riboflavin_karne_b_25 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = riboflavin_karne_a_8;
+              right = left;
+              left = riboflavin_karne_a_32;
+              
+              strength = 1;
+               var riboflavin_karne_b_26 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = riboflavin_karne_a_8;
+              right = left;
+              left = riboflavin_karne_a_16;
+              
+              strength = 1;
+               var riboflavin_karne_b_27 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = riboflavin_karne_a_7;
+              right = left;
+              left = riboflavin_karne_a_37;
+              
+              strength = 1;
+               var riboflavin_karne_b_28 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = riboflavin_karne_a_7;
+              right = left;
+              left = riboflavin_karne_a_36;
+              
+              strength = 1;
+               var riboflavin_karne_b_29 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = riboflavin_karne_a_7;
+              right = left;
+              left = riboflavin_karne_a_8;
+              
+              strength = 1;
+               var riboflavin_karne_b_30 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = riboflavin_karne_a_6;
+              right = left;
+              left = riboflavin_karne_a_39;
+              
+              strength = 1;
+               var riboflavin_karne_b_31 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = riboflavin_karne_a_6;
+              right = left;
+              left = riboflavin_karne_a_38;
+              
+              strength = 1;
+               var riboflavin_karne_b_32 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = riboflavin_karne_a_6;
+              right = left;
+              left = riboflavin_karne_a_7;
+              
+              strength = 1;
+               var riboflavin_karne_b_33 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = riboflavin_karne_a_5;
+              right = left;
+              left = riboflavin_karne_a_41;
+              
+              strength = 1;
+               var riboflavin_karne_b_34 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = riboflavin_karne_a_5;
+              right = left;
+              left = riboflavin_karne_a_40;
+              
+              strength = 1;
+               var riboflavin_karne_b_35 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = riboflavin_karne_a_5;
+              right = left;
+              left = riboflavin_karne_a_6;
+              
+              strength = 1;
+               var riboflavin_karne_b_36 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = riboflavin_karne_a_4;
+              right = left;
+              left = riboflavin_karne_a_31;
+              
+              strength = 1;
+               var riboflavin_karne_b_37 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = riboflavin_karne_a_4;
+              right = left;
+              left = riboflavin_karne_a_30;
+              
+              strength = 1;
+               var riboflavin_karne_b_38 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = riboflavin_karne_a_4;
+              right = left;
+              left = riboflavin_karne_a_29;
+              
+              strength = 1;
+               var riboflavin_karne_b_39 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = riboflavin_karne_a_4;
+              right = left;
+              left = riboflavin_karne_a_5;
+              
+              strength = 1;
+               var riboflavin_karne_b_40 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = riboflavin_karne_a_3;
+              right = left;
+              left = riboflavin_karne_a_10;
+              
+              strength = 2;
+               var riboflavin_karne_b_41 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = riboflavin_karne_a_2;
+              right = left;
+              left = riboflavin_karne_a_28;
+              
+              strength = 1;
+               var riboflavin_karne_b_42 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = riboflavin_karne_a_2;
+              right = left;
+              left = riboflavin_karne_a_27;
+              
+              strength = 1;
+               var riboflavin_karne_b_43 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = riboflavin_karne_a_2;
+              right = left;
+              left = riboflavin_karne_a_26;
+              
+              strength = 1;
+               var riboflavin_karne_b_44 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = riboflavin_karne_a_2;
+              right = left;
+              left = riboflavin_karne_a_22;
+              
+              strength = 1;
+               var riboflavin_karne_b_45 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = riboflavin_karne_a_1;
+              right = left;
+              left = riboflavin_karne_a_25;
+              
+              strength = 1;
+               var riboflavin_karne_b_46 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = riboflavin_karne_a_1;
+              right = left;
+              left = riboflavin_karne_a_24;
+              
+              strength = 1;
+               var riboflavin_karne_b_47 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = riboflavin_karne_a_1;
+              right = left;
+              left = riboflavin_karne_a_23;
+              
+              strength = 1;
+               var riboflavin_karne_b_48 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = riboflavin_karne_a_1;
+              right = left;
+              left = riboflavin_karne_a_21;
+              
+              strength = 1;
+               var riboflavin_karne_b_49 = new Bond(left, right, strength);
+  
+              RefreshScreen()
+              Rotate()
+            }
+            
+        </script>
+</defs>
+<g id="backdrop">
+<rect x="0" y="0" width="350" height="300" style="fill:white;" />
+</g>
+<g transform="translate(-30, -75)">
+<g id="structure">
+<g id="shadows" transform="translate(200, 350)" style="fill:grey" />
+<g id="bonds" transform="translate(200, 200)" />
+<g id="atoms" transform="translate(200, 205)" style="text-anchor:middle;alignment-baseline:middle" />
+</g>
+</g>
+</svg>
+

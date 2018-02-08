@@ -1,0 +1,201 @@
+<svg	xmlns="http://www.w3.org/2000/svg" width="100%"
+xmlns:xlink="http://www.w3.org/1999/xlink" onload="startup(evt)"
+>
+<script><![CDATA[
+xmlns="http://www.w3.org/2000/svg"
+var D=document
+var CBB;
+var Root;
+var Colors=new Array("#ca9","#ffa","#ee8","#aaa","#df8","#e97","#48d")
+var count=0
+var ox=300
+var G
+var oy=200
+var olddur=6
+numstars=75
+var Stars=new Array(numstars)
+function startup(evt){
+	Root = D.documentElement;
+	Canvas=D.getElementById("Canvas")
+	CBB=Canvas.getBBox()
+	manybuild()
+	activate()
+}
+
+function manybuild(){
+	for (var i=0;i<numstars;i++){
+		var x=Math.floor((CBB.width-50)*Math.random())+25
+		var y=-40
+		var P=build(i,x,y)
+		Stars[i]=new Star(x,y)
+		var ty=Math.floor((CBB.height)*Math.random())
+		P.setAttribute("transform","translate(0,"+ty+")")
+		Stars[i].y=ty
+	}
+	x=Math.floor((CBB.width-50)*Math.random())+25
+	Gust=new Star(x,200)
+}
+function activate(){
+	count++
+	Gust.x=Gust.x+Gust.xv
+	Gust.y=Gust.y+Gust.yv
+	if (Gust.y>CBB.height){
+		Gust.y=0
+		Gust.xv=Math.random()*5
+	}
+	if (Gust.x>CBB.width){
+		Gust.x=5
+		Gust.xv=5
+	}
+	if (Gust.x<0){
+		Gust.x=CBB.width-5
+		Gust.xv=-5
+	}
+	for (var i=0;i<Stars.length;i++){
+		P=document.getElementById("O"+i)
+		Stars[i].x+=Stars[i].xv
+		Stars[i].y+=Stars[i].yv
+		if ((count+i)%45==0)Stars[i].xv+=1+Math.random()
+		if ((count+i)%37==0)Stars[i].xv-=1
+		distance=Math.abs(Stars[i].x-Gust.x)+Math.abs(Stars[i].y-Gust.y)
+		if (distance<100) {Stars[i].xa=5*Gust.xv/Math.abs(Gust.xv)}
+		if (!Stars[i].xa==0) {
+			Stars[i].xa=Stars[i].xa-Stars[i].xa/Math.abs(Stars[i].xa)
+			Stars[i].xv=Stars[i].xv+1
+		}
+		if ((Stars[i].y>CBB.height+80)||(Stars[i].x>CBB.width+80)) {
+			var x=Math.floor(CBB.width*Math.random()/2)
+			var y=-40
+			P.setAttribute("transform","translate("+0+","+0+")")
+			Stars[i].x=x
+			Stars[i].y=y
+			Stars[i].xv=Math.random()*2-1
+			Stars[i].yv=Math.random()*4 + 1
+			Stars[i].xa=0
+			rebuild(i)
+		}
+		else P.setAttribute("transform","translate("+Stars[i].x+","+Stars[i].y+")")
+	}
+	window.setTimeout("activate()",25)
+}
+function rebuild(i,evt){
+	P=document.getElementById("O"+i)
+	var x=Stars[i].x
+	var y=Stars[i].y
+	var rad=Math.ceil(Math.random()*40)+20
+	var s=makeStar(x,0,rad)
+	P.setAttribute("transform","translate("+x+","+y+")")
+	P.setAttribute("d",s)
+}
+function build(ni,x,y){
+
+	var r1=Math.random()
+	var r2=Math.random()
+	var id="O"+ni
+	var C=Colors[Math.floor(r1*Colors.length)]
+	var r=Math.random()
+	if (r<.3) C=color()
+	else if (r<.7) C="white"
+	var rad=Math.ceil(r2*50)+10
+	var s=makeStar(x,y,rad)
+	var O=makePath(s,C,id)
+	return O
+}
+function Star(x,y){
+	this.x=x
+	this.y=y
+	this.xv=Math.random()*3 - 2
+	this.yv=Math.random()*4 + 1
+	this.xa=0
+}
+function makePath(s,C,id){
+	var P= D.createElementNS(xmlns,"path");
+	P.setAttribute("d", s);
+	P.setAttribute("transform","translate(0,0)")
+	P.setAttribute("fill",C)
+	var r=Math.random()
+	if (r<.2) C=color()
+	else if (r<.6) C="black"
+	P.setAttribute("stroke",C)
+	P.setAttribute("id",id)
+	P.setAttribute("fill-rule","evenodd")
+	P.setAttribute("stroke-width", 1.5);
+	P.setAttribute("opacity", 0.7);
+	var n=id.replace("O","")
+	P.setAttribute("onmousedown", "rebuild("+n+",evt)");
+	Root.appendChild(P);
+	return P
+}
+function makeStar(x,y,radius){
+	starstring="M "
+	n=Math.floor(Math.random()*25)+7
+	permute=Math.floor(Math.random()*(n/2))+3
+	if (Math.floor(n/permute)*permute==n) n=n+1
+	if (Math.floor(n/permute)*permute==n) n=n-2
+	off=Math.random()*2*Math.PI/n
+	Ang=2*Math.PI/n
+	Ax=new Array(n)
+	Ay=new Array(n)
+	for (i=0;i<n;i++){
+		Ax[i]=x+Math.ceil(radius*Math.cos(i*Ang+off))
+		Ay[i]=y+Math.ceil(radius*Math.sin(i*Ang+off))
+	}
+	for (i=0;i<n;i++){
+		starstring+=Ax[(i*permute)%n]+" "+Ay[(i*permute)%n]+" "
+	}
+	starstring+="z"
+	return starstring
+
+}
+function Smooth(evt){
+	O=evt.target
+	var Upath=O.getAttribute("d")
+	var UP=Upath.split(" ")
+	UP.shift()
+	UP.pop()
+	for (i=0;i<UP.length;i++)UP[i]=parseInt(UP[i])
+	var x1=UP[0]
+	var y1=UP[1]
+	var x2=UP[2]
+	var y2=UP[3]
+	var x3=xn=UP[UP.length-2]
+	var y3=yn=UP[UP.length-1]
+	smx=midx1=(x1+x2)/2
+	smy=midy1=(y1+y2)/2
+	nmx=(x1+xn)/2
+	nmy=(y1+yn)/2
+	pathstring="M "+nmx+" "+nmy+" Q "+x1+" "+y1+" "+midx1+" "+midy1
+	for (i=4;i<UP.length-1;i+=2){
+		x3=UP[i]
+		y3=UP[i+1]
+		midx1=(x2+x1)/2
+		midy1=(y2+y1)/2
+		midx2=(x2+x3)/2
+		midy2=(y2+y3)/2
+		pathstring+=" Q "+x2+" "+y2+" "+midx2+" "+midy2
+		x1=x2
+		y1=y2
+		x2=x3
+		y2=y3
+	}
+	pathstring+=" Q "+xn+" "+yn+" "+nmx+" "+nmy
+	pathstring+=" z"
+	O.setAttribute("d",pathstring)
+
+}
+function color(){
+	s="#"
+	for (i=0;i<3;i++) 
+		s+=Math.floor(Math.random()*16).toString(16)
+	return s
+}
+//]]>
+</script>
+<linearGradient id="backsky" x1="0%" y1="0%" x2="0%" y2="100%">
+<stop offset="0"  stop-color="#103"/>
+
+<stop offset="1.0" stop-color="#14a"/>
+</linearGradient> 
+<rect x="0" y="0" height="100%" id="Canvas" width="100%" fill="url(#backsky)"/>
+
+</svg>

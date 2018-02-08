@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<title></title>
+    <!--<base href="/external/examples/common/" />-->
+    <script type="text/javascript">
+        function GetBaseURL () {
+            var obj = document.getElementById ("myObject");
+            if ('BaseHref' in obj) {
+                alert ("The base URL for the object:\n" + obj.BaseHref);
+            }
+            else {
+                if ('baseURI' in obj) {
+                    alert ("The base URL for the object:\n" + obj.baseURI);
+                }
+                else {
+                    alert ("Your browser does not support this example!");
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <object id="myObject" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="300" height="120" 
+            codebase="http://fpdownload.adobe.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0">
+        <param name="movie" value="swf/flash.swf" />
+        <!-- Optional params -->
+        <param name="play" value="true" />
+        <param name="loop" value="true" />
+        <param name="quality" value="high" />
+        <!-- END Optional -->
+        <embed src="swf/flash.swf" width="300" height="120" play="true" 
+            loop="true" quality="high" 
+            pluginspage="http://www.adobe.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" /> 
+    </object>
+
+    <br /><br />
+    <button onclick="GetBaseURL ();">Get the base URL for the object</button>
+</body>
+</html>

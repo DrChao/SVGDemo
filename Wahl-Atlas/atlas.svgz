@@ -1,0 +1,1025 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="no"?>
+<!--<?xml-stylesheet href="./styles/allStyles.css" type="text/css"?>-->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN"
+ "http://www.w3.org/TR/SVG/DTD/svg10.dtd" [
+    <!ATTLIST svg
+            a3:scriptImplementation CDATA #IMPLIED
+            xmlns:a3 CDATA #IMPLIED>
+    <!ATTLIST script
+            a3:scriptImplementation CDATA #IMPLIED>
+
+]>
+<!--  Copyright (C) <2005>  <Federal Statistical Office of Germany> -->
+
+
+<!-- Gibt Aufloesung für den Drucker an -->
+<?AdobeSVGViewer resolution="600"?>
+<!-- Das Geruest der ganzen Anwendung mit erzwungenem PluginScripting -->
+<svg id="Atlas" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a3="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" a3:scriptImplementation="Adobe" xml:space="preserve"  viewBox="0 0 805 600" onload="init(evt,this);InitContextMenu();" display="all" zoomAndPan="disable" >  
+<title>Bundestagswahl 2005</title>
+ <!--<rect fill="#D9E7F1" width="100%" height="100%" />-->
+  	<!-- Spripte der Eingabefelder -->
+	<script a3:scriptImplementation="Adobe" type="text/ecmascript" xlink:href="./framework/Node_Builder.js"/>
+    	<script a3:scriptImplementation="Adobe" type="text/ecmascript" xlink:href="./framework/Textbox.js"/>
+     
+        <!-- Skripte des Frameworks -->
+        <script a3:scriptImplementation="Adobe" type="text/ecmascript" xlink:href="./framework/framework-script.js" />
+        <script a3:scriptImplementation="Adobe" type="text/ecmascript" xlink:href="./framework/framework-common.js" />
+        <script a3:scriptImplementation="Adobe" type="text/ecmascript" xlink:href="./framework/createHisto.js" />
+         <!-- Skripte der Karte -->
+        <script a3:scriptImplementation="Adobe" type="text/ecmascript"  xlink:href="./map/scripts/germany-script.js" />
+	<!-- Skripte der Comboboxen -->
+	<script a3:scriptImplementation="Adobe" xlink:href="./framework/selectionList.js" type="text/ecmascript"/>
+	<script a3:scriptImplementation="Adobe" xlink:href="./framework/comboBoxes.js" type="text/ecmascript" />
+	<!--<script a3:scriptImplementation="Adobe" xlink:href="./framework/comboBoxes-data.js" type="text/ecmascript" />-->
+	<script a3:scriptImplementation="Adobe" xlink:href="./map/data/statistikAuswahl.js" type="text/ecmascript"/>
+	
+	
+	<!-- Skripte der Detailinfos-->
+	<script a3:scriptImplementation="Adobe" xlink:href="./framework/createDetailDiagram.js" />
+	
+	<!-- Skripte der Daten
+	<script a3:scriptImplementation="Adobe" xlink:href="./map/data/theData.js" />
+	-->
+	
+	
+	<!-- Aendern des Kontextmenues-->
+	<script><![CDATA[
+	   function InitContextMenu()
+	      {
+	      var newMenuRoot = parseXML(printNode(document.getElementById('myCustomMenu')), contextMenu);
+	      contextMenu.replaceChild( newMenuRoot, contextMenu.firstChild );
+	      }
+	]]></script>
+	<defs>
+	
+	
+	
+	<!-- Das Kontextmenue-->
+	<menu id="myCustomMenu" xmlns="http://mynamepsace.com/">
+		<header>Custom Menu</header>
+		<item action='CopySVG'>Ansicht kopieren</item>	
+		<item action='ViewSource'>Quellcode ansehen</item>
+		<separator />
+		<item action='Quality'>bessere Qualit&#228;t</item>
+		<separator />
+		<item action='Help'>&amp;Help</item>
+		<item action='About'>Über SVG Viewer...</item>
+	 </menu>         
+<!--
+###############################################################################################################################
+##
+##                Farbverlaeufe und Effekte
+##
+###############################################################################################################################
+-->
+        
+	<!-- Farbverlauf fuer passive Buttons -->
+       	<linearGradient id="passiv" x1="0%" y1="0%" x2="0%" y2="100%" spreadMethod="pad">
+		<stop offset="0%" style="stop-color:white"/>
+		<stop offset="50%" style="stop-color:lightgrey"/>
+		<stop offset="100%" style="stop-color:whitesmoke"/>
+	</linearGradient>
+       	<!-- Farbverlauf fuer aktive Buttons -->
+       	<linearGradient id="ilumi" x1="0%" y1="0%" x2="0%" y2="100%" spreadMethod="pad">
+		<stop offset="0%" style="stop-color:white"/>
+		<stop offset="50%" style="stop-color:#fabc40"/>
+		<stop offset="100%" style="stop-color:#fcea96"/>
+	</linearGradient>
+	
+	<!-- Farbverlauf fuer hervorgeohbene Buttons -->
+	<linearGradient id="emphase" x1="0%" y1="0%" x2="0%" y2="100%" spreadMethod="pad">
+		 <stop offset="0%" style="stop-color:white" />
+		 <stop offset="50%" style="stop-color:#6699cc" />
+		 <stop offset="100%" style="stop-color:#b3e6ff" />
+	</linearGradient>
+	
+<!--
+###############################################################################################################################
+##
+##                Prototypen als Symbole
+##
+###############################################################################################################################
+-->
+	<!-- Prototyp eines Buttons -->
+	<symbol id="protoButton" overflow="visible">
+		<rect rx="0.5%" ry="0.5%" width="70" height="20" />
+	</symbol>
+	<!-- Prototyp der Quadrate fuer die Klassenfarben ohne Hoehenprofil-->
+	<symbol id="klassenLegende" overflow="visible">
+		<rect rx="0.5%" ry="0.5%" width="12" height="12" stroke="black"/>
+	</symbol>
+	
+	<!-- Prototyp eines kleinen Buttons -->
+	<symbol id="kleinerButton" overflow="visible">
+		<rect rx="0.5%" ry="0.5%" width="20" height="15" stroke="black"/>
+	</symbol>
+	
+	<!-- Prototyp eines Haekchens fuer Auswahlbuttons -->
+	<symbol id="haekchen" overflow="visible" transform="scale(0.65) translate(5,2)" pointer-events="none" >
+		<path fill="none" stroke="#000000" stroke-width="3" d="M1.1,9.7l6.3,6.3L22.2,1.1"/>
+	</symbol>
+	<!-- Prototyp einer Karteikarte fuer den Karteikasen -->
+	<symbol id="karteiKarte" overflow="visible">
+		<rect y="220" x="0" rx="0.5%" ry="0.5%" width="364" height="216" class="karteikasen" />
+	</symbol>
+	<!-- Prototyp eines Pfeils fuer die Navigation -->
+  	<symbol id="pfeil" overflow="visible" stroke-width="2">
+		<path d="M64 80l36 0 0 -36 73 72 -73 73 0 -36 -36 0 0 -73zm-22 0l14 0 0 73 -14 0 0 -73zm-15 0l7 0 0 73 -7 0 0 -73zm55 0m18 -18m36 18m0 73m-36 18m-18 -18m-18 -37m-15 -36m7 36m-7 37m-7 -37m-11 -36m3 36m-3 37m-4 -37"/>
+	</symbol>
+	
+	<!-- Prototyp der Lupen fuer die Zoomfunktion -->
+	<symbol id="magnif" overflow="visible">
+		<ellipse cx="15" cy="374" rx="5" ry="35" stroke="rgb(0,0,0)" transform="matrix(0.707107,0.707107,-0.707107,0.707107,279.525,70.4193)"/>
+		<circle cx="54" cy="314" r="24" stroke="rgb(0,0,0)"/>
+	</symbol>
+	
+	<!-- Prototyp der Eingabefelder zur wahl manueller Klassengrenzen  -->
+	<symbol id="fixedInputFeld" overflow="visible">
+		<rect visibility="visible" class="Rect4FixValue" rx="0.5%" ry="0.5%" width="55" height="15" />
+	</symbol>
+			
+<!--
+###############################################################################################################################
+##
+##                CSS-Styles wegen Druckproblem intern
+##
+###############################################################################################################################
+-->
+	<style type="text/css"><![CDATA[
+		
+		@media all 
+		{
+			/* Rechteck fuer fixe Werte */
+			.Rect4FixValue
+			{
+				fill:lightgrey;
+				stroke:black;
+				stroke-width:1;				
+			}
+			/* normales Rechteck fuer variable Werte*/
+			.Rect4VarValue
+			{
+				fill:whitesmoke;
+				stroke:black;
+			}	
+			/* Rechteck fuer variable Werte bei der Eingabe*/
+			.Rect4InputValue
+			{
+				fill:white;
+				stroke:#3366cc;
+				stroke-width:2;
+			}	
+			/* Rechteck fuer variable Werte bei seiner Aktivierung*/
+			.Rect4ActiveValue
+			{
+				fill:white;
+				stroke:grey;
+				stroke-width:2;
+			}	
+					
+			/* menue Hintergrund */
+			.menueBackground
+			{
+				fill:rgb(230,230,230);
+				/*fill:#ccdef6;*/
+				stroke:black;
+				stroke-width:1;			
+			}
+			
+			/* das Menue Karteikasten */
+			.karteikasen 
+			{
+				fill:rgb(204,204,204);
+				stroke:black;
+				stroke-width:1;				
+			}
+			.copyrightBox 
+			{
+				fill:white;
+				opacity:0.8;
+				stroke:black;
+			}
+			
+			.line
+			{
+				stroke:black;
+				stroke-width:2;
+			}
+			/* Buttons */
+			.darkButton 
+			{
+				fill:url(#passiv);
+				stroke:black;
+				stroke-width:1;
+				
+			}
+			.deactiveButton
+			{
+				fill:rgb(204,204,204);
+				stroke:grey;
+				stroke-width:1;
+				pointer-events:none;	
+			}
+			
+			/* Mausover fuer Buttons fill:white;*/
+			.emphaizeButton
+			{
+				
+				fill:url(#emphase);
+				stroke:black;
+				stroke-width:1;			
+			} 		
+			
+			/* gedrueckter button*/
+			.iluminatedButton
+			{
+				fill:url(#ilumi);
+				stroke:black;					
+			}	
+			.iluminatedTabButton
+			{
+				fill:rgb(204,204,204);
+				stroke:black;
+			}
+			
+			.darkTabButton 
+			{
+				fill:rgb(215,215,215);
+				stroke:black;
+				stroke-width:1;
+				
+			}
+			
+			.karteikasenColor
+			{
+				fill:rgb(204,204,204);
+			}			
+				
+			.eingabefeldPassiv
+			{
+				fill:lightgrey;
+				stroke:black;
+				stroke-width:1;
+			}
+			
+			.eingabefeldAktiv
+			{
+				fill:whitesmoke;
+				stroke:#3366cc;
+				stroke-width:2;
+			}	
+			.cursor
+			{
+				stroke: #F00; 
+				stroke-width: 1.5px; 
+				visibility: hidden
+			}
+			
+			.unerbrocheneLinie
+			{
+				stroke:white;
+				stroke-width:1;
+				opacity:1;
+				stroke-dasharray:8,6;
+				pointer-events:none;
+			}
+			
+			.linie
+			{
+				stroke:black;
+				
+				stroke-width:0.25;
+				pointer-events:none;
+			}
+			.histoBar
+			{
+				stroke:none;
+			}
+			
+			.stadt
+			{
+				fill:none;
+				stroke:black;
+				pointer-events:none;
+				
+			}	
+			
+			.kreisGrenze { stroke-width:1000; stroke-linejoin:round; stroke-linecap:round;}
+		
+			.laenderGrenze { stroke-width:5000;  stroke-linejoin:round; stroke-linecap:round; }
+			.fluss {fill:none; stroke:royalblue; stroke-width:2.8; stroke-linecap:round; stroke-linejoin:round}
+			.flussKontratst {fill:none; stroke:grey; stroke-width:2.8; stroke-linecap:round; stroke-linejoin:round}
+			
+			.copyrightText { font-family:"Tahoma", "Arial", "Helvetica", "sans-serif"; font-size:11; fill:black; stroke:none; pointer-events:none; }
+			
+			.copyrightTextSmall { font-family:"Tahoma", "Arial", "Helvetica", "sans-serif"; font-size:10; fill:black; stroke:none; pointer-events:none;  }
+			
+		
+			.headline { font-family:"Tahoma","Arial", "Helvetica","sans-serif"; font-size:12; pointer-events:none; fill:black}
+		
+			.headline2 {  font-family:"Tahoma", "Arial", "Helvetica", "sans-serif"; font-size:11; pointer-events:none; }
+		
+			.headline3 { font-family:"Tahoma", "Arial", "Helvetica", "sans-serif"; font-size:11; pointer-events:none; fill:black;}
+			.headline3Grey { font-family:"Tahoma", "Arial", "Helvetica", "sans-serif"; font-size:11; pointer-events:none; fill:grey;}
+			.headline3NoPrint{ font-family:"Tahoma", "Arial", "Helvetica", "sans-serif"; font-size:10; pointer-events:none; fill:grey;}
+			
+			.headline3Input { font-family:"Tahoma", "Arial", "Helvetica", "sans-serif"; font-size:11; pointer-events:all; fill:black;}
+			.headline3r { font-family:"Tahoma", "Arial", "Helvetica", "sans-serif"; font-size:11; pointer-events:none; fill:red;}
+			
+			.headlineCityB { font-family:"Tahoma", "Arial", "Helvetica", "sans-serif"; font-size:11; pointer-events:none; fill:black; stroke:black; stroke-width:0.8}
+			.headlineCityW { font-family:"Tahoma", "Arial", "Helvetica", "sans-serif"; font-size:11; pointer-events:none; fill:white;}
+			
+			.textMonoSpace { font-size:10; font-family:monospace;}
+			.textMonoSpaceBig { font-size:12; font-family:monospace; fill:black; font-weight:bold;}
+			
+			
+			
+			.headline4bX {font-family:"Arial", "Helvetica", "sans-serif"; font-size:9; pointer-events:none; fill:black; stroke:none;}
+			.headline4b {font-family:"Tahoma", "Arial", "Helvetica", "sans-serif"; font-size:9; pointer-events:none; fill:black; stroke:none;}
+			.headline4g { font-family:"Tahoma", "Arial", "Helvetica", "sans-serif"; font-size:9; pointer-events:none; fill:grey; stroke:none; }
+			.headline4NoPrint{ font-family:"Tahoma", "Arial", "Helvetica", "sans-serif";font-size:9.5; pointer-events:none; fill:black;}
+		
+			.headline4w { font-family:"Tahoma", "Arial", "Helvetica", "sans-serif"; font-size:9; pointer-events:none; fill:white; stroke:none; text-rendering:optimizeSpeed;}
+			.headline5b { font-family:"Tahoma", "Arial", "Helvetica", "sans-serif"; font-size:9; pointer-events:none; fill:black; stroke:none; text-rendering:optimizeSpeed;}
+			
+			.flussText { font-family:"Tahoma", "Arial", "Helvetica", "sans-serif"; font-size:9; pointer-events:none; fill:royalblue; stroke:black; stroke-width:0.20;}
+			.flussTextKontratst { font-family:"Tahoma", "Arial", "Helvetica", "sans-serif"; font-size:9; pointer-events:none; fill:grey; stroke:black; stroke-width:0.20;}
+			
+			.karteikartentext { font-family:"Tahoma", "Arial", "Helvetica", "sans-serif"; font-size:10; pointer-events:none; fill:black; stroke:none; }
+			.karteikartentextPassiv { font-family:"Tahoma", "Arial", "Helvetica", "sans-serif"; font-size:10; pointer-events:none; fill:grey; stroke:none; }
+			
+			.progress {font-family:"Tahoma", "Arial", "Helvetica", "sans-serif"; font-size:11; fill:blue;}
+			.progressMap {font-family:"Tahoma", "Arial", "Helvetica", "sans-serif"; font-size:11; fill:blue;}
+			.progressInit {font-family:"Tahoma", "Arial", "Helvetica", "sans-serif"; font-size:11; fill:red;}
+			.progressInitSmal {font-family:"Tahoma", "Arial", "Helvetica", "sans-serif"; font-size:10; fill:red;}
+			.detailLegende { font-family:"Tahoma", "Arial", "Helvetica", "sans-serif"; font-size:10; pointer-events:none; fill:black;}
+			.detailLegendenTitel { font-family:"Tahoma", "Arial", "Helvetica", "sans-serif"; font-size:10; pointer-events:none; fill:black; stroke:none;}
+			.detailLegendenTitelEmphase { font-family:"Tahoma", "Arial", "Helvetica", "sans-serif"; font-size:10; pointer-events:none; fill:red; stroke:none;}
+			.noScreen { display:none; }
+			
+		
+		
+			.Error1 { font-size:12; fill:red;}
+			
+			.Error2 { font-size:9; fill:red; text-rendering:optimizeSpeed;} 
+			.Error3 { font-size:9; fill:blue; text-rendering:optimizeSpeed;} 				
+					
+		}
+		
+		@media print 
+		{
+		  	.copyrightText { font-family:"Arial", "Helvetica", "sans-serif"; font-size:10; }
+		  	
+		  	.copyrightTextSmall { font-family:"Arial", "Helvetica", "sans-serif"; font-size:9;}
+		  	
+		  	.copyrightBox {font-family:"Arial", "Helvetica", "sans-serif"; display:all; fill:white; stroke:red; }
+		  	
+		  	.noPrint { font-family:"Arial", "Helvetica", "sans-serif"; display:none; }
+		  	
+		  	.headline3NoPrint{ font-family:"Arial", "Helvetica", "sans-serif"; display:none; }
+		  	.noScreen { display:all; }
+		  	.headline4NoPrint { display:none; }
+		
+		}	
+		
+		
+	 ]]></style>
+     </defs>
+<g id="embedMapHere">
+</g>
+<!--
+###############################################################################################################################
+##
+##                Hintergrund fuer das Menue 
+##
+###############################################################################################################################
+-->
+<svg id="theMenue" width="390" height="600" x="420" y="0" viewBox="0 0 350 600">
+	<rect rx="0.5%" ry="0.5%" class="menueBackground" y="10" x="10" width="350" height="580" />
+</svg>
+<!--
+###############################################################################################################################
+##
+##                SVG-Ueberschrift und Logo -> VewBox == width and heigth * 1.1 for solution
+##
+###############################################################################################################################
+-->
+<svg id="header" width="350" height="35" x="449" y="10" viewBox="0 0 385 38,5">
+	<rect id="logoPlatz" fill="white" stroke="none" width="98%" height="100%" transform="translate(5,3)"/>
+	<!--<animateColor xlink:href="#logoPlatz"
+		    attributeName="fill"
+		    begin="2" dur="2"
+		    from="white" to="green"
+		    repeatCount ="indefinite"		     
+		    />-->
+    	<!-- Ueberschrift und Copyrightsymbol-->
+	<g id="headline">
+		<text x="12" y="18" class="headline">Wahlergebnisse und Strukturdaten</text>
+		<!--<text id ="beta" x="200" y="18" class="headline" fill="green" >-RC 1-</text>
+		<animateColor xlink:href="#beta"
+		    attributeName="fill"
+		    begin="2" dur="2"
+		    from="green" to="white"
+		    repeatCount ="indefinite"		     
+		    />-->
+				
+		<text x="12" y="34" class="headline">zur Bundestagswahl 2005</text>
+		<!--<text x="170" y="25" class="headline">final</text>-->
+		<text x="150" y="29" font-size="14" class="headline2">&#169;</text>
+		<a><circle id="copyright" r="5" cx="155" cy="26" opacity="0" onclick="showInfos('Copyright');zeigeKarteikarte('Info');"/></a>
+	</g>
+<!--	<image id="Logo" x="270" y="0" width="100px" height="40px" xlink:href="./images/wahllogo_kln.gif"/>		-->
+<g id="Logo" transform="translate(260 5) scale(.55)">
+		
+	<g id="Ebene_1">
+		<path fill="#1B1C20" d="M22.8,10.4c0.2-0.1,0.3-0.1,0.5,0c2.6-0.1,5.2-1.7,5.2-3.8c0-1.1-0.5-1.9-1.1-2.7c-0.4,0-0.7,0-0.9,0
+			c-1.3,0-1.9-0.6-2-1.4c0.1-0.4,0.5-0.9,1.1-0.9c1.2,0,3.2,1.1,5.2,1.1c-0.2,0.1-0.5,0.2-0.9,0.5c1.2,1,2,2.4,2.3,3.8l3.2,5
+			c0.5,0.7,1.6,2.3,3.2,3.6c-2,0-3.3,0-5-2.7l-1.6-2.5c-0.1,0.4-0.3,0.7-0.5,1.1l3.2,5c0.5,0.7,1.6,2.3,3.2,3.6
+			c-1.9-0.1-3.2,0-5-2.7l-2.7-4.3c-0.1,0.3-0.3,0.5-0.7,0.7l3.8,6.1c0.6,0.8,1.7,2.4,3.4,3.6c-2,0-3.4,0.1-5-2.5l-3.8-5.9
+			c-0.2,0.1-0.5,0.2-0.7,0.5l4.5,7c0.5,0.9,1.6,2.5,3.2,3.6c-1.9,0.1-3.2,0.1-5-2.5l-4.5-7.5c-0.4,0.2-0.7,0.3-0.9,0.5l5.2,8.4
+			c0.6,0.7,1.7,2.3,3.4,3.6c-2.1-0.1-3.4,0-5-2.7l-5.7-8.8c-0.2,0-0.2,0-0.2,0c-0.2,0.5-0.3,0.9-0.2,1.4c-0.1,2.8,1.8,5.3,4.1,7.2
+			c-0.2,0-0.4,0.1-0.7,0c-0.5,0.1-0.8,0-0.9,0c0.5,1.2,1.6,2.7,2,3.4c0.8-0.1,1.9-0.2,2.5-0.2c0.8,0,0.9,0.5,0.9,0.9
+			c0,0.6-0.3,1.1-0.7,1.4c-0.1-0.3-0.4-0.7-1.8-0.7c0-0.1,0-0.1,0,0c0.3,0.4,1.6,1.4,1.6,2c0,0.6-0.6,1.4-1.4,1.4c0-0.1,0-0.3,0-0.5
+			c0-0.6-0.6-1.3-1.1-1.8c0.1,0.1,0.1,0.1,0,0.2c0.1,1.6,0,2.3-0.9,2.3c-0.6,0-0.9-0.2-1.1-0.2c0.7-0.7,0.8-1.1,0.7-2
+			c0.1-0.2,0.1-0.4,0-0.7c0.1-0.2,0.1-0.4,0-0.7c-0.2,0-0.4,0-0.7,0c0,0-1.4-0.1-1.6,0.7c-0.5-0.4-1-0.9-1.1-1.4
+			c0.1-0.4,0.3-0.8,0.9-0.9c0.4,0.1,1.2,0.3,1.8,0.2c-0.1-0.4-0.9-1.6-1.6-2.5c-0.2,0.3-0.4,0.7-0.7,0.9c-0.1-0.5-0.5-2.3-1.4-3.4
+			c-0.1,0.8-0.3,1.5-0.2,2.9c-0.1,3.9,0.9,6.6,2.7,7.2c-0.2,0.4-0.7,0.8-1.4,0.7c-0.6,0.1-1-0.7-1.4-1.4c-0.2,0.5-0.8,1.8-1.4,1.8
+			c-0.6,0-1.2-1.4-1.4-1.8c-0.4,0.7-0.8,1.5-1.6,1.4c-0.5,0.1-1-0.3-1.4-0.7c2-0.6,2.9-3.4,2.9-7.2c0-1.4-0.1-2.2-0.2-2.9
+			c-0.9,1.1-1.3,2.9-1.4,3.4c-0.3-0.2-0.5-0.6-0.7-0.9c-0.7,0.9-1.5,2.1-1.8,2.5c0.8,0,1.6-0.1,1.8-0.2c0.8,0.1,1,0.5,0.9,0.9
+			c0.1,0.5-0.5,0.9-0.9,1.4c-0.3-0.8-1.7-0.7-1.6-0.7c-0.3,0-0.5,0-0.9,0c0.1,0.2,0.1,0.5,0,0.7c0.1,0.3,0.1,0.5,0,0.7
+			c0.1,0.9,0.1,1.4,0.7,2c0,0-0.4,0.2-0.9,0.2c-0.9,0-1.1-0.7-1.1-2.3c0.1-0.1,0.1-0.1,0-0.2c-0.4,0.5-1,1.2-0.9,1.8
+			c-0.1,0.2-0.1,0.3,0,0.5c-0.8,0.1-1.4-0.7-1.4-1.4c0-0.7,1.2-1.7,1.6-2c0-0.1-0.1-0.1-0.2,0c-1.2-0.1-1.5,0.4-1.6,0.7
+			c-0.4-0.3-0.7-0.8-0.7-1.4c-0.1-0.4,0-0.9,0.7-0.9c0.8,0,1.8,0.1,2.5,0.2c0.6-0.7,1.8-2.2,2.3-3.4c-0.2,0-0.5,0.1-0.9,0
+			c-0.3,0.1-0.5,0-0.7,0c2.2-1.9,4.1-4.4,4.1-7.2c0-0.4-0.1-0.9-0.2-1.4c-0.1,0-0.1,0-0.2,0L10.4,26c-1.6,2.7-3,2.7-5,2.7
+			c1.7-1.3,2.8-2.9,3.4-3.6l5.2-8.4c-0.3-0.2-0.6-0.3-0.9-0.5l-4.5,7.5c-1.8,2.6-3.1,2.6-5.2,2.5c1.7-1.2,2.8-2.7,3.4-3.6l4.5-7
+			c-0.3-0.3-0.5-0.4-0.7-0.5l-3.8,5.9c-1.7,2.5-3,2.5-5,2.5c1.6-1.3,2.7-2.8,3.2-3.6l3.8-6.1c-0.2-0.2-0.4-0.4-0.7-0.7l-2.7,4.3
+			c-1.6,2.7-2.9,2.7-5,2.7c1.7-1.3,2.8-2.9,3.4-3.6l3.2-5c-0.2-0.4-0.4-0.7-0.5-1.1L5,12.9c-1.7,2.7-3.1,2.7-5,2.7
+			c1.6-1.3,2.7-2.9,3.2-3.6l3.2-5c0.2-1.5,1-2.9,2.3-3.8C8.1,3,7.8,2.8,7.7,2.8c1.9-0.1,3.9-1.1,5-1.1c0.8,0,1.2,0.5,1.1,0.9
+			c0.1,0.7-0.6,1.3-1.8,1.4c-0.2,0-0.6,0-0.9,0c-0.7,0.8-1.2,1.6-1.1,2.7c-0.1,2.1,2.5,3.8,5.2,3.8c0.1-0.1,0.2-0.1,0.5,0
+			c0.4-1.8,1.5-2.9,2.5-4.1C17,6,15.8,5,15.8,4.6c-0.1,0,0-0.1,0,0c0.1-0.1,2.1,0.6,2.3,0.7c0.1,0,0.1,0,0.2,0
+			c0.2-0.1,0.4-0.5,0.5-0.5c-0.3-0.1-1.5-0.3-2.5-0.7c-0.6-0.1-0.9-0.6-0.9-0.7c0-0.1,0-0.1,0,0c0.2-0.1,1,0.3,2.3,0.2
+			c0.4,0.1,0.5,0.1,0.9,0C18.2,3,17.7,2.4,17,2.3c-0.2,0.1-0.8,0.2-1.1,0.5c-0.4-0.5-0.7-1.1-0.7-1.6c-0.1-0.3,0.4-0.8,1.6-0.9
+			c0.3,0.1,0.7,0.1,0.9,0.2c0.3,0,0.5,0,0.7,0c0,0.1,0,0,0,0c0-0.2,0.1-0.4,0.7-0.5c1,0.1,2,0.4,3.4,0.5c0.2-0.1,0.4-0.1,0.7-0.2
+			c-0.1,0.3-0.5,0.7-0.9,0.9c0.3,0.3,0.8,1,0.9,2c-0.1,1.7-1.2,3-1.1,4.7C21.9,9,22.6,9.8,22.8,10.4z M19.9,2.3
+			c0.9,0.2,1.5-0.9,0.7-1.1c0.1,0.4-0.5,0.7-0.5,0.7c0,0-0.3-0.5,0-0.9c-0.5-0.2-0.6,0.1-0.7,0.5C19.7,1.7,19.8,2,19.9,2.3z M19,4.1
+			c0.3-0.3,0.5-0.8,0.5-1.4c0.1-1.4-1.1-2-2.7-2c-0.8,0-1.2,0.3-1.1,0.5c-0.1,0.3,0.2,0.9,0.2,1.1C16.2,2.1,16.7,2,17,2.1
+			C18.1,2,18.9,3.2,19,4.1z M9,6.6C9,5.3,9.9,4.3,10.4,3.7c-0.1,0-0.2-0.1-0.5,0C9.6,4,8.2,5.5,8.1,7.3c0.1,3.3,3.4,6.3,7.2,6.3
+			c-0.1-0.4-0.2-0.7-0.2-1.1c0.1-0.3,0.1-0.5,0-0.7C11.9,11.7,9,9.4,9,6.6z M15.6,26.3c-0.2-0.4-0.3-0.6-0.7-0.7
+			c-0.2,0-0.3,0.1-0.5,0c-0.5,1.3-2.2,3.7-2.5,4.1c-0.7-0.2-1.8-0.3-2.7-0.2c-0.1-0.1-0.4-0.1-0.5,0.5C8.9,30.1,9,30.6,9,30.8
+			c0.5-0.5,1.1-0.6,1.8-0.7c0.4,0,0.8,0.2,0.9,0.2c-1,1-1.9,1.8-2,2.3c0.1,0.4,0.4,0.8,0.7,0.9c0-0.8,0.9-1.9,1.8-2.5
+			c-0.1,0.1,0,0.5,0,0.9c0,1.6,0.1,1.9,0.7,2c0.2-0.1,0.4-0.1,0.5-0.2c-0.3-0.3-0.5-0.8-0.5-1.8c0-0.2,0-0.5,0-0.7
+			c0-0.4-0.1-0.7,0-0.9c0.1-0.1,0.7-0.1,1.1-0.2c0.8,0.1,1.3,0.2,1.6,0.5c0.3-0.1,0.6-0.5,0.7-0.7c-0.1-0.4-0.3-0.5-0.7-0.5
+			c-0.3,0-0.7,0.1-2.3,0.2C13.7,28.7,14.6,27.5,15.6,26.3z M25.1,29.7c-1.6-0.1-2-0.2-2.5-0.2c-0.2,0-0.4,0-0.5,0.5
+			c0,0.2,0.3,0.6,0.7,0.7c0.3-0.3,0.8-0.4,1.6-0.5c0.4,0.1,1,0.2,1.1,0.2c0,0.2,0,0.5,0,0.9c0,0.2,0,0.5,0,0.7c0,1-0.2,1.5-0.5,1.8
+			c0,0.1,0.2,0.1,0.5,0.2c0.5-0.1,0.7-0.4,0.7-2c0-0.4,0-0.8,0-0.9c0.9,0.6,1.7,1.7,1.8,2.5c0.2-0.1,0.5-0.5,0.5-0.9
+			c0.1-0.5-0.9-1.3-1.8-2.3c0.1-0.1,0.4-0.2,0.7-0.2c0.9,0,1.5,0.2,1.8,0.7c0.2-0.2,0.3-0.7,0.5-0.9c-0.1-0.5-0.4-0.5-0.7-0.5
+			c-0.7-0.1-1.8,0.1-2.5,0.2c-0.3-0.4-2.1-2.7-2.5-4.1c-0.2,0.1-0.3,0-0.5,0c-0.4,0-0.5,0.3-0.7,0.7C23.8,27.5,24.7,28.7,25.1,29.7z
+			 M30.3,7.3c-0.1-1.8-1.5-3.3-2-3.6c0-0.1-0.1,0-0.2,0c0.5,0.6,1.4,1.6,1.4,2.9c0,2.8-2.9,5.1-6.1,5.2c0,0.2,0,0.5,0,0.7
+			c0,0.4,0,0.8,0,1.1C26.9,13.5,30.2,10.5,30.3,7.3"/>
+		<g>
+			<path fill="#1B1C20" d="M71.6,12.5c-1,1-2.2,1.7-4.3,1.7h-3.4V1.4H67c2.2-0.1,3.6,0.4,4.8,1.9c0.7,1.2,1.1,2.6,1,4.3
+				C72.9,9.8,72.3,11.3,71.6,12.5z M69.9,3.8c-0.6-0.8-1.4-1.1-2.6-1h-1.4v9.8h1.4c1.4-0.1,2.4-0.4,2.9-1.4c0.5-0.9,0.8-2,0.7-3.4
+				C70.9,6.2,70.7,4.8,69.9,3.8"/>
+			<path fill="#1B1C20" d="M76.9,9.8v0.2c-0.1,0.8,0.1,1.4,0.2,1.9c0.6,0.7,1.3,1,2.2,1c0.9,0.1,1.7-0.2,2.4-0.7l0.5,1
+				c-0.8,0.7-1.9,1.1-3.1,1.2c-2.5-0.1-4.1-1.9-4.1-5c0-1.6,0.3-2.6,1-3.6c0.8-0.8,1.8-1.2,2.9-1.2c1.1,0,1.9,0.3,2.6,1
+				c0.7,0.9,1,1.9,1,4.1c0.1,0,0.1,0.1,0,0.2H76.9z M80.2,6.5c-0.4-0.4-0.9-0.6-1.4-0.7c-1.3,0.1-2,1.1-1.9,2.9h3.8
+				C80.7,7.7,80.5,6.9,80.2,6.5"/>
+			<path fill="#1B1C20" d="M89.1,6.2c-0.2,0-0.3,0-0.5,0c-1,0-1.9,0.9-1.9,1.9v6H85v-7c0-1-0.2-1.6-0.5-2.2l1.7-0.5
+				c0.2,0.3,0.4,1,0.5,1.4v0.2c0.6-1.2,1.4-1.7,2.4-1.7c0.2,0,0.5,0,0.7,0L89.1,6.2"/>
+			<path fill="#1B1C20" d="M69.9,34.1c-0.6,0.1-1.3,0.1-1.9,0.2h-4.1v-13h2.9c2.1,0.1,2.7,0.1,3.4,0.5c1.2,0.7,1.8,1.6,1.9,2.6
+				c-0.1,1.4-0.9,2.5-2.4,2.9c1.9,0.5,2.8,1.7,2.9,3.4C72.5,32.5,71.4,33.6,69.9,34.1z M68.7,23c-0.2-0.1-0.6-0.1-1.2,0h-1.7v3.8
+				h1.9c1.2-0.1,1.5-0.3,1.9-0.7c0.2-0.4,0.4-0.9,0.5-1.2C70,24,69.5,23.3,68.7,23z M69.2,28.3c-0.4,0-0.7,0-1.4,0h-1.9v4.6h2.4
+				c1.1-0.1,2.3-0.7,2.4-2.4C70.5,29.4,70,28.6,69.2,28.3"/>
+			<path fill="#1B1C20" d="M81.2,34.5c-0.3-0.4-0.6-0.7-0.7-1.4c-0.8,1-1.7,1.4-2.9,1.4c-1.1,0-2.1-0.6-2.4-1.4
+				c-0.2-0.4-0.3-0.9-0.2-1.4v-6.7l1.7-0.2v6.5c0,0.9,0.1,1.2,0.5,1.4c0.1,0.3,0.6,0.5,1,0.5c0.9,0,1.8-0.6,2.2-1.4v-6.7l1.7-0.2v7
+				c0,0.9,0.2,1.6,0.5,1.9L81.2,34.5"/>
+			<path fill="#1B1C20" d="M90.3,34.3v-6.5c0-0.7-0.1-1-0.2-1.4c-0.2-0.1-0.6-0.3-1-0.2c-0.7,0-1.7,0.5-2.4,1.2v7H85v-7
+				c0.1-1.2,0-1.6-0.2-2.2l1.7-0.5c0.1,0.4,0.2,0.8,0.2,1.4c0.5-0.5,0.8-0.8,1.2-1c0.5-0.4,1.1-0.5,1.7-0.5c1,0,1.9,0.5,2.2,1.2
+				c0.2,0.4,0.3,0.8,0.2,1.2v7.2H90.3"/>
+			<path fill="#1B1C20" d="M100.6,34.3c-0.1-0.4-0.1-0.5-0.2-1c-0.6,0.7-1.3,1-2.4,1c-2.3,0-3.7-1.7-3.6-4.6
+				c-0.1-2.1,0.6-3.7,1.9-4.6c0.5-0.3,1.1-0.5,1.7-0.5c1,0,1.7,0.3,2.4,1.2c0-0.4-0.1-1.1,0-1.7v-3.6l1.7,0.2v10.3
+				c-0.1,1.4,0,2.4,0.2,3.1H100.6z M100.4,26.9c-0.6-0.5-1.2-0.8-2.2-0.7c-0.6,0-1.2,0.3-1.4,1c-0.4,0.6-0.6,1.3-0.5,2.4
+				c-0.1,1.9,0.1,2.4,0.7,2.9c0.2,0.4,0.7,0.5,1.2,0.5c1.1,0.1,1.7-0.5,2.2-1V26.9"/>
+			<path fill="#1B1C20" d="M106.4,30v0.2c0,0.7,0.1,1.3,0.5,1.7c0.4,0.8,1.1,1.2,1.9,1.2c1,0,1.7-0.3,2.4-1l0.7,1
+				c-1,0.9-2.1,1.3-3.4,1.2c-2.5,0.1-4.1-1.8-4.1-4.8c0-1.6,0.3-2.7,1.2-3.6c0.7-0.9,1.6-1.3,2.6-1.2c1.1-0.1,1.9,0.2,2.6,1
+				c0.8,0.8,1.1,1.8,1.2,3.8c-0.1,0.2-0.1,0.3,0,0.5H106.4z M109.7,26.6c-0.4-0.4-0.8-0.7-1.4-0.7c-1.3,0-1.9,1.1-1.9,2.6h3.8
+				C110.2,27.8,110,27,109.7,26.6"/>
+			<path fill="#1B1C20" d="M117.2,34.5c-1.2-0.1-2.5-0.4-3.6-1l0.7-1.4c0.8,0.6,1.9,1,2.9,1c1.1,0.1,1.8-0.5,1.7-1.4
+				c0.1-0.8-0.4-1.3-1.4-1.4l-1.2-0.2c-1.4-0.3-2.2-1.2-2.2-2.6c-0.1-1.6,1.3-2.8,3.4-2.9c1.1,0,2.1,0.4,2.9,0.7l-0.5,1.2
+				c-1-0.3-1.7-0.6-2.4-0.5c-1-0.1-1.6,0.5-1.7,1.2c0.1,0.8,0.4,1.1,1.4,1.4l1.2,0.2c1.7,0.3,2.4,1.3,2.4,2.6
+				C120.7,33.2,119.3,34.5,117.2,34.5"/>
+			<path fill="#1B1C20" d="M131.6,34.3h-1.7l-1.2-5c-0.3-0.7-0.7-2.2-0.7-2.2c0,0-0.4,1.5-0.5,1.9l-1.4,5.3h-1.7l-2.4-9.4l1.7-0.2
+				l1.2,5.3c0.2,0.9,0.4,2.2,0.5,2.2c0,0,0.2-1.3,0.5-2.2l1.4-5h1.7l1.2,5c0.4,0.9,0.6,2.1,0.7,2.2c0,0,0.3-1.5,0.5-2.2l1.2-5h1.7
+				L131.6,34.3"/>
+			<path fill="#1B1C20" d="M142.4,34.5c-0.7-0.2-1.1-0.6-1.4-1.2c-0.1,0.2-0.9,1.1-2.6,1.2c-1.8-0.1-2.9-1-2.9-2.9
+				c0-2.1,1.7-3.2,4.8-3.1c0.1-0.1,0.3-0.1,0.5,0v-0.7c0.1-1.1-0.1-1.8-1.4-1.9c-0.9,0.1-2,0.6-2.9,1.2l-0.7-1.2
+				c0.9-0.6,2.1-1.3,3.8-1.2c1.4-0.1,2.4,0.4,2.9,1.4c0,0.4,0.1,0.7,0,1.7c0.1,0.6,0,2,0,3.4c0,1.3,0,1.8,0.7,2.2L142.4,34.5z
+				 M140.2,29.5c-1.3,0.1-2.1,0.3-2.4,0.7c-0.4,0.4-0.6,0.8-0.5,1.4c-0.1,1,0.4,1.6,1.4,1.7c0.7-0.1,1.5-0.6,1.9-1.4v-2.2
+				C140.5,29.6,140.3,29.6,140.2,29.5"/>
+			<path fill="#1B1C20" d="M151,34.3v-6.5c-0.1-0.7-0.2-1.1-0.5-1.2c-0.1-0.3-0.5-0.5-1-0.5c-0.8,0-1.7,0.5-2.4,1.4v6.7h-1.7V22.8
+				c-0.1-0.7-0.2-1.3-0.2-1.9l1.7-0.2c0.1,0.5,0.2,1.2,0.2,2.2v2.2c-0.1,0.2-0.1,0.6,0,1.2c0.3-0.4,0.5-0.6,1-0.7
+				c0.6-0.6,1.2-0.7,1.9-0.7c1.1,0,2.1,0.5,2.4,1.4c0.1,0.4,0.1,0.6,0.2,1.4v6.7H151"/>
+			<path fill="#1B1C20" d="M157.3,34.3c-0.6,0.1-1.1-0.1-1.4-0.7c-0.3-0.3-0.3-0.6-0.2-1.4v-8.4c-0.1-1.4-0.1-2.1-0.2-2.9l1.7-0.2
+				c0.2,0.6,0.2,1.5,0.2,2.6v8.4c0,0.9,0,1.2,0.2,1.4c0.1,0,0.3,0.1,0.5,0l0.5,1C158,34.3,157.7,34.4,157.3,34.3"/>
+			<path fill="#1B1C20" d="M162.1,34.3c-0.6,0.1-1-0.1-1.4-0.7c-0.2-0.3-0.3-0.6-0.2-1.4v-8.4c0-1.4-0.1-2.1-0.2-2.9l1.9-0.2
+				c0.1,0.6,0.1,1.5,0,2.6v8.4c0.1,0.9,0.1,1.2,0.2,1.4c0.2,0,0.4,0.1,0.7,0l0.2,1C162.9,34.3,162.6,34.4,162.1,34.3"/>
+			<path fill="#1B1C20" d="M166.6,30v0.2c-0.1,0.7,0,1.3,0.2,1.7c0.5,0.8,1.3,1.2,2.2,1.2c0.9,0,1.6-0.3,2.4-1l0.5,1
+				c-0.8,0.9-1.9,1.3-3.1,1.2c-2.6,0.1-4.2-1.8-4.1-4.8c-0.1-1.6,0.2-2.7,1-3.6c0.8-0.9,1.7-1.3,2.9-1.2c1-0.1,1.9,0.2,2.4,1
+				c0.9,0.8,1.2,1.8,1.2,3.8c0,0.2,0,0.3,0,0.5H166.6z M169.7,26.6c-0.2-0.4-0.7-0.7-1.2-0.7c-1.3,0-2,1.1-1.9,2.6h3.8
+				C170.4,27.8,170.2,27,169.7,26.6"/>
+			<path fill="#1B1C20" d="M175.5,23.3c-0.6,0-1.1-0.6-1.2-1.2c0.1-0.7,0.6-1.3,1.2-1.2c0.7-0.1,1.3,0.5,1.2,1.2
+				C176.8,22.7,176.2,23.3,175.5,23.3z M174.8,34.3v-9.4l1.7-0.2v9.6H174.8"/>
+			<path fill="#1B1C20" d="M182.9,26.1h-1.7v5.5c-0.1,1.2,0.2,1.5,1.2,1.4c0.2,0.1,0.5,0.1,0.7,0l0.2,1c-0.5,0.3-1.1,0.4-1.7,0.5
+				c-0.6-0.1-1.3-0.3-1.7-0.5c-0.3-0.4-0.6-0.6-0.5-1.9v-6h-1.2v-1.2h1.2c-0.1-0.8-0.1-1.7,0-2.4l1.7-0.5c0,0.7-0.1,1.9,0,2.9h2.2
+				L182.9,26.1"/>
+			<path fill="#1B1C20" d="M186.8,30v0.2c-0.1,0.7,0,1.3,0.2,1.7c0.6,0.8,1.3,1.2,2.2,1.2c0.9,0,1.7-0.3,2.4-1l0.5,1
+				c-0.8,0.9-1.9,1.3-3.1,1.2c-2.6,0.1-4.1-1.8-4.1-4.8c-0.1-1.6,0.3-2.7,1-3.6c0.8-0.9,1.8-1.3,2.9-1.2c1.1-0.1,1.9,0.2,2.6,1
+				c0.7,0.8,1,1.8,1,3.8c0.1,0.2,0.1,0.3,0,0.5H186.8z M190.1,26.6c-0.4-0.4-0.9-0.7-1.4-0.7c-1.3,0-2,1.1-1.9,2.6h3.8
+				C190.6,27.8,190.4,27,190.1,26.6"/>
+			<path fill="#1B1C20" d="M199,26.4c-0.2,0-0.3-0.1-0.5,0c-1-0.1-1.9,0.8-1.9,1.9v6h-1.7v-7c0-1.1-0.2-1.7-0.5-2.4l1.7-0.2
+				c0.2,0.3,0.4,0.9,0.5,1.4c0.6-1,1.4-1.5,2.4-1.4c0.2-0.1,0.4-0.1,0.5,0L199,26.4"/>
+		</g>
+		<g>
+			<path d="M47.4,0h4.8v19.3h-4.8V0z"/>
+			<path fill="#FF0000" d="M47.4,19.1h4.8v19.5h-4.8V19.1z"/>
+			<path fill="#E0B700" d="M47.4,38.6h4.8v19.3h-4.8V38.6z"/>
+		</g>
+	</g>
+</g>
+ 
+</svg>
+<!--
+###############################################################################################################################
+##
+##                Das Menue -> VewBox == width and heigth * 1.1 for solution  
+##
+###############################################################################################################################
+-->
+<svg id="menue" xml:space="preserve" y="130" x="449"  width="350" height="456" viewBox="0 0 385 462" display="all">
+	<!-- Infos und Daten-->
+	<g transform="translate(12,0)">
+		<text id="statistikName" class="headline2" > </text>
+	</g>
+	
+	<g id="allInfos" transform="translate(12,40)">
+		
+		<text class="headline3Grey" id="G3Name" x="0" y="30" pointer-events="none" display="none">Fahren Sie mit der Maus über </text>
+		<text class="headline3Grey" id="G3Wert" x="0" y="42" pointer-events="none" display="none">die Karte, um Werte anzuzeigen</text>
+	  
+	
+		<!-- Hinweis beim initialen Laden -->
+		<g id="progressInit" visibility="visible">
+			<rect rx="0.5%" ry="0.5%" x="160" y="20" width="200" height="60" fill="white" stroke="black"/>
+			<text  class="progressInit" x="165" y="37"  >Atlas wird geladen. Bitte warten...</text>	
+			<text  class="progressInitSmal" x="165" y="55"  >Der erstmalige Start kann etwas dauern.</text>
+			<text  class="progressInitSmal" x="165" dy="70" >Danach ist flüssiges Arbeiten möglich.</text>	
+		</g>	
+		<!-- Hinweis beim nachladen von Daten -->
+		<g id="progressData" visibility="hidden">
+			<rect rx="0.5%" ry="0.5%" x="160" y="20" width="200" height="25" fill="white" stroke="black"/>
+			<text  class="progress" x="165" y="37"  >Daten werden geladen. Bitte warten...</text>		
+		</g>
+		
+		<!-- Hinweis beim nachladen einer Karte -->
+		<g id="progressMap" visibility="hidden">
+			<rect rx="0.5%" ry="0.5%" x="160" y="20" width="200" height="25" fill="white" stroke="black"/>
+			<text  class="progressMap" x="165" y="37"  >Karte wird geladen. Bitte warten...</text>		
+		</g>	
+		
+		<!-- Hinweis beim ausfuehren einer Bereichnung -->
+		<g id="progressCalc" visibility="hidden">
+			<rect rx="0.5%" ry="0.5%" x="160" y="20" width="200" height="25" fill="white" stroke="black"/>
+			<text  class="progressMap" x="165" y="37"  >Aktion wird ausgeführt. Bitte warten...</text>		
+		</g>		
+	
+		
+		<text class="headline3" id="G2Name" x="0" y="62" pointer-events="none"> </text>
+		<text class="headline3" id="G2Wert" x="0" y="74" pointer-events="none"> </text>
+		
+		<!-- Bundesdaten -->
+		<text class="headline3" id="G1Name" x="190" y="62" pointer-events="none"> </text>
+		<text class="headline3" id="G1Wert" x="190" y="74" pointer-events="none"> </text>
+	</g>
+	<!-- Legende -->	
+	<g id="legende" transform="translate(12,15)">
+		<g id="legende1" display="none">
+	                <use xlink:href="#klassenLegende" id="klasse1" x="0" y="110"/>
+	                <text class="headline3" id="klasse1txt" x="30" y="120" >-</text>
+	        </g>
+	
+	        <g id="legende2" display="none">
+	                <use xlink:href="#klassenLegende" id="klasse2" x="0" y="125"/>
+	                <text class="headline3" id="klasse2txt" x="30" y="135" >-</text>
+	        </g>
+	
+	        <g id="legende3" display="none">
+	                <use xlink:href="#klassenLegende" id="klasse3" x="0" y="140"/>
+	                <text class="headline3" id="klasse3txt" x="30" y="150" >-</text>
+	        </g>
+	
+	        <g id="legende4" display="none">
+	                <use xlink:href="#klassenLegende" id="klasse4" x="0" y="155"/>
+	                <text class="headline3" id="klasse4txt" x="30" y="165" >-</text>
+	        </g>
+	
+	        <g id="legende5" display="none">
+	                <use xlink:href="#klassenLegende" id="klasse5" x="0" y="170"/>
+	                <text class="headline3" id="klasse5txt" x="30" y="180" >-</text>
+	        </g>
+	        
+	        <g id="legendeMissingValue" display="none">
+	                <use xlink:href="#klassenLegende" id="MissingValue" x="0" y="185"/>
+	                <text class="headline3" id="klassetxt" x="30" y="195" >Fehlende Werte</text>
+	        </g>
+	
+		<!-- fixierung der Klassenanzahl bei Erhebungswechsel oder Jahreswechsel -->
+		<g id="anzahlFix" display="all" transform="translate(0,190)" >
+			<text class="karteikartentext" x="0" y="24">Grenzen zwischen den Klassen für einen Vergleich fixieren:</text>
+		        <a><g id="fixButton" transform="translate(280,13)" class="darkButton">
+		        	<use xlink:href="#kleinerButton" onmouseover="ButtonEmphasize(evt)" onmouseout="ButtonHide(evt)" onclick="switchFix(evt.getTarget().parentNode)"/>
+		        	<use xlink:href="#haekchen" visibility="hidden"/></g></a>
+		</g>
+	 
+	        <!-- Haeufigkeitsverteilung innerhalb der Klassen -->
+	        <g transform="translate(-60,0)" >
+		        <text class="headline3" id="haeufigkeit" x="250" y="120" display="none" >Häufigkeit:</text>      
+		        <text class="headline3" writing-mode="rl" id="haeufigkeit1" x="335" y="120" display="all"> </text>      
+		        <text class="headline3" writing-mode="rl" id="haeufigkeit2" x="335" y="135" display="all"> </text>
+			<text class="headline3" writing-mode="rl" id="haeufigkeit3" x="335" y="150" display="all"> </text>
+			<text class="headline3" writing-mode="rl" id="haeufigkeit4" x="335" y="165" display="all"> </text>
+			<text class="headline3" writing-mode="rl" id="haeufigkeit5" x="335" y="180" display="all"> </text>
+			<text class="headline3" writing-mode="rl" id="haeufigkeitMissing" x="335" y="195" display="none"> </text>
+		</g>    
+	        <!-- Minimum und Maximum -->
+	        <g id="mimimumTXT" transform="translate(25,0)" display="none" >
+		        <text class="headline3"  x="280" y="120">Minimum:</text>      
+		        <text class="headline3" writing-mode="ll" id="mimimumVALUE" x="280" y="135" > </text>      
+		</g>    		 
+	        <g id="maximumTXT" transform="translate(25,45)" display="none">
+		        <text class="headline3"  x="280" y="120" >Maximum:</text>      
+		        <text class="headline3" writing-mode="ll" id="maximumVALUE" x="280" y="135" display="all"> </text>      
+		</g>   	
+	
+	</g>
+<!--
+###############################################################################################################################
+##
+##                Karteikasten
+##
+###############################################################################################################################
+-->
+	<g id="Karteikasten" display="all" transform="translate(12,40)">
+	
+		<a><g id="Klassifizerung-Button" transform="translate(0,202)" class="karteikasen">
+	                <use xlink:href="#protoButton" onmouseover="TabButtonEmphasize(evt)" onmouseout="TabButtonHide(evt)"  onclick="zeigeKarteikarte('Klassifizerung');visibleHistogramm()" />
+	  		<text class="karteikartentext" x="5" y="12">Klassen</text>
+	               
+	        </g></a>
+	
+	        <a><g id="Navigation-Button" transform="translate(70,202)" class="karteikasen">
+	                <use xlink:href="#protoButton" onmouseover="TabButtonEmphasize(evt)" onmouseout="TabButtonHide(evt)"  onclick="zeigeKarteikarte('Navigation')" />
+	                <text class="karteikartentext" x="5" y="12">Navigation</text>
+	        </g></a>
+	
+	        <a><g id="Karte-Button" transform="translate(140,202)" class="karteikasen">
+	                <use xlink:href="#protoButton" onmouseover="TabButtonEmphasize(evt)" onmouseout="TabButtonHide(evt)"  onclick="zeigeKarteikarte('Karte')" />
+	                <text class="karteikartentext" x="5" y="12">Karte</text>
+	        </g></a>
+	
+	        <a><g id="Info-Button" transform="translate(210,202)" class="karteikasen">
+	                <use xlink:href="#protoButton" onmouseover="TabButtonEmphasize(evt)" onmouseout="TabButtonHide(evt)"  onclick="zeigeKarteikarte('Info')" />
+	                <text class="karteikartentext" x="5" y="12">Info</text>
+	        </g></a>
+	
+	
+	        <a><g id="Detail-Button" transform="translate(280,202)" class="karteikasen">
+	        	<use xlink:href="#protoButton"  onmouseover="TabButtonEmphasize(evt)" onmouseout="TabButtonHide(evt)"  onclick="zeigeKarteikarte('Info')"/>
+	                <text class="karteikartentextPassiv" x="5" y="12">Details</text>
+	        </g></a>
+	  
+	        
+	
+<!--
+###############################################################################################################################
+##
+##                Karteikarte zur Klassifizierung
+##
+###############################################################################################################################
+-->
+        <g id="Klassifizerung-Karte" display="none">
+                <use xlink:href="#karteiKarte"/>
+                <!-- Anzahl Klassen-->
+                <g id="anzahlKlassen" display="all" transform="translate(0,0)">
+	                <text class="karteikartentext" x="5" y="241">Klassenanzahl:</text>
+	
+	                <a><g id="Klasse2Button" transform="translate(100,230)" class="darkButton">
+	                        <use xlink:href="#kleinerButton" onmouseover="ButtonEmphasize(evt)" onmouseout="ButtonHide(evt)" onclick="setAnzKlassen(evt,2)"/>
+	                        <text class="headline4b" x="8" y="11">2</text>
+	                </g></a>
+	
+	                <a><g id="Klasse3Button" transform="translate(130,230)" class="darkButton">
+	                        <use xlink:href="#kleinerButton" onmouseover="ButtonEmphasize(evt)" onmouseout="ButtonHide(evt)" onclick="setAnzKlassen(evt,3)"/>
+	                        <text class="headline4b" x="8" y="11">3</text>
+	                </g></a>
+	
+	                <a><g id="Klasse4Button" transform="translate(160,230)" class="darkButton">
+	                        <use xlink:href="#kleinerButton" onmouseover="ButtonEmphasize(evt)" onmouseout="ButtonHide(evt)" onclick="setAnzKlassen(evt,4)"/>
+	                        <text class="headline4b" x="8" y="11">4</text>
+	                </g></a>
+	
+	                <a><g id="Klasse5Button" transform="translate(190,230)" class="darkButton">
+	                        <use xlink:href="#kleinerButton" onmouseover="ButtonEmphasize(evt)" onmouseout="ButtonHide(evt)" onclick="setAnzKlassen(evt,5)"/>
+	                        <text class="headline4b" x="8" y="11">5</text>
+	                </g></a>
+		</g>
+                <!-- Typ der Klassifizierung-->
+                <g id="KlassifizierungsMethode" display="all" transform="translate(0,-25)">
+	                <text class="karteikartentext" x="5" y="294">Klasseneinteilung:</text>
+	
+	                <a><g id="QuantileButton" transform="translate(100,280)" class="darkButton">
+	                        <use xlink:href="#protoButton" onmouseover="ButtonEmphasize(evt)" onmouseout="ButtonHide(evt)" onclick="setClassMethod('quantil'); colorAll();" />
+	                        <text class="headline4bX" x="5" y="8">gleiche</text>
+	                        <text class="headline4bX" x="5" y="17">Häufigkeiten</text>
+	                </g></a>
+	
+	                <a><g id="AequidistantButton" transform="translate(190,280)" class="darkButton">
+	                        <use xlink:href="#protoButton" onmouseover="ButtonEmphasize(evt)" onmouseout="ButtonHide(evt)" onclick="setClassMethod('equalDist'); colorAll();" />
+	                        <text class="headline4bX" x="5" y="8">gleiche</text>
+	                        <text class="headline4bX" x="5" y="17">Wertespannen</text>
+	                </g></a>
+	
+	                <a><g id="FreiButton" transform="translate(100,305)" class="darkButton">
+	                        <use xlink:href="#protoButton" onmouseover="ButtonEmphasize(evt)" onmouseout="ButtonHide(evt)" onclick="setClassMethod('free')"/>
+	                        <text class="headline4bX" x="5" y="8">freie</text>
+	                        <text class="headline4bX" x="5" y="17">Eingabe</text>
+	                </g></a>
+	                <a><g id="DefaultClassButton" transform="translate(190,305)"  class="darkButton">
+	                        <use xlink:href="#protoButton"  onmouseover="ButtonEmphasize(evt)" onmouseout="ButtonHide(evt)" onclick="setClassMethod('vorgabe');colorAll();"/>
+	                        <text id="DefaultClassButtonTXT" class="headline4bX" x="5" y="13">Vorgabe</text>
+	                    
+	                </g></a>
+ 		</g>
+ 		
+ 		<!-- Rechteck zum verstecken Der Klasseneinstellungen. -> geht nicht ueber das Gruppenattribut der einzelnen Objekte,
+ 		     da sonst Inkonsestenzen mit den Defaultwerden bei Nachladen einer Karte entstehen.-->
+ 		<g id="KlasseneinteilungVersteck" visibility="hidden">
+	 		<rect class="karteikasenColor" x="5" y="228" width="350" height="75" />
+	 		<text class="headline3r" x="120" y="270">Klasseneinteilung fixiert!</text>
+	 	</g>
+ 		
+                <!-- Histogramm wird per Script erstellt-->
+                <text class="karteikartentext" x="5" y="315">Werteverteilung:</text>
+                <a>
+	                <g id="histoGroup">
+	                </g>
+	            </a>
+	                <g id="histoGridLineGroup">
+                </g>
+                
+ 		<!-- freie Eingabe von Klassengrenzen -->
+ 		<g id="freieKlassengrenzen" display="none">
+			<rect rx="0.5%" ry="0.5%" x="6" y="230" width="350" height="90" fill="white" stroke="black"/>
+			
+	                <a><g id="OKButtonFreieKlassengrenzen" transform="translate(200,295)" class="darkButton">
+	                        <use xlink:href="#protoButton" onmouseover="ButtonEmphasize(evt)" onmouseout="ButtonHide(evt)" onclick="switchFree('ok')"/>
+	                        <text class="headline4b" x="29" y="13">OK</text>
+	                </g></a>
+	                <a><g id="AbbrechenButtonFreieKlassengrenzen" transform="translate(280,295)" class="darkButton">
+	                        <use xlink:href="#protoButton" onmouseover="ButtonEmphasize(evt)" onmouseout="ButtonHide(evt)" onclick="switchFree('abbruch')"/>
+	                        <text class="headline4b" x="13" y="13">Abbrechen</text>
+	                </g></a>
+			<g id="mti_txt">
+				<text visibility="visible" id="mti_txtMin" class="headline4b" x="10" y="250">Minimum:</text>
+				<use xlink:href="#fixedInputFeld" id="mtiMin" x="55" y="240" />
+				<text visibility="visible" id="mti_ValueMin" class="headline3" x="60" y="252"> </text>
+				<text visibility="hidden" id="mti_txt1" class="headline4b" x="10" y="280">Grenze 1:</text>
+				<text visibility="hidden" id="mti_txt2" class="headline4b" x="10" y="310">Grenze 2:</text>
+				<text visibility="hidden" id="mti_txt3" class="headline4b" x="130" y="250">Grenze 3:</text>
+				<text visibility="hidden" id="mti_txt4" class="headline4b" x="130" y="280">Grenze 4:</text>
+				<text visibility="visible" id="mti_txtMax" class="headline4b" x="248" y="250">Maximum:</text>			
+				<use xlink:href="#fixedInputFeld" id="mtiMax" x="295" y="240" />
+				<text visibility="visible" id="mti_ValueMax" class="headline3" x="305" y="252"> </text>
+			</g>
+			<g id="mti" class="headline3Input"></g>
+		
+ 		</g>
+		<!-- Ubergang der Karteikarte zum Reiter -->
+                <rect stroke="none" width="69" height="5" transform="translate(0.5,218)" class="karteikasenColor"/>
+		<line x1="0" y1="217.5" x2="0" y2="222.5" stroke="black" stroke-width="1.0" opacity="1"/>
+        </g>
+<!--
+###############################################################################################################################
+##
+##                Karteikarte zur Navigation
+##
+###############################################################################################################################
+-->
+	<g id="Navigation-Karte" display="none">
+	        <use xlink:href="#karteiKarte"/>
+	
+		<!-- Bewegen in der Karte -->   
+	        <a><g id="naviPfeile" transform=" translate(0,200) scale(0.25)">
+			<g id="pfeilUnten" class="darkButton">
+				<use  xlink:href="#pfeil" transform="translate(500, 600) rotate(90)" onmouseover="ButtonEmphasize(evt)" onmouseout="iluminationOFF(evt.getTarget().parentNode); ButtonHide(evt)"  onclick="myPan('up')" onmousedown="iluminationON(evt.getTarget().parentNode)" onmouseup="iluminationOFF(evt.getTarget().parentNode)"/>
+			</g>
+			<g id="pfeilOben" class="darkButton">
+			     	<use  xlink:href="#pfeil" transform="translate(267, 450) rotate(-90)" onmouseover="ButtonEmphasize(evt)" onmouseout="iluminationOFF(evt.getTarget().parentNode); ButtonHide(evt)"  onclick="myPan('down')" onmousedown="iluminationON(evt.getTarget().parentNode)" onmouseup="iluminationOFF(evt.getTarget().parentNode)"/>
+			</g>
+			<g id="pfeilRechts" class="darkButton">
+			     	<use  xlink:href="#pfeil" transform="translate(460, 409)" onmouseover="ButtonEmphasize(evt)" onmouseout="iluminationOFF(evt.getTarget().parentNode); ButtonHide(evt)"  onclick="myPan('left')" onmousedown="iluminationON(evt.getTarget().parentNode)" onmouseup="iluminationOFF(evt.getTarget().parentNode)"/>
+			</g>
+			<g id="pfeilLinks" class="darkButton">
+			     	<use  xlink:href="#pfeil" transform="translate(309, 642) rotate(-180)" onmouseover="ButtonEmphasize(evt)" onmouseout="iluminationOFF(evt.getTarget().parentNode); ButtonHide(evt)"  onclick="myPan('right')" onmousedown="iluminationON(evt.getTarget().parentNode)" onmouseup="iluminationOFF(evt.getTarget().parentNode)"/>
+			</g>
+	 
+	        </g></a>
+	
+	        <!-- originalansicht -->
+	         <a><g id="origView" transform="translate(220,370)" class="darkButton">
+	                <use xlink:href="#protoButton" onmouseover="ButtonEmphasize(evt)" onmouseout="ButtonHide(evt)"  onclick="setOrigView()"/>
+	                <text id="origViewTXT" class="headline4b" x="5" y="13">Originalansicht</text>
+	         </g></a>
+	
+	 	<!-- Zoomen --> 	
+	        <a><g id="zoomIn" transform="scale(0.5) translate(400,250)" class="darkButton" >
+			<g onmouseover="ButtonEmphasize(evt)" onmouseout="iluminationOFF(evt.getTarget().parentNode);ButtonHide(evt)" onclick="zoomIn()" onmousedown="iluminationON(evt.getTarget().parentNode)" onmouseup="iluminationOFF(evt.getTarget().parentNode)">
+				<use xlink:href="#magnif" id="zoomInBody"/>
+				<line id="zoomInLine1" x1="39" y1="313" x2="69" y2="313" class="line"/>
+				<line id="zoomInLine2" x1="54" y1="299" x2="54" y2="329" class="line"/>
+			</g>
+	        </g></a>
+	        
+	        <a><g id="zoomOut" transform="scale(0.5) translate(520,250)" class="darkButton" >
+			<g onmouseover="ButtonEmphasize(evt)" onmouseout="iluminationOFF(evt.getTarget().parentNode);ButtonHide(evt)" onclick="zoomOut()" onmousedown="iluminationON(evt.getTarget().parentNode)" onmouseup="iluminationOFF(evt.getTarget().parentNode)">
+				<use  xlink:href="#magnif" id="zoomOutBody"/>
+				<line id="zoomOutLine" x1="39" y1="313" x2="69" y2="313" class="line"/>
+			</g>
+	        </g></a>
+	        
+	        <!-- fuer der Uebergang zur Karteikarte-->
+	        <rect stroke="none" width="69" height="5" transform="translate(70.5,218)" class="karteikasenColor"/>
+	
+	</g>
+<!--
+###############################################################################################################################
+##
+##                Karteikarte fuer Kartenlayer
+##
+###############################################################################################################################
+-->
+	<g id="Karte-Karte" display="none">
+	        <use xlink:href="#karteiKarte"/>
+	
+	        <text class="karteikartentext" x="5" y="245">Ein- und Auschalten von Kartenebenen</text>
+	
+	        <!-- Laendergrenzen -->      
+		<text class="karteikartentext" x="20" y="280">Grenzen der Bundesländer</text>
+	        <a><g id="G2Button" transform="translate(180,270)" class="iluminatedButton">
+	        	<use id="test" xlink:href="#kleinerButton" onmouseover="ButtonEmphasize(evt)" onmouseout="ButtonHide(evt)" onclick="switchButton(evt)"/>
+	        	<use id="test2" xlink:href="#haekchen" visibility="visible"/></g></a>
+	              
+	        <!-- Hauptstaedte -->      
+		<text class="karteikartentext" x="20" y="310">Hauptstädte der Bundesländer</text>
+	        <a><g id="StaedteButton" transform="translate(180,300)" class="iluminatedButton">
+		       <use xlink:href="#kleinerButton" onmouseover="ButtonEmphasize(evt)" onmouseout="ButtonHide(evt)" onclick="switchButton(evt)"/>
+		       <use xlink:href="#haekchen" visibility="visible"/></g></a>
+		
+	 
+	        <!-- fuer der Uebergang zur Karteikarte-->
+	        <rect fill="white" stroke="none" width="69" height="5" transform="translate(140.5,218)" class="karteikasenColor"/>
+	
+	         
+	</g>
+<!--
+###############################################################################################################################
+##
+##                Karteikarte fuer Informationen
+##
+###############################################################################################################################
+-->
+	<g id="Info-Karte" display="none">
+	        <use xlink:href="#karteiKarte"/>
+	
+	      	<text class="headline4b" x="5" y="245">Beachten Sie bitte:</text>
+	
+		<!-- Anezeigeflaeche fuer Infotexte-->
+		<g id="infoScreen" class="copyrightBox">
+		        <rect rx="0.5%" ry="0.5%" x="5" y="260" width="351" height="170" />
+		</g>
+	         
+	         <a><g id="infoErhebungButton" transform="translate(100,230)" class="darkButton">
+	                  <use xlink:href="#protoButton" onmouseover="ButtonEmphasize(evt)" onmouseout="ButtonHide(evt)" onclick="showInfos('Erhebung')" />
+	                  <text class="headline4b" x="5" y="8">regionale </text>
+	                  <text class="headline4b" x="5" y="17">Besonderheiten</text>
+	         </g></a>
+	
+	         <a><g id="infoCopyrightButton" transform="translate(190,230)" class="darkButton">
+	                  <use xlink:href="#protoButton" onmouseover="ButtonEmphasize(evt)" onmouseout="ButtonHide(evt)" onclick="showInfos('Copyright')"/>
+	                  <text class="headline4b" x="5" y="13">Copyright</text>
+	         </g></a>
+	       
+	
+		<!-- Infotext des Copyrights -->
+	        <g id="copyrightText" display="none">
+	
+			<text class="copyrightText" x="10" y="280">Datengrundlage sowie</text>
+			<text class="copyrightText" x="10" y="295">Wahlkreiskarte für die Wahl zum 16. Deutschen Bundestag:</text>
+			<text class="copyrightTextSmall" x="20" y="315">Alle Rechte vorbehalten.</text>	
+			<text class="copyrightTextSmall" x="20" y="330">&#169; Statistisches Bundesamt, Wiesbaden, 2005.</text>	
+				
+			<text class="copyrightText" x="10" y="360">Quelle der Verwaltungsgrenzen:</text>
+			<text class="copyrightTextSmall" x="20" y="380">VG1000, generalisiert.</text>
+			<text class="copyrightTextSmall" x="20" y="395">&#169; Bundesamt für Kartographie und Geodäsie.</text>
+	      	</g>
+	      	
+		<!-- Infotext der aktuellen Erhebung -->
+	        <g id="fussnotenText" display="none">
+	
+			<!-- Datenbasis -->
+			<text id="gesamterFussnotenText" class="headline2" x="10" y="280">Fußnoten:
+			</text>			
+	      	</g>      	
+	      		
+	        <!-- fuer der Uebergang zur Karteikarte-->
+	        <rect fill="white" stroke="none" width="69" height="5" transform="translate(210.5,218)" class="karteikasenColor"/>
+		
+	</g>
+<!--
+###############################################################################################################################
+##
+##                Karteikarte fuer Detailinformation
+##
+###############################################################################################################################
+-->
+	<g id="Detail-Karte" display="none">
+	        <use xlink:href="#karteiKarte"/>
+	        
+	        <!-- fuer der Uebergang zur Karteikarte-->
+	        <rect fill="white" stroke="none" width="69" height="5" transform="translate(280.5,218)" class="karteikasenColor"/>
+		<line x1="350" y1="216" x2="350" y2="220.5" stroke="black" opacity="1"/>
+	</g>
+ <!-- ende des Karteikastens -->
+ </g>
+</svg>
+<!--
+###############################################################################################################################
+##
+##                Die Comboboxen zur Statistikauswahl 
+##
+###############################################################################################################################
+-->
+<svg id="svgCombo" width="350" height="190" x="449" y="50" viewBox="0 0 350 190"  display="all">
+<!--<rect fill="red" stroke="black" width="100%" height="100%"/>-->
+		
+	<!-- Container fuer die Comboboxen. Sie werden durch Skriptierung erstellt. Dei Reihenfolge ist wichtig -->
+	<text x="10" y="17" class="headline3NoPrint">Wählen Sie eine weitere Karte der aktuellen Wahlkreise mit Hilfe der Menüs</text>
+	<!-- <text x="10" y="25" class="headline3NoPrint">mit Hilfe der Menüs</text>-->
+	<g id="auswahlErhebung" display="none">
+		<text x="10" y="66" class="headline4NoPrint">Merkmal:</text>
+		<g transform="translate(50,25)" id="sLselectionBoxCombo2" class="noPrint"/>
+	</g>
+	<text x="10" y="42" class="headline4NoPrint">Sachgebiet:</text>
+	<g transform="translate(50,20)" id="sLselectionBoxCombo1" class="noPrint"/>
+	
+	
+	 <g id="copyrightTextPrint" display="all" transform="translate(5,10)" class="noScreen" >
+	 	
+	        <rect rx="0.5%" ry="0.5%" x="5" y="-10" width="332" height="100" class="copyrightBox" />
+		<text class="copyrightText" x="10" y="0">Datengrundlage sowie</text>
+		<text class="copyrightText" x="10" y="12">Wahlkreiskarte für die Wahl zum 16. Deutschen Bundestag:</text>
+		<text class="copyrightTextSmall" x="15" y="27">Alle Rechte vorbehalten.</text>		
+		<text class="copyrightTextSmall" x="15" y="39">&#169; Statistisches Bundesamt, Wiesbaden, 2005.</text>		
+		<text class="copyrightText" x="10" y="59">Quelle der Verwaltungsgrenzen:</text>
+		<text class="copyrightTextSmall" x="15" y="74">VG1000, generalisiert.</text>
+		<text class="copyrightTextSmall" x="15" y="86">&#169; Bundesamt für Kartographie und Geodäsie.</text>
+     </g>
+	
+	
+</svg>
+<!--
+###############################################################################################################################
+##
+##                Bei Falschem Plugin
+##
+###############################################################################################################################
+-->
+<svg id="PluginError" xmlns:a3="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" a3:scriptImplementation="Adobe" xml:space="preserve" width="100%" height="100%" viewBox="0 0 805 600" display="none ">
+	<!-- Anezeigeflaeche fuer Infotexte-->
+	<g id="infoScreen" class="copyrightBox" fill="grey">
+	        <rect rx="0.5%" ry="0.5%" x="300" y="220" width="450" height="170"  />
+	</g>
+	
+  <text class="Error1" x="320" y="250">Sie verwenden ein nicht unterstütztes SVG-Plugin, oder nutzen die native</text>
+	<text class="Error1" x="320" y="270">SVG-Unterstützung ihres Browsers, diese muss deaktiviert sein.</text>
+	<text class="Error2" x="320" y="300">Bitte öffnen Sie nachfolgenden Link in einem NEUEM Fenster und installieren Sie die neueste Version.</text>
+		
+	<a xlink:href="http://www.adobe.com/svg/viewer/install/main.html" xlink:show="new">
+		<text class="Error3" x="320" y="320">http://www.adobe.com/svg/viewer/install/</text>
+	</a>
+	<text class="Error2" x="320" y="340">Beachten Sie bitte ebenfalls unsere </text>
+	<a xlink:href="http://intranet/wahlen/bundestagswahl2005/onlineatlas/help/" xlink:show="new">
+		<text class="Error3" x="320" y="360">Hilfeseiten.</text>
+	</a>
+</svg>
+</svg>

@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <script type="text/javascript" language="javascript">
+        function getProcInfo() {
+            var procInfo = window.dialogArguments;
+
+            var _num = procInfo[0];
+            var _fishTrunk = procInfo[1];
+            var _fishBone = procInfo[2];
+            var _strProcInfo = _num + ";" + _fishTrunk + ";" + _fishBone;
+
+            document.getElementById("showInfo").innerHTML = _strProcInfo.replace(/答辯/g, 'Rejection');
+            //var _str = "5&text-top0=claims001&text-bot0=claims002&text-top1=claims0011&text-bot1=claims0022&text-top2=claims00111&text-bot2=claims00222&text-top3=claims001111&text-bot3=claims002222&text-top4=claims001111&text-bot4=claims002222&text-top5=claims001111&text-bot5=claims002222";
+            var _divInnerHtml;
+
+            _divInnerHtml = "<object id='fishBoneId' data='fishBone.svg' type='image/svg+xml' width='100%' height='100%' codebase='http://www.adobe.com/svg/viewer/install/'>";
+            _divInnerHtml += "<param id='paramSrc' value='fishBone.svg' name='src' />";
+            _divInnerHtml += "提示：您的瀏覽器不支持SVG。 請安裝 <a href='http://www.adobe.com/svg/viewer/install/'>Adobe SVG Viewer</a>";
+            _divInnerHtml += "插件(IE用戶) 或者用 <a href='http://www.getfirefox.com/'>Firefox</a>, <a href='http://www.opera.com/'>Opera</a> or <a href='http://www.apple.com/safari/download/'>Safari</a> 進行替代。";
+            _divInnerHtml += "</object>";
+            document.getElementById("divFishBone").innerHTML = _divInnerHtml;
+        }
+    </script>
+
+</head>
+<body onload="getProcInfo()">
+    <div id="divFishBone">
+    </div>
+    <!--<object id="fishBoneId" data="fishBone.svg" type="image/svg+xml" width="100%" height="100%"
+        codebase="http://www.adobe.com/svg/viewer/install/">
+        <param id="paramSrc" value="fishBone.svg" name="src" />
+        提示：您的瀏覽器不支持SVG。 請安裝 <a href="http://www.adobe.com/svg/viewer/install/">Adobe SVG Viewer</a>
+        插件(IE用戶) 或者用 <a href="http://www.getfirefox.com/">Firefox</a>, <a href="http://www.opera.com/">
+            Opera</a> or <a href="http://www.apple.com/safari/download/">Safari</a> 進行替代。
+    </object>-->
+    <div id="showInfo" style="visibility:hidden;">
+    </div>
+    <!--<textarea id="txtAreaSvg" cols="100" rows="30"></textarea>-->
+</body>
+</html>
+<%--num=3&text-top0=claims001&text-bot0=claims002&text-top1=claims0011&text-bot1=claims0022&text-top2=claims00111&text-bot2=claims00222&text-top3=claims001111&text-bot3=claims002222--%>

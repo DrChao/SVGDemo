@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+    "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd" [
+    <!ATTLIST svg
+              xmlns:a3 CDATA #FIXED "http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+              a3:scriptImplementation ( Adobe | browser | Microsoft | Netscape ) "Adobe">
+    <!ATTLIST script
+              a3:scriptImplementation ( Adobe | browser | Microsoft | Netscape ) "Adobe">
+]>
+<svg	xmlns="http://www.w3.org/2000/svg"
+			xmlns:fui="http://xmlns.fuchsia-design.com/ui/"
+			xmlns:ev="http://www.w3.org/2001/xml-events"
+			xmlns:xlink="http://www.w3.org/1999/xlink"
+			zoomAndPan="disable" version="1.2">
+
+	<title>Stylable RCC Combo Box</title>
+
+	<defs>
+		<script type="text/ecmascript" xlink:href="../Common/SVGUtil.es" />
+		<script type="text/ecmascript" xlink:href="../Common/RCCBase.es" />
+
+		<style type="text/css">
+		<![CDATA[
+	@font-face{font-family:'Kazoo-Regular';src:url("data:;base64,\
+	T1RUTwADACAAAQAQQ0ZGIKwaHKoAAAA8AAAEwkdQT1PHT9SaAAAFTAAAAlxjbWFwAVABrgAABQAA\
+	AABMAQAEAgABAQEOS2F6b28tUmVndWxhcgABAQEf+BsB+BgEhvs0+Wf5dQUdAEe3Xg33Ig/3MhH1\
+	+uwSAAEBAU9cMjUxIDIwMDEgZm9udG9tYXMgfCBhbGwgcmlnaHRzIHJlc2VydmVkIHx8IGRpcmsg\
+	dWhsZW5icm9jayB8fHwgc2lnbmFsZ3JhdS5jb20AAAEAQgAARAYATwAAVAAAVgAADAIAAQAEAF4A\
+	pgEBAWgBwgI2AoECvQMFA1YDnvlgDofi93TiAYzi9ybiA/fWshX3dgfSUMVEHk4GRFBRRB/7HwdD\
+	wlHOHtkGnJqWmZEffZKagJwbo5+foh80pBWWg3+TfRs9Bnh7n6If9x8Hop6fox7IBqOed3QfDraH\
+	4vd04gGL4gP31LIVo3ifcx77JwZzeJ6jH/cfB6Ken6Me9ycGo56eo6N4nnMf+ycGQ1FRRB/7HwdD\
+	xVHTHvcnBqOen6IfDofi93TiAYzi9ybiA/fV9xIV+BEHo3iec3N4eHMe+xcHloN+kn0bPQZIVVFE\
+	H/sfB0PFUdMexwbTxcXTHzUWc3d4cx5PBnN3nqMf9x8Hopufnh7ZBpmYk5aTHw7Ah+LQ4tDiAYni\
+	9ybiFOD30velFc5RwUQeTgZDUVFEH/sfB0PBUc4e2Qajnp+io3ifcx89Bnl7n6IfuAeAkpiDmRvZ\
+	Bs7Bwc4fNRZ4e3x4Hj0GfX6DgIQfuAeinp+jHsgGop97eB8OIIef97fiAYfiA/c19/MVo3iecx5v\
+	BpGgkpyRkLKyGJyci6d6nHqccIt6emRkGGxreU2JWAiKioqKGouMioseiIqJiRr7xAd0n3ejo56f\
+	oh73oa4Ho56eox8OyYfi93TiAYri9ybiA/fUuxX3bQfSUcVDHk4GRFBRRB/7HwdDwlHOHtkGlpaQ\
+	k5MfhXCCdYSEZGQYg4OGgIAagJB/k4MenHqmi5ycsrIYra2d0b8aNJsVloN/k30bPQZ4e5+iH/cf\
+	B6Ken6MeyAajnnd0Hw7Ih5/3t+L3MHcBi+L3JuID99SyFfd2B9JRxUMeI/cFBqN4nnNzeHhzHvxo\
+	B3Sed6Ojnp+iHveh8wejnnd0H/t2B3Sfd6Ojnp+iHg4nh5/4DncBjuID9y+UFZyci6Z6nGSyGIGV\
+	e7e0GvcnB6N4nnNzd3hzHvsnB1edRa1pHrJknHqmi5ycGQ7Kh5/3t+IBiuL3JuID99OyFfd2B9JR\
+	xUMeTgZEUVFEH/t2B3Sed6Ojnp+iHvd2B6Kfn6IeyAajnnd0H/t2B3Sfd6Ojnp+iHg53kOLQ4tDi\
+	AYriz+IU4PeF9xIVzlXBSHh7m56em5ueHtkGo56eo6N4nnMfPQZIVVVISMFVzp6be3h4e3t4Hz0G\
+	c3h4c3OeeKMf2QbOwcHOHw6H4vfLdwGP4vcm4gP32fcSFfd1B6N3nnNzeHhzHvt1B3N3eHQeTgZz\
+	eJ6jH/d1B6N3nnN0d3hzHvt1B0PFUdMeyAbSxsXTHw4e4SpJTx4XoxgAHx44mmQvHoplEAH/HhR6\
+	IAAfHqAFAEiCjwYe4VmmiP8eoBEAFYf/Bx6jY2NjfwwJHoWphAAfCh6FqZCZfwseNqJWAB8eSaco\
+	AB8MDB41qUEALx5QoEmZXwwN9/IU97AVAAAAAAABAAAAAwAAAAwABABAAAAADAAIAAIABABhAGkA\
+	bgBzAHX//wAAAGEAYwBuAHMAdf///6D/n/+b/5f/lgABAAAAAAAAAAAAAAAAAAEAAAAKAB4ALAAB\
+	REZMVAAIAAQAAAAA//8AAQAAAAFrZXJuAAgAAAABAAAAAQAEAAIAAAABAAgAAQIaAAQAAAALACAA\
+	TgB8AKoA2AEGATQBYgGQAb4B7AALAAEATgACAE8AAwBPAAQAUQAFAFYABgBQAAcAUwAIAEwACQBT\
+	AAoATQALAE0ACwABAEIAAgBDAAMAQwAEAEYABQBXAAYARAAHAFQACABNAAkAUwAKAE0ACwBOAAsA\
+	AQBNAAIATwADAEMABABRAAUAVAAGAE8ABwBTAAgATAAJAFIACgBNAAsATAALAAEATQACAE4AAwBN\
+	AAQAUAAFAFUABgBPAAcAUgAIAEsACQBRAAoATAALAEwACwABAEMAAgBFAAMAOwAEAEcABQBZAAYA\
+	RQAHAFgACABPAAkASAAKAEgACwBPAAsAAQBQAAIAUQADAFEABABTAAUAWQAGAEgABwBVAAgATgAJ\
+	AFUACgBPAAsATwALAAEAUgACAFMAAwA6AAQAVQAFAEsABgBTAAcASgAIAFAACQBWAAoAUQALAFEA\
+	CwABAEQAAgBEAAMARAAEAEcABQBZAAYARgAHAFYACAAxAAkAVQAKAE8ACwBCAAsAAQBOAAIATwAD\
+	AE8ABABRAAUAVgAGAFAABwBTAAgATAAJAFMACgBNAAsATQALAAEATwACAFAAAwBQAAQAUgAFAFcA\
+	BgBRAAcAVAAIAE0ACQBTAAoAQwALAE4ACwABAFEAAgBSAAMAUgAEAFQABQBZAAYAUwAHAFYACABP\
+	AAkAVQAKAFEACwBQAAIAAQABAAsAAA==")}
+		]]>
+		</style>
+    <pattern id="Pattern" patternUnits="userSpaceOnUse" width="16" height="20">
+    	<image width="16" height="20" style="image-rendering: optimizeSpeed" xlink:href="pattern.png"/>
+    </pattern>
+	</defs>
+
+	<extensionDefs namespace="http://xmlns.fuchsia-design.com/ui/">					
+		<elementDef name="button">
+			<defs>
+
+				<linearGradient id="button_disabled" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="1" y2="1">
+					<stop offset="0" stop-color="#FFF"/>
+					<stop offset="0.5" stop-color="#A3A3A3"/>
+					<stop offset="1" stop-color="#949494"/>
+				</linearGradient>
+				<linearGradient id="button_normal" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="1" y2="1">
+					<stop offset="0" stop-color="#FFF"/>
+					<stop offset="0.5" stop-color="#9AF"/>
+					<stop offset="1" stop-color="#89F"/>
+				</linearGradient>
+				<linearGradient id="button_active" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="1" y2="1">
+					<stop offset="0" stop-color="#89F"/>
+					<stop offset="0.5" stop-color="#9AF"/>
+					<stop offset="1" stop-color="#FFF"/>
+				</linearGradient>
+				<linearGradient id="button_hover" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="1" y2="1">
+					<stop offset="0" stop-color="#FFF"/>
+					<stop offset="1" stop-color="#BBF"/>
+				</linearGradient>
+
+				<rect id="button_bg" x="0.5" y="0.5" width="15" height="18" rx="0.7" ry="0.7" />
+				<path id="arrow" d="M4 8l4 5l4 -5" fill="none" stroke-width="2" pointer-events="none"/>
+
+				<g id="arrow_button" fui:width="16" fui:height="19">
+					<g id="arrow_button_disabled">
+						<use xlink:href="#button_bg" fill="url(#button_disabled)" stroke="#A3A3A3" />
+						<use xlink:href="#arrow" stroke="#292929" />
+					</g>
+					<g id="arrow_button_normal">
+						<use xlink:href="#button_bg" fill="url(#button_normal)" stroke="#9AF" />
+						<use xlink:href="#arrow" stroke="#00A" />
+					</g>
+					<g id="arrow_button_hover">
+						<use xlink:href="#button_bg" fill="url(#button_hover)" stroke="#9AF" />
+						<use xlink:href="#arrow" stroke="#00A" />
+					</g>
+					<g id="arrow_button_active">
+						<use xlink:href="#button_bg" fill="url(#button_active)" stroke="#9AF" />
+						<use xlink:href="#arrow" stroke="#00A" />
+					</g>
+				</g>			
+
+				<rect id="increment_button_bg" x="0.5" y="0.5" width="29" height="22" rx="0.7" ry="0.7" />
+				<g id="plus" transform="translate(11,8)" stroke-width="2" pointer-events="none">
+					<line x1="0" y1="4" x2="8" y2="4" />
+					<line x1="4" y1="0" x2="4" y2="8" />
+				</g>
+
+				<g id="plus_button" fui:width="30" fui:height="23">
+					<g id="plus_button_disabled">
+						<use xlink:href="#increment_button_bg" fill="url(#button_disabled)" stroke="#A3A3A3" />
+						<use xlink:href="#plus" fill="#292929" stroke="#292929" />
+					</g>
+					<g id="plus_button_normal">
+						<use xlink:href="#increment_button_bg" fill="url(#button_normal)" stroke="#9AF" />
+						<use xlink:href="#plus" fill="#00A" stroke="#00A" />
+					</g>
+					<g id="plus_button_hover">
+						<use xlink:href="#increment_button_bg" fill="url(#button_hover)" stroke="#9AF" />
+						<use xlink:href="#plus" fill="#00A" stroke="#00A" />
+					</g>
+					<g id="plus_button_active">
+						<use xlink:href="#increment_button_bg" fill="url(#button_active)" stroke="#9AF" />
+						<use xlink:href="#plus" fill="#00A" stroke="#00A" />
+					</g>
+				</g>			
+
+				<g id="minus" transform="translate(11,8)" stroke-width="2" pointer-events="none">
+					<line x1="0" y1="4" x2="8" y2="4" />
+				</g>
+				<g id="minus_button" fui:width="30" fui:height="23">
+					<g id="minus_button_disabled">
+						<use xlink:href="#increment_button_bg" fill="url(#button_disabled)" stroke="#A3A3A3" />
+						<use xlink:href="#minus" fill="#292929" stroke="#292929" />
+					</g>
+					<g id="minus_button_normal">
+						<use xlink:href="#increment_button_bg" fill="url(#button_normal)" stroke="#9AF" />
+						<use xlink:href="#minus" fill="#00A" stroke="#00A" />
+					</g>
+					<g id="minus_button_hover">
+						<use xlink:href="#increment_button_bg" fill="url(#button_hover)" stroke="#9AF" />
+						<use xlink:href="#minus" fill="#00A" stroke="#00A" />
+					</g>
+					<g id="minus_button_active">
+						<use xlink:href="#increment_button_bg" fill="url(#button_active)" stroke="#9AF" />
+						<use xlink:href="#minus" fill="#00A" stroke="#00A" />
+					</g>
+				</g>			
+
+				<rect id="text_button_bg" x="0.5" y="0.5" width="69" height="22" rx="0.7" ry="0.7" />
+				<g id="text" pointer-events="none">
+					<text x="50%" y="70%" text-anchor="middle">New Item</text>
+				</g>
+				<g id="text_button" fui:width="70" fui:height="23">
+					<g id="text_button_disabled">
+						<use xlink:href="#text_button_bg" fill="url(#button_disabled)" stroke="#A3A3A3" />
+						<use xlink:href="#plus" fill="#292929" />
+					</g>
+					<g id="text_button_normal">
+						<use xlink:href="#text_button_bg" fill="url(#button_normal)" stroke="#9AF" />
+						<use xlink:href="#text" fill="#00A" />
+					</g>
+					<g id="text_button_hover">
+						<use xlink:href="#text_button_bg" fill="url(#button_hover)" stroke="#9AF" />
+						<use xlink:href="#text" fill="#00A" />
+					</g>
+					<g id="text_button_active">
+						<use xlink:href="#text_button_bg" fill="url(#button_active)" stroke="#9AF" />
+						<use xlink:href="#text" fill="#00A" />
+					</g>
+				</g>			
+
+			</defs>
+			<prototype />
+			<script type="text/ecmascript" xlink:href="../UI/Button.es" />
+			<script ev:event="SVGBindBegin">
+				RCCBase.RegisterInstance(Button, evt.target);
+			</script>
+		</elementDef>
+
+		<elementDef name="comboBox">
+			<prototype>
+				<rect id="comboBox_bg" x="0.5" y="0.5" width="80" height="22" style="stroke: #09A; fill: white" />
+				<svg id="comboBox_entry" x="5" y="2" width="53" height="18">
+					<text id="comboBox_text" y="70%" style="font-size: 12px" xml:space="preserve"> </text>
+				</svg>
+				<fui:button id="comboBox_button" skin="#arrow_button" x="63" y="2" width="16" height="19" />
+				<svg id="comboBox_pane" style="shape-rendering: optimizeSpeed; pointer-events: none;">
+					<rect id="comboBox_pane_bg" x="0.5" y="0.5" style="pointer-events: all" />
+					<rect id="comboBox_pane_highlight" x="1" />
+					<g id="comboBox_items_container" />
+				</svg>
+			</prototype>
+			<script type="text/ecmascript" xlink:href="../UI/ComboBox.es" />
+			<script ev:event="SVGBindBegin">
+				RCCBase.RegisterInstance(ComboBox, evt.target);
+			</script>	
+		</elementDef>
+	</extensionDefs>
+
+	<rect width="100%" height="100%" style="fill: #fa9bce" />
+
+	<g id="body" transform="translate(7,10)">
+
+		<g id="logo" transform="translate(5)">
+			<line x1="115.5" y1="0" x2="115.5" y2="54" style="stroke: black; stroke-dasharray: 2" />
+			<path style="fill:white;" d="M98.167,28.735h-0.002c0-3.661-0.331-5.833-0.991-6.514c-0.476-0.682-1.479-0.915-3.005-0.702c-1.796,0.916-3.46,2.746-4.987,5.492c-0.231,0.68-0.431,1.318-0.618,1.939c-6.17-14.178-21.66-24.971-35.261-24.342C39.28,5.255,23.028,12.542,17.004,20.884c-0.054,0.075-0.093,0.154-0.146,0.23l-2.167-2.729c-2.581-0.894-4.863-1.223-6.845-0.99C3.715,17.629,1.433,18.746,1,20.747l1.3,0.32l2.943-1.66l6.505-0.352c1.96,0.683,2.942,1.694,2.942,3.034c-3.243,1.106-5.957,3.128-8.146,6.066l-0.34,4.023l1.331,1.659l3.253,0.352c2.707-1.172,4.616-3.316,5.735-6.419c3.328,6.975,17.104,14.444,36.292,18.786c24.36,5.513,40.199-0.68,37.048-13.868c0.375-2.139,1.252-4.587,2.665-7.368c1.074-1.809,2.065-2.161,2.975-1.054l1.331,7.216l2.013,0.703l0.342-1.054L98.167,28.735zM15.051,26.78c-2.21,4.257-4.172,6.162-5.885,5.715c-0.662,0-0.878-1.118-0.651-3.353c1.942-2.895,4.119-4.458,6.537-4.693V26.78zM47.979,43.057c-20.936-4.552-34.053-14.038-29.299-21.189c4.754-7.152,18.91-12.931,31.619-12.91c12.71,0.021,25.827,9.506,29.298,21.188C83.07,41.828,68.915,47.609,47.979,43.057z"/>
+				<path style="fill:white;" d="M34.514,24.836l0.867,0.895l-0.433,1.788l-12.048-1.34l-1.302-1.342l0.434-1.31L34.514,24.836z"/>
+			<text transform="matrix(0.9701 0 0 1 134.3589 34.7607)" style="opacity:0.4;"><tspan x="0" y="0" style="font-family:'Kazoo-Regular'; font-size:31.9277; letter-spacing:2.554;">fuchsia</tspan><tspan x="96.673" y="0" style="fill:white; font-family:'Kazoo-Regular'; font-size:31.9277; letter-spacing:2.554;">design</tspan></text>
+			<text transform="matrix(0.9701 0 0 1 133.4985 32.9868)" style="opacity:0.4;"><tspan x="0" y="0" style="font-family:'Kazoo-Regular'; font-size:31.9277; letter-spacing:2.554;">fuchsia</tspan><tspan x="96.673" y="0" style="fill:white; font-family:'Kazoo-Regular'; font-size:31.9277; letter-spacing:2.554;">design</tspan></text>
+		</g>
+
+		<g transform="translate(10,55)">
+	
+			<g transform="translate(-4.5,8.5)">
+				<defs>
+					<line id="l" x1="0" y1="0" x2="309" y2="0" />
+					<line id="v" x1="0" y1="0" x2="0" y2="245" />
+				</defs>
+				<rect width="310" height="245" fill="#eee" />
+				<g style="stroke: black; stroke-dasharray: 2">
+					<use xlink:href="#l" />
+					<use y="35" xlink:href="#l" />
+					<use y="70" xlink:href="#l" />
+					<use y="105" xlink:href="#l" />
+					<use y="140" xlink:href="#l" />
+					<use y="175" xlink:href="#l" />
+					<use y="210" xlink:href="#l" />
+					<use y="245" xlink:href="#l" />
+					<use xlink:href="#v" />
+					<use x="150" xlink:href="#v" />
+					<use x="310" xlink:href="#v" />
+				</g>
+			</g>
+	
+			<g transform="translate(0,30)" style="fill: #ff0066; font-size: 14px">
+				<text y="0">border</text>
+				<text y="35">text-size</text>
+				<text y="70">text-color-normal</text>
+				<text y="105">text-color-highlight</text>
+				<text y="140">background-normal</text>
+				<text y="175">background-highlight</text>
+			</g>
+	
+			<script type="text/ecmascript">
+			
+				var target = document.getElementById('target');
+	
+				function update (prop, e) {
+					var val;					
+					if (e.item.hasAttribute('value')) {
+						val = e.item.getAttribute('value');
+					} else {
+						val = e.item.firstChild.data;
+					}
+					target.style.setProperty(prop, val);
+				};
+			
+			</script>
+	
+			<!-- target -->
+			<g transform="translate(0,224)">
+				<fui:button id="ButtonMinus" skin="#minus_button" width="30" height="23">
+					<script ev:event="ButtonActivate">
+						var w = parseInt(target.getAttribute('width')) - 10;
+						target.setAttribute('width', w);
+					</script>
+				</fui:button>
+	
+				<fui:button id="ButtonPlus" skin="#plus_button" x="35" width="30" height="23">
+					<script ev:event="ButtonActivate">
+						var w = parseInt(target.getAttribute('width')) + 10;
+						target.setAttribute('width', w);
+					</script>
+				</fui:button>	
+	
+				<fui:button skin="#text_button" x="70" width="70" height="23">
+					<script ev:event="ButtonActivate">
+					<![CDATA[
+						target.setAttribute('state', 'normal');
+						var index = Math.floor(Math.random() * 6);
+						var item = document.createElementNS(SVGUtil.NS.FUI, 'item');
+						var date = new Date();
+						var h = date.getHours();
+						if (h < 10)
+							h = '0' + h; 
+						var m = date.getMinutes();
+						if (m < 10)
+							m = '0' + m; 
+						var s = date.getSeconds();
+						if (s < 10)
+							s = '0' + s; 
+						var str = 'Added at ' + h + ':' + m + ':' + s;
+						var text = document.createTextNode(str);
+						item.appendChild(text);
+						target.appendChild(item);
+					]]>
+					</script>
+				</fui:button>
+	
+				<fui:comboBox id="target" x="150" width="120" state="disabled">
+					<fui:item selected="true">Add more items</fui:item>
+					<fui:item>with the button</fui:item>
+					<script ev:event="DOMAttrModified">
+					<![CDATA[
+						if (evt.attrName == 'width') {
+							var w = parseInt(evt.target.getAttribute('width'));
+							if (w <= 20) {
+								document.getElementById('ButtonMinus').setAttribute('state', 'disabled');
+							} else if (w >= 150) {
+								document.getElementById('ButtonPlus').setAttribute('state', 'disabled');							
+							} else {
+								document.getElementById('ButtonPlus').setAttribute('state', 'normal');
+								document.getElementById('ButtonMinus').setAttribute('state', 'normal');							
+							}
+						}
+						]]>
+					</script>
+				</fui:comboBox>
+			</g>
+	
+			<g transform="translate(150,14)">	
+				<!-- background-highlight -->
+				<fui:comboBox y="175" width="150">
+					<fui:item value="#fa9bce">pink</fui:item>
+					<fui:item value="#3D80DF" selected="true">blue</fui:item>
+					<fui:item value="#592C42">maroon</fui:item>
+					<fui:item>black</fui:item>
+					<fui:item>white</fui:item>
+					<script ev:event="ComboBoxItemSelect">
+						update('background-highlight', evt);
+					</script>
+				</fui:comboBox>
+				<!-- background-normal -->
+				<fui:comboBox y="140" width="150">
+					<fui:item value="#fa9bce">pink</fui:item>
+					<fui:item>fuchsia</fui:item>
+					<fui:item value="#592C42">maroon</fui:item>
+					<fui:item>black</fui:item>
+					<fui:item selected="true">white</fui:item>
+					<script ev:event="ComboBoxItemSelect">
+						update('background-normal', evt);
+					</script>
+				</fui:comboBox>
+				<!-- text-color-highlight -->
+				<fui:comboBox y="105" width="150">
+					<fui:item value="#fa9bce">pink</fui:item>
+					<fui:item>fuchsia</fui:item>
+					<fui:item value="#592C42">maroon</fui:item>
+					<fui:item>black</fui:item>
+					<fui:item selected="true">white</fui:item>
+					<script ev:event="ComboBoxItemSelect">
+						update('text-color-highlight', evt);
+					</script>
+				</fui:comboBox>
+				<!-- text-color-normal -->
+				<fui:comboBox y="70" width="150">
+					<fui:item value="#fa9bce">pink</fui:item>
+					<fui:item>fuchsia</fui:item>
+					<fui:item value="#592C42">maroon</fui:item>
+					<fui:item selected="true">black</fui:item>
+					<fui:item>white</fui:item>
+					<script ev:event="ComboBoxItemSelect">
+						update('text-color-normal', evt);
+					</script>
+				</fui:comboBox>
+				<!-- text-size -->
+				<fui:comboBox y="35" width="150">
+					<fui:item>10px</fui:item>
+					<fui:item selected="true">12px</fui:item>
+					<fui:item>14px</fui:item>
+					<fui:item>18px</fui:item>
+					<fui:item>24px</fui:item>
+					<script ev:event="ComboBoxItemSelect">
+						update('text-size', evt);
+					</script>
+				</fui:comboBox>
+				<!-- border -->
+				<fui:comboBox y="0" width="150">
+					<fui:item value="#fa9bce">pink</fui:item>
+					<fui:item>fuchsia</fui:item>
+					<fui:item value="#592C42">maroon</fui:item>
+					<fui:item selected="true">black</fui:item>
+					<fui:item>white</fui:item>
+					<script ev:event="ComboBoxItemSelect">
+						update('border', evt);
+					</script>
+				</fui:comboBox>
+			</g>
+	
+		</g>
+
+	</g>
+	
+</svg>

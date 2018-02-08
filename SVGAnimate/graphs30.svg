@@ -1,0 +1,9 @@
+<svg	xmlns="http://www.w3.org/2000/svg" 
+xmlns:xlink="http://www.w3.org/2000/xlink/namespace/" 
+onload="start(evt)">
+<script language="Javascript" xlink:href="../JS/Graphics.js" />
+<g id="prototype"><rect	width="55"	height="20"	stroke="red"/><text font-size="16" font-family="garamond" x="10" y="15" pointer-events="none"> </text></g>
+<rect	id="Canvas" x="0%"	y="0%"	width="100%"	height="100%"	fill="#eed"/>
+<rect	id="menubar"	x="0%"	y="0%"	width="100%"	height="20px"	fill="#eee"	stroke="#a0f"/>
+<text	id="T"	visibility="hidden">advene,afresh,armour,assign,barbed,basset,behave,belfry,bellow,benzol,bronco,bumper,buzzer,caecum,carack,carbon,carrom,cashew,chalet,cither,coldly,cupful,curtsy,cyclic,debunk,derive,effete,effort,emblem,energy,engulf,enrich,excite,eyelet,fabled,fallen,feeble,figure,finish,fracas,freeze,gallon,gaping,glitch,gratis,homely,humbly,inject,jigger,jigsaw,kimono,lackey,lenity,liking,lunacy,margin,marrow,metric,mizzle,module,mongol,murrey,nearly,novice,paunch,pepper,permit,plaque,pliers,profit,pueblo,purely,python,rammer,rehash,rejoin,rudder,second,shield,smoker,solace,soldan,solder,stroll,supply,talent,tendon,tongue,tubing,turgid,uprear,valley,victor,walrus,warmth,warped,washer,wimple,wolves,yonder</text>
+</svg>

@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 9.0, SVG Export Plug-In  -->
+<!-- NOTICE:  Copyright [1999-2001] Adobe Systems Incorporated.  Adobe hereby grants you the rights to reproduce, modify and distribute this file and its contents, not including any fonts, audio files or raster images included or embedded in or linked to this file, (the "Software"), and to grant such rights to other parties subject to the following:  This notice shall be included in any copy of the Software or any portion thereof.  THE SOFTWARE IS PROVIDED TO YOU AS-IS, WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT.  IN NO EVENT SHALL ADOBE BE LIABLE TO YOU OR ANY OTHER PARTY FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE.
+-->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20001102//EN" "http://www.w3.org/TR/2000/CR-SVG-20001102/DTD/svg-20001102.dtd" [
+	<!ENTITY st0 "fill:#844800;stroke:none;">
+	<!ENTITY st1 "fill:#AF8300;stroke:none;">
+	<!ENTITY st2 "font-family:'Myriad-Roman';">
+	<!ENTITY st3 "fill:url(#aigrd1);stroke:none;">
+	<!ENTITY st4 "fill:#000000;stroke:none;">
+	<!ENTITY st5 "fill:#80435E;stroke:none;">
+	<!ENTITY st6 "fill:#8C9F07;stroke:none;">
+	<!ENTITY st7 "fill-rule:nonzero;clip-rule:nonzero;fill:none;stroke:#9900CC;stroke-miterlimit:4;">
+	<!ENTITY st8 "fill:#3C560B;stroke:none;">
+	<!ENTITY st9 "opacity:0.35;">
+	<!ENTITY st10 "fill:#24758D;stroke:none;">
+	<!ENTITY st11 "fill:#AD6136;stroke:none;">
+	<!ENTITY st12 "opacity:0.15;fill:#9999CC;">
+	<!ENTITY st13 "fill-rule:nonzero;clip-rule:nonzero;fill:#9999CC;stroke:#999966;stroke-width:0.5;stroke-miterlimit:4;">
+	<!ENTITY st14 "fill:#71A214;stroke:none;">
+	<!ENTITY st15 "fill:#6A374D;stroke:none;">
+	<!ENTITY st16 "opacity:0.5;fill:none;stroke:#FF9966;stroke-width:1;stroke-dasharray:3;">
+	<!ENTITY st17 "fill:#7D6709;stroke:none;">
+	<!ENTITY st18 "fill:#6D3C00;stroke:none;">
+	<!ENTITY st19 "fill:#675507;stroke:none;">
+	<!ENTITY st20 "fill-rule:nonzero;clip-rule:nonzero;fill:#CC99CC;stroke:#999966;stroke-width:0.5;stroke-miterlimit:4;">
+	<!ENTITY st21 "fill:#C76891;stroke:none;">
+	<!ENTITY st22 "fill:#FFFFFF;stroke:none;">
+	<!ENTITY st23 "opacity:0.1;">
+	<!ENTITY st24 "opacity:0.3;">
+	<!ENTITY st25 "opacity:0.5;">
+	<!ENTITY st26 "opacity:0.3;fill:#FF9966;stroke:#996600;">
+	<!ENTITY st27 "fill:#C2A00E;stroke:none;">
+	<!ENTITY st28 "fill:#48680D;stroke:none;">
+	<!ENTITY st29 "font-size:14;">
+	<!ENTITY st30 "font-size:24;">
+	<!ENTITY st31 "fill:#CD7100;stroke:none;">
+]>
+<svg xmlns="http://www.w3.org/2000/svg"
+xmlns:xlink="http://www.w3.org/2000/xlink/namespace/"  onload="Initialize(evt)" width="625" height="392.5" viewBox="0 0 625 392.5" xml:space="preserve">
+<title>graph.svg</title> 
+<desc>line graph</desc>
+	<style type="text/css">
+	<![CDATA[
+@font-face{font-family:'Myriad-Roman';src:url("data:;base64,\
+T1RUTwADACAAAQAQQ0ZGIMwpHCwAAAA8AAAGu0dQT1O0/8VcAAAHlAAAAg5jbWFwBKsC2QAABvgA\
+AACcAQAEAgABAQENTXlyaWFkLVJvbWFuAAEBASD4GwH4GARd+476+vnTBR0AAKQDDfd9D/ekEcUc\
+BoESAAEBAapDb3B5cmlnaHQgKGMpIDE5OTIsIDE5OTQgQWRvYmUgU3lzdGVtcyBJbmNvcnBvcmF0\
+ZWQuICBBbGwgUmlnaHRzIFJlc2VydmVkLk15cmlhZCBpcyBhIHRyYWRlbWFyayBvZiBBZG9iZSBT\
+eXN0ZW1zIEluY29ycG9yYXRlZCBtYXkgYmUgcmVnaXN0ZXJlZCBpbiBjZXJ0YWluIGp1cmlzZGlj\
+dGlvbnMuAAAAAAEAIwAkACgAKgA0ADcAQgBEAEYASQBKAEwATwBQAFEAUwBVAFcAFAIAAQACAAMA\
+dwC9AR0BMwGLAcUCNwJ4AtMDGANMA4cDzwQQBHsExQULBUUODn6Fz/eZzPd0zhLX4vd05EjnE/TX\
+jRWHqLmHxxv3Ateftrkfrqyit8Ua70DAS5oejgcT+NGkt8TNGsB1s2ilHq1iU5o0G09OhYJlH+JR\
+FY6Zoo6zG+PGaz1KVVowHzwGSgTTBhP06tpkMCk4ajFsc4yOeR8OpIDV+LnUAa/nA/il5hV6aFWA\
+VRv7Nyz09zr3RfTw9zLDun97qx+h0gWXdFWdOBv7Zfsj+yL7aPty9yL7DPdS3cybm6ofDuaE0/dv\
+0feS1Gx3Eq/n+AzhE+z44vf2FftyRfcc+10GgXdkg1Ib+zIl8Pc/9z328fc4z7h/eq8fE9yh0gUT\
+7JluTZw9G/t2+x/7J/tdIq8xxVMfTM3fcfEb5tmhmrIfDvvQoHb5NncB1uMD1vk2Ff024/k2Bw5N\
+gNT4u9MBw+P3beMDtawVc6/Sd8wb9zPX5vPuUsH7BrgfLq9iqsoaua7C58i4eH6gHqPSBZxuWJtH\
+G/sXND0iLc9R9wJjH+Zpr2ZNGkZXXTJPU56kZB4OjovlRnb5NncSjvjCE3D31Bb3hfk2BS4G+wb7\
+4QUTsGwzcDZ4PQiJBnjZct5v5iL34BgsBvdx/TYFDkKAzGp294vI9w7MEq7j91/jE7z4Mve9Fexn\
+8PspTlB6cmMen1AFoq26mLkb7oyWQmMagQf7T4wjS/sJGkW9Ru3QwK2xpR6OBhN8k04F2gaGrIm0\
+tRo1uhUTvIKKgYiCHmJ9YmNLG19lpcXp9wGc64kfDiCA0vgB0QGx5AP4J94VgHJqf1kbK0PQ9wTw\
+x973A7usf4CgH5/OBZhzXZhXG/syJfsB+yn7Keoo9ybMvpyWoh8OVYHQ/wCngAD/AD+AAPcjygGx\
+4PeV4AP4Yvd2FY2VjJmdGuRi9x/7MvshNPsH+yf7JeUo9yjYwZyZqh57yQV+a2SATBszQLz3C4kf\
+jMoVyJKx3eUb7aMzVIofDougdvg61PdrdwHU4/eA4wPUFuP3uAacjJiQlx67nLezxBveqEo8H/uq\
+4/e0B/c7I7NKamyCe3EecH11dH1yCIn3wjMGDvvVoHb4eHf3AfcFEsf3BSfjE+j3NRb4eDP8eAcT\
+8Lb40RWuoaWqqnWkaWl0cmxsoXGsHw41oHb4eHf3incB1OMD9zX5WhUz/Vrj90oGuL73Ovt9BfYG\
++2n3sfdP91sFIgb7I/s7fXt7dX96GYkGDougdvg704B3EtTj94DjE9jUFuP3uAaZjZuPlh68m7i0\
+xBveqEk9H/ur4/e1B/c6I7NIO1NeXnMeiQYTuIbaBT0GjmOMY1gaDoWAzfgKzQGx5Pe55gP3o4AV\
+9wf3Edn3SPcnLfD7H/sZICz7Nvst8Sv3Fh+NzRU2T9v157jr8vO0JDn7Akw8Nx8OmftFdvdP0PgD\
+0YB3EtTj967kE+zU+1oV4/ebjQZbqMJvzBv3Bfbh90L3JzPu+wo9UWlPaB+JBhPcht4FPAaOXYxZ\
+TRrjXhWWjpiNlx4T7M2cxLXHG+i9OCr7A1U/Lk1Vtch8H4iWipiXGg77eKB2+DDegHendxLV4hPI\
+1Bbj95YGmoyZjZgezJe3uskbl5SKipUfE5jdBxPIjYOEjIIbUFViSnUfiAYTqIfqBT4Gjl6MWlIa\
+Dvt0gNRjdvg0zhLo4RNw6PjRFTJASNb7nAcTsFKVYKNwHnSgrH20G62mkZGcH4fOBYd+fYlzG1p6\
+rccf95n3Es77EvcIBw5Bi+NIdvh4dxKY+F4TcJj4eBX3TPx4Bd8G91L4eAUvBi37owUTsHtefWOA\
+YwiIBoGzfrN7uCz3oxgOgJb5Npb7XZf3Lpa8lgb3mZD8ZpFwlAceoGBFgpn/DAkeegmZmZ8MCs4K\
+4wvOkQwM448MDfdoFPi/FQAAAAABAAAAAwAAAAwABACQAAAAIAAgAAQAAAAgAEMARwBJAFMAVgBh\
+AGMAZQBpAGsAcAByAHQAdv//AAAAIABCAEcASQBTAFYAYQBjAGUAaABrAG4AcgB0AHb////h/8D/\
+vf+8/7P/sf+n/6b/pf+j/6L/oP+f/57/nQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\
+AAAAAQAAAAoAHgAsAAFERkxUAAgABAAAAAD//wABAAAAAWtlcm4ACAAAAAEAAAABAAQAAgAAAAEA\
+CAABAcYABAAAABIALgA0AFYAeACWAKwA2gD8AQYBGAEeASgBSgFUAWYBdAGmAbQAAQAH/9wACAAH\
+AAQACAACAAoABAALAAEADAABAA0AAQAPAAUAEQABAAgAA//oAAT/6AAI//kACv/0AAv//QAM//0A\
+D//zABH//wAHAAgACAAKAAoACwACAAwAAwAOAAIADwAGABEAAgAFAAsACwAMAAsADQALABIAEAAT\
+AAkACwAIAAUACgAGAAv//QAM//8ADf/+AA7//wAPAAQAEP//ABH//wAS//wAE//1AAgAA//8AAT/\
+/AAGAAYACP/cAAr/2wAMAA0AD//ZABH/7QACABL//AAT//MABAAIAAEACv/6AA//+gASAA0AAQAT\
+//4AAgAS//wAE//uAAgACAARAAoABwALABIADAARAA4AEgAPAAEAEAASABEAEQACABL//AAT/+4A\
+BAAJAAEACgABAA8AAQAT//cAAwAJAAEACgABAA8AAQAMAAj/+gAJ//oACv/6AAsABQAMAAQADQAE\
+AA4ABAAP//oAEAAEABEABAASABgAEwAZAAMACf/6AAr/+gAP//oABAAI//IACf/1AAr/9QAP//UA\
+AgACAAEACwAAAA0AEwALAAA=")}
+	]]>
+	</style>
+  <defs>
+    <filter id="DropShadowFilter" filterUnits="objectBoundingBox" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2" result="BlurAlpha"/>
+      <feOffset in="BlurAlpha" dx="4" dy="4" result="OffsetBlurAlpha"/>
+      <feMerge>
+        <feMergeNode in="OffsetBlurAlpha"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <script>
+    <![CDATA[
+      debug = true
+    
+      SVGDocument = null
+    
+      ChartHeight = 150
+      ChartWidth  = 250
+      
+      XArray = new Array()
+      YArray = new Array()
+      Elements = new Array()
+      
+      MaxX = 0;
+      MaxY = 0;
+      
+      ParentGroup = null;
+      Grandparent = null;
+      ChartLine = null;
+      
+      Removed = false
+      
+      function Initialize(LoadEvent)
+        {
+          SVGDocument = LoadEvent.getTarget().getOwnerDocument()
+          ParentGroup = SVGDocument.getElementById("loadlayer")
+          Grandparent = SVGDocument.getElementById("chart")
+          ChartLine = SVGDocument.getElementById("chartline")
+        }
+      
+      function AddChartValue(Y, X, Repress)
+        {
+          X = X * 1
+          Y = Y * 1
+          
+          if ((X < 0) || (Y < 0))
+            {
+              alert("Values must be positive")
+              return;
+            }
+          if (!(Removed))
+            Grandparent.removeChild(ParentGroup)
+        
+          NewItem = XArray.length
+        
+          XArray[XArray.length] = X * 1
+          YArray[YArray.length] = Y * 1
+          
+          NewElement = SVGDocument.createElement("circle")
+          
+          Elements[Elements.length] = NewElement
+          
+          Elements[Elements.length - 1].setAttribute("style", "stroke:black;fill:#80FF80")
+          Elements[Elements.length - 1].setAttribute("onmouseover", "DisplayInfo('" + X + "', '" + Y + "')")
+          Elements[Elements.length - 1].setAttribute("onmouseout", "DisplayInfo(' ', ' ')")
+          ParentGroup.appendChild(Elements[Elements.length - 1])
+          
+          ChangeScale = false
+          
+          if (X * 1 > MaxX * 1)
+            {
+              MaxX = X
+              ChangeScale = true
+            }
+          if (Y * 1 > MaxY * 1)
+            {
+              MaxY = Y
+              ChangeScale = true
+            }
+          
+          for (var I = 0; I < XArray.length; I++)
+            for (var J = I + 1; J < XArray.length; J++)
+              if (XArray[J] < XArray[I])
+                {
+                  Temp = XArray[J]
+                  XArray[J] = XArray[I]
+                  XArray[I] = Temp
+                  Temp = YArray[J]
+                  YArray[J] = YArray[I]
+                  YArray[I] = Temp
+                  Temp = Elements[J]
+                  Elements[J] = Elements[I]
+                  Elements[I] = Temp
+                  
+                  if (J == NewItem)
+                    NewItem = I
+                }
+          
+          PathData = "M "
+          
+          
+          for (var I = 0; I < XArray.length; I++)
+            {
+              if ((ChangeScale) || (I == NewItem))
+                {
+                  Elements[I].setAttribute("cx", XArray[I] / MaxX * ChartWidth)
+                  Elements[I].setAttribute("cy", -1 * YArray[I] / MaxY * ChartHeight)
+                }
+              
+              if (MaxX == 0)
+                TempMaxX = 1
+              else
+                TempMaxX = MaxX
+                
+              if (MaxY == 0)
+                TempMaxY = 1
+              else
+                TempMaxY = MaxY
+                
+              PathData = PathData + " " + (XArray[I] / TempMaxX * ChartWidth) + " " + (-1 * YArray[I] / TempMaxY * ChartHeight)
+            }
+          
+          NewElement.setAttribute("r", "3")
+          ChartLine.setAttribute("d", PathData)
+          SVGDocument.getElementById("maxY").replaceChild(SVGDocument.createTextNode(MaxY), SVGDocument.getElementById("maxY").getFirstChild())
+          SVGDocument.getElementById("maxX").replaceChild(SVGDocument.createTextNode(MaxX), SVGDocument.getElementById("maxX").getFirstChild())
+          SVGDocument.getElementById("min").replaceChild(SVGDocument.createTextNode(0), SVGDocument.getElementById("min").getFirstChild())
+          if (Repress)
+            Removed = true
+          else
+            {
+              Removed = false
+              Grandparent.appendChild(ParentGroup)
+            }
+        }
+        
+      function DisplayInfo(Text, Value)
+        {
+          NewItem = SVGDocument.createTextNode(Value)
+          SVGDocument.getElementById("labelamount").replaceChild(NewItem, SVGDocument.getElementById("labelamount").getFirstChild())
+          NewItem = SVGDocument.createTextNode(Text)
+          SVGDocument.getElementById("labelitem").replaceChild(NewItem, SVGDocument.getElementById("labelitem").getFirstChild())
+          if (Text + Value == "  ")
+            NewItem = SVGDocument.createTextNode(" ")
+          else
+            NewItem = SVGDocument.createTextNode(":")
+          SVGDocument.getElementById("labelcolon").replaceChild(NewItem, SVGDocument.getElementById("labelcolon").getFirstChild())
+        }
+        
+      function SetTitle(Text)
+        {
+          NewItem = SVGDocument.createTextNode(Text)
+          SVGDocument.getElementById("title").replaceChild(NewItem, SVGDocument.getElementById("title").getFirstChild())
+        }
+        
+      function SetAxes(YText, XText)
+        {
+          NewItem = SVGDocument.createTextNode(XText)
+          SVGDocument.getElementById("xaxis").replaceChild(NewItem, SVGDocument.getElementById("xaxis").getFirstChild())
+          NewItem = SVGDocument.createTextNode(YText)
+          SVGDocument.getElementById("yaxis").replaceChild(NewItem, SVGDocument.getElementById("yaxis").getFirstChild())
+        }
+        
+      parent.addChartValue = AddChartValue
+      parent.setTitle = SetTitle
+      parent.setAxes = SetAxes
+    
+    
+    ]]>
+  </script>
+	<g id="bgArea" style="&st20;">
+		
+		<g id="hLines" style="&st23;">
+			<path d="M579,90.5H94v-20h485v20z"/>
+			<path d="M579,125.5H94v-20h485v20z"/>
+			<path d="M579,160.5H94v-20h485v20z"/>
+			<path d="M579,195.5H94v-20h485v20z"/>
+			<path d="M579,230.5H94v-20h485v20z"/>
+			<path d="M579,265.5H94v-20h485v20z"/>
+			<path d="M579,300.5H94v-20h485v20z"/>
+			<path d="M579,335.5H93.7v-20H579v20z"/>
+			<path d="M579,370.5H93.7v-20H579v20z"/>
+		</g>
+		<path id="leftDashLine" style="&st16;" d="M48,43.5v265"/>
+		<path style="&st12;" d="M71.5,105c0,1.7-1.3,3-3,3h-9c-1.7,0-3-1.3-3-3v-9c0-1.7,1.3-3,3-3h9c1.7,0,3,1.3,3,3v9z"/>
+		<path style="&st12;" d="M71.5,75c0,1.7-1.3,3-3,3h-9c-1.7,0-3-1.3-3-3v-9c0-1.7,1.3-3,3-3h9c1.7,0,3,1.3,3,3v9z"/>
+		<path style="&st12;" d="M71.5,135c0,1.7-1.3,3-3,3h-9c-1.7,0-3-1.3-3-3v-9c0-1.7,1.3-3,3-3h9c1.7,0,3,1.3,3,3v9z"/>
+		<path style="&st16;" d="M594.5,385.5V43.8c0-7.7-5.1-14-11.5-14H467l-17.3,7.7l-20-15.7l-5.9,13.8l-12,12.5l-18-10l-12.5-9.5l-13,0.4l-21,9.7L335,34.5l-17.5,1.8L303.1,27l-14.5,9.5l-16,4.9L260,32l-14,8.4"/>
+	</g>
+	<g id="chartButton" style="&st7;">
+		<g id="pie3d" style="&st25;">
+			<linearGradient id="aigrd1" gradientUnits="userSpaceOnUse" x1="27.1372" y1="363.3359" x2="109.3506" y2="363.3359">
+				<stop  offset="0" style="stop-color:#24758D"/>
+				<stop  offset="0.4045" style="stop-color:#99FFFF"/>
+				<stop  offset="1" style="stop-color:#24758D"/>
+			</linearGradient>
+			<path style="&st3;" d="M102.2,361.6c-4.8,1.7-10.4,2.7-15.9,3.3c-5.7,0.7-11.5,1-17.3,1c-5.9,0-11.8-0.2-17.7-0.9c-5.5-0.6-11.1-1.5-16-3.1c-3.7-1.2-8.2-3.2-8.2-5.9c0,1.4,0,2.8,0,4.2c0,0.9,0.1,1.7,0.8,2.6c1.2,1.4,3.4,2.5,5.6,3.3c4.7,1.8,10.3,2.8,15.8,3.5
+				c5.7,0.7,11.6,1,17.4,1.1c5.8,0,11.7-0.2,17.5-0.8c5.6-0.6,11.2-1.4,16.2-3c3.9-1.2,8.7-3.1,8.9-6c0.1-1.4,0-2.8,0-4.3c0-0.2,0-0.4,0-0.7c0,2.5-3.8,4.4-7.1,5.6"/>
+			<path style="&st10;" d="M108.5,354c4.6,5.4-9.8,10.6-32,11.7c-22.2,1.1-44-2.4-48.5-7.7c-4.6-5.4,9.8-10.6,32-11.7c22.2-1.1,44,2.4,48.5,7.7z"/>
+			<path style="&st1;" d="M67.8,356.2l-34.3-5.5c0,0,4.5-1.7,10-2.6c6.7-1.1,12-1.5,12-1.5l12.3,9.6z"/>
+			<path style="&st11;" d="M67.8,356.2l-12.3-9.6c0,0,2.9-0.3,7.2-0.4c4.1-0.1,6.8-0.1,6.8-0.1l-1.7,10.1z"/>
+			<path style="&st6;" d="M67.7,356.2l1.7-10.2c0,0,1,0,2.7,0c1.6,0.1,2.5,0.1,2.5,0.1l-6.9,10z"/>
+		</g>
+		<g id="lines">
+			<path style="&st24;" d="M69,340.9l9.7-2.2v-28.2"/>
+			<path style="&st24;" d="M78.7,338.7l49.3,10"/>
+		</g>
+		<g id="box" style="&st24;">
+			<g>
+				<path style="&st15;" d="M56.1,340.6v-24.1l4.1,3.7v24.1l-4.1-3.7z"/>
+				<path style="&st5;" d="M60.2,320.2l-4.1-3.7l8.2-1.9l4.1,3.7l-8.2,1.9z"/>
+				<path style="&st21;" d="M60.2,344.3v-24.1l8.2-1.9v24.1l-8.2,1.9z"/>
+			</g>
+			<g>
+				<path style="&st31;" d="M48.4,346.4v-10.3l7.6-1.7v10.3l-7.6,1.7z"/>
+				<path style="&st18;" d="M44.6,342.9v-10.3l3.8,3.5v10.3l-3.8-3.5z"/>
+				<path style="&st0;" d="M48.4,336.1l-3.8-3.5l7.6-1.7l3.8,3.5l-7.6,1.7z"/>
+			</g>
+			<g>
+				<path style="&st14;" d="M36.7,348.9v-16.1l7.6-1.5v15.9l-7.6,1.7z"/>
+				<path style="&st28;" d="M36.7,332.8l-3.8-3.5l7.6-1.7l3.8,3.7l-7.6,1.5z"/>
+				<path style="&st8;" d="M32.9,345.5v-16.1l3.8,3.5v16.1l-3.8-3.5z"/>
+			</g>
+			<g>
+				<path style="&st19;" d="M21.3,347.9v-20.5l3.8,3.5v20.5l-3.8-3.5z"/>
+				<path style="&st17;" d="M25.1,330.8l-3.8-3.5l7.6-1.7l3.8,3.5l-7.6,1.7z"/>
+				<path style="&st27;" d="M25.1,351.4v-20.5l7.6-1.7v20.5l-7.6,1.7z"/>
+			</g>
+		</g>
+		<a xlink:href="GraphicCtrl.aspx">
+		<path id="buttonToChart" style="&st26;" d="M130.8,371.7c0,7.6-5.4,13.8-12,13.8h-98c-6.6,0-12-6.2-12-13.8v-47.3c0-7.6,5.4-13.8,12-13.8h98c6.6,0,12,6.2,12,13.8v47.3z"/>
+		</a>
+		<text transform="matrix(1 0 0 1 47 381.5)"><tspan x="0" y="0" style="&st4; &st2; &st29;" fill-opacity=".5">Back to Chart</tspan></text>
+	</g>
+	<g id="Title" style="&st13;">
+		<g id="topDecorPie">
+			<path style="&st9;" d="M250.4,40.4c0,1.8-2,3.2-4.4,3.2c-2.4,0-4.4-1.5-4.3-3.2c0-1.8,2-3.2,4.4-3.2c2.4,0,4.4,1.5,4.3,3.2z"/>
+		</g>
+		<g>
+			<path style="&st9;" d="M264.7,34.2c-0.9,1.9-3.7,2.4-6.2,1.3c-2.6-1.2-3.9-3.7-3.1-5.6c0.9-1.9,3.7-2.4,6.2-1.3c2.6,1.2,3.9,3.7,3.1,5.6z"/>
+		</g>
+		<g>
+			<path style="&st9;" d="M277.5,41.8c-0.1,2-2.4,3.4-5,3.2c-2.7-0.2-4.7-1.9-4.6-3.9s2.4-3.4,5-3.2c2.7,0.2,4.7,1.9,4.6,3.9z"/>
+		</g>
+		<g>
+			<path style="&st9;" d="M292.9,35.1c0.6,1.7-0.8,3.8-3.1,4.6c-2.3,0.8-4.7,0.1-5.3-1.6c-0.6-1.7,0.8-3.8,3.1-4.6c2.3-0.8,4.7-0.1,5.3,1.6z"/>
+		</g>
+		<g>
+			<path style="&st9;" d="M308.6,27.8c-0.3,2.1-3,3.5-6.1,3c-3-0.4-5.3-2.5-4.9-4.7c0.3-2.1,3-3.5,6.1-3c3,0.4,5.3,2.5,4.9,4.7z"/>
+		</g>
+		<g>
+			<path style="&st9;" d="M323.8,34.4c0.6,2.2-1.6,4.8-5.1,5.8c-3.4,1-6.7,0.1-7.4-2.1c-0.6-2.2,1.6-4.8,5.1-5.8c3.4-1,6.7,0,7.4,2.1z"/>
+		</g>
+		<g>
+			<path style="&st9;" d="M341.5,34.9c-0.1,2.3-3.1,3.9-6.7,3.7c-3.6-0.2-6.4-2.3-6.2-4.5c0.1-2.3,3.1-3.9,6.7-3.7c3.6,0.2,6.4,2.3,6.2,4.5z"/>
+		</g>
+		<g>
+			<path style="&st9;" d="M352.2,39c-0.1,2.3-2.4,4-5.1,3.8c-2.7-0.2-4.7-2.2-4.6-4.4c0.1-2.3,2.4-4,5.1-3.8c2.7,0.2,4.7,2.2,4.6,4.4z"/>
+		</g>
+		<g>
+			<path style="&st9;" d="M368.8,21.2c6.6,0.3,11.8,4.1,11.5,8.4c-0.2,4.3-5.8,7.5-12.4,7.1c-6.6-0.3-11.8-4.1-11.5-8.4c0.2-4.3,5.8-7.5,12.4-7.1z"/>
+		</g>
+		<g>
+			<path style="&st9;" d="M384.2,31.8c-2.1,1.9-5.1,1.9-6.6,0.1c-1.6-1.8-1.1-4.7,1-6.6c2.1-1.9,5.1-1.9,6.6-0.1c1.6,1.8,1.1,4.7-1,6.6z"/>
+		</g>
+		<g>
+			<path style="&st9;" d="M393.2,42.3c-2.8-0.4-4.7-2.6-4.4-5c0.3-2.3,2.9-3.9,5.6-3.5c2.8,0.4,4.7,2.6,4.4,5c-0.4,2.3-2.9,3.9-5.6,3.5z"/>
+		</g>
+		<g>
+			<path style="&st9;" d="M411.2,52.3c-2.8-0.4-4.7-2.6-4.4-5c0.3-2.3,2.9-3.9,5.6-3.5c2.8,0.4,4.7,2.6,4.4,5c-0.4,2.3-2.9,3.9-5.6,3.5z"/>
+		</g>
+		<g>
+			<path style="&st9;" d="M423.2,39.8c-2.8-0.4-4.7-2.6-4.4-5c0.3-2.3,2.9-3.9,5.6-3.5c2.8,0.4,4.7,2.6,4.4,5c-0.4,2.3-2.9,3.9-5.6,3.5z"/>
+		</g>
+		<g>
+			<path style="&st9;" d="M429,26c-2.8-0.4-4.7-2.6-4.4-5c0.3-2.3,2.9-3.9,5.6-3.5c2.8,0.4,4.7,2.6,4.4,5c-0.4,2.3-2.9,3.9-5.6,3.5z"/>
+		</g>
+		<g>
+			<path style="&st9;" d="M448.5,41.3c-2.8-0.4-4.7-2.6-4.4-5c0.3-2.3,2.9-3.9,5.6-3.5c2.8,0.4,4.7,2.6,4.4,5c-0.4,2.3-2.9,3.9-5.6,3.5z"/>
+		</g>
+		<g>
+			<path style="&st9;" d="M465.9,34.3c-2.8-0.4-4.7-2.6-4.4-5c0.3-2.3,2.9-3.9,5.6-3.5c2.8,0.4,4.7,2.6,4.4,5c-0.4,2.3-2.9,3.9-5.6,3.5z"/>
+		</g>
+		<text transform="matrix(1 0 0 1 14 41.7061)"><tspan x="0" y="0" style="&st4; &st2; &st30;">SVG Interactive Graph</tspan></text>
+	</g>
+	<g id="hiddenGraph" transform="translate(125, 100)">
+	<g>
+	    <g id="chart" transform="translate(90, 200)" style="filter:url(#DropShadowFilter)">
+	      <g id="loadlayer">
+	        <path d="M0,0H-5 0 V 5 -150 h -5 10 -5 V 0H250 V 5 -5 0 H 0" style="fill:none;stroke:black"/>
+	        <path d="" style="fill:none;stroke:#FF8080" id="chartline"/>
+	      </g>
+	    </g>
+	  </g>
+	  <g>
+	    <text x="100" y="260">
+	      <tspan id="labelitem" style="font-weight:bold"> </tspan>
+	      <tspan id="labelcolon"> </tspan>
+	      <tspan id="labelamount"> </tspan>
+	    </text>
+	    <text x="215" y="15" style="font-weight:bold;text-anchor:middle;font-size:16" id="title">
+	    </text>
+	  </g>
+	  <g>
+	    <text x="-125" y="50" style="font-weight:bold;text-anchor:middle;font-size:13" id="yaxis" transform="rotate(-90)">
+	    </text>
+	    <text x="215" y="240" style="font-weight:bold;text-anchor:middle;font-size:13" id="xaxis">
+	    </text>
+	    <text x="110" y="225" style="font-weight:bold;text-anchor:end;font-size:13" id="min"><![CDATA[ ]]>
+	    </text>
+	    <text x="355" y="225" style="font-weight:bold;text-anchor:middle;font-size:13" id="maxX"><![CDATA[ ]]>
+	    </text>
+	    <text x="115" y="37" style="font-weight:bold;text-anchor:end;font-size:13" id="maxY"><![CDATA[ ]]>
+	    </text>
+	  </g>
+	</g>
+</svg>
+

@@ -1,0 +1,474 @@
+<!-- NOTICE:  Copyright [1999-2001] Adobe Systems Incorporated.  Adobe hereby grants you the rights to reproduce, modify and distribute this file and its contents, not including any fonts, audio files or raster images included or embedded in or linked to this file, (the "Software"), and to grant such rights to other parties subject to the following:  This notice shall be included in any copy of the Software or any portion thereof.  THE SOFTWARE IS PROVIDED TO YOU AS-IS, WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT.  IN NO EVENT SHALL ADOBE BE LIABLE TO YOU OR ANY OTHER PARTY FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE.
+-->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20001102//EN" "http://www.w3.org/TR/2000/CR-SVG-20001102/DTD/svg-20001102.dtd" [
+]>
+<svg width="350" height="300" viewBox="0 0 350 300" xml:space="preserve" onload="Initialize(evt)" onmousedown="MouseDown(evt)" onmousemove="MouseMove(evt)" onmouseup="MouseUp(evt)">
+<title>caffein.svg</title>
+<desc>An interactive 3d model of caffeine.</desc>
+<defs>
+<script language="Javascript" xlink:href="chemeleon.js" />
+<script language="Javascript">
+          
+          function GenerateStructure()
+            {
+              
+              x =       -2.8709;
+              y =       -1.0499;
+              z =       0.1718;
+              charge =  0;
+              isotope = -1;
+        
+              var caffeine_karne_a_1 = new Atom(x, y, z, "C", charge, isotope);
+  
+              x =       -2.9099;
+              y =       0.2747;
+              z =       0.1062;
+              charge =  0;
+              isotope = -1;
+        
+              var caffeine_karne_a_2 = new Atom(x, y, z, "N", charge, isotope);
+  
+              x =       -1.8026;
+              y =       0.9662;
+              z =       -0.1184;
+              charge =  0;
+              isotope = -1;
+        
+              var caffeine_karne_a_3 = new Atom(x, y, z, "C", charge, isotope);
+  
+              x =       -0.6411;
+              y =       0.2954;
+              z =       -0.2316;
+              charge =  0;
+              isotope = -1;
+        
+              var caffeine_karne_a_4 = new Atom(x, y, z, "C", charge, isotope);
+  
+              x =       -0.6549;
+              y =       -1.0889;
+              z =       -0.1279;
+              charge =  0;
+              isotope = -1;
+        
+              var caffeine_karne_a_5 = new Atom(x, y, z, "C", charge, isotope);
+  
+              x =       -1.7352;
+              y =       -1.7187;
+              z =       0.0624;
+              charge =  0;
+              isotope = -1;
+        
+              var caffeine_karne_a_6 = new Atom(x, y, z, "N", charge, isotope);
+  
+              x =       0.6052;
+              y =       0.7432;
+              z =       -0.4434;
+              charge =  0;
+              isotope = -1;
+        
+              var caffeine_karne_a_7 = new Atom(x, y, z, "N", charge, isotope);
+  
+              x =       1.2863;
+              y =       -0.4175;
+              z =       -0.4514;
+              charge =  0;
+              isotope = -1;
+        
+              var caffeine_karne_a_8 = new Atom(x, y, z, "C", charge, isotope);
+  
+              x =       0.5994;
+              y =       -1.5633;
+              z =       -0.2698;
+              charge =  0;
+              isotope = -1;
+        
+              var caffeine_karne_a_9 = new Atom(x, y, z, "N", charge, isotope);
+  
+              x =       1.0875;
+              y =       2.0867;
+              z =       -0.6139;
+              charge =  0;
+              isotope = -1;
+        
+              var caffeine_karne_a_10 = new Atom(x, y, z, "C", charge, isotope);
+  
+              x =       -1.8349;
+              y =       2.1699;
+              z =       -0.2205;
+              charge =  0;
+              isotope = -1;
+        
+              var caffeine_karne_a_11 = new Atom(x, y, z, "O", charge, isotope);
+  
+              x =       -4.2178;
+              y =       0.9810;
+              z =       0.2003;
+              charge =  0;
+              isotope = -1;
+        
+              var caffeine_karne_a_12 = new Atom(x, y, z, "C", charge, isotope);
+  
+              x =       -3.8944;
+              y =       -1.6746;
+              z =       0.3323;
+              charge =  0;
+              isotope = -1;
+        
+              var caffeine_karne_a_13 = new Atom(x, y, z, "O", charge, isotope);
+  
+              x =       -1.6764;
+              y =       -3.1997;
+              z =       0.1458;
+              charge =  0;
+              isotope = -1;
+        
+              var caffeine_karne_a_14 = new Atom(x, y, z, "C", charge, isotope);
+  
+              x =       2.3776;
+              y =       -0.4481;
+              z =       -0.6036;
+              charge =  0;
+              isotope = -1;
+        
+              var caffeine_karne_a_15 = new Atom(x, y, z, "H", charge, isotope);
+  
+              x =       2.1902;
+              y =       2.0944;
+              z =       -0.7699;
+              charge =  0;
+              isotope = -1;
+        
+              var caffeine_karne_a_16 = new Atom(x, y, z, "H", charge, isotope);
+  
+              x =       0.6074;
+              y =       2.5547;
+              z =       -1.5032;
+              charge =  0;
+              isotope = -1;
+        
+              var caffeine_karne_a_17 = new Atom(x, y, z, "H", charge, isotope);
+  
+              x =       0.8606;
+              y =       2.6915;
+              z =       0.2934;
+              charge =  0;
+              isotope = -1;
+        
+              var caffeine_karne_a_18 = new Atom(x, y, z, "H", charge, isotope);
+  
+              x =       -4.0942;
+              y =       2.0097;
+              z =       0.6091;
+              charge =  0;
+              isotope = -1;
+        
+              var caffeine_karne_a_19 = new Atom(x, y, z, "H", charge, isotope);
+  
+              x =       -4.6699;
+              y =       1.0338;
+              z =       -0.8167;
+              charge =  0;
+              isotope = -1;
+        
+              var caffeine_karne_a_20 = new Atom(x, y, z, "H", charge, isotope);
+  
+              x =       -4.9101;
+              y =       0.4518;
+              z =       0.8943;
+              charge =  0;
+              isotope = -1;
+        
+              var caffeine_karne_a_21 = new Atom(x, y, z, "H", charge, isotope);
+  
+              x =       -2.3049;
+              y =       -3.6334;
+              z =       -0.6659;
+              charge =  0;
+              isotope = -1;
+        
+              var caffeine_karne_a_22 = new Atom(x, y, z, "H", charge, isotope);
+  
+              x =       -0.6444;
+              y =       -3.6030;
+              z =       0.0359;
+              charge =  0;
+              isotope = -1;
+        
+              var caffeine_karne_a_23 = new Atom(x, y, z, "H", charge, isotope);
+  
+              x =       -2.0682;
+              y =       -3.5218;
+              z =       1.1381;
+              charge =  0;
+              isotope = -1;
+        
+              var caffeine_karne_a_24 = new Atom(x, y, z, "H", charge, isotope);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = caffeine_karne_a_1;
+              right = left;
+              left = caffeine_karne_a_2;
+              
+              strength = 1;
+               var caffeine_karne_b_1 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = caffeine_karne_a_1;
+              right = left;
+              left = caffeine_karne_a_6;
+              
+              strength = 1;
+               var caffeine_karne_b_2 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = caffeine_karne_a_1;
+              right = left;
+              left = caffeine_karne_a_13;
+              
+              strength = 2;
+               var caffeine_karne_b_3 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = caffeine_karne_a_2;
+              right = left;
+              left = caffeine_karne_a_3;
+              
+              strength = 1;
+               var caffeine_karne_b_4 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = caffeine_karne_a_2;
+              right = left;
+              left = caffeine_karne_a_12;
+              
+              strength = 1;
+               var caffeine_karne_b_5 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = caffeine_karne_a_3;
+              right = left;
+              left = caffeine_karne_a_4;
+              
+              strength = 1;
+               var caffeine_karne_b_6 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = caffeine_karne_a_3;
+              right = left;
+              left = caffeine_karne_a_11;
+              
+              strength = 2;
+               var caffeine_karne_b_7 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = caffeine_karne_a_4;
+              right = left;
+              left = caffeine_karne_a_5;
+              
+              strength = 2;
+               var caffeine_karne_b_8 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = caffeine_karne_a_4;
+              right = left;
+              left = caffeine_karne_a_7;
+              
+              strength = 1;
+               var caffeine_karne_b_9 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = caffeine_karne_a_5;
+              right = left;
+              left = caffeine_karne_a_6;
+              
+              strength = 1;
+               var caffeine_karne_b_10 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = caffeine_karne_a_5;
+              right = left;
+              left = caffeine_karne_a_9;
+              
+              strength = 1;
+               var caffeine_karne_b_11 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = caffeine_karne_a_6;
+              right = left;
+              left = caffeine_karne_a_14;
+              
+              strength = 1;
+               var caffeine_karne_b_12 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = caffeine_karne_a_7;
+              right = left;
+              left = caffeine_karne_a_8;
+              
+              strength = 1;
+               var caffeine_karne_b_13 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = caffeine_karne_a_7;
+              right = left;
+              left = caffeine_karne_a_10;
+              
+              strength = 1;
+               var caffeine_karne_b_14 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = caffeine_karne_a_8;
+              right = left;
+              left = caffeine_karne_a_9;
+              
+              strength = 2;
+               var caffeine_karne_b_15 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = caffeine_karne_a_8;
+              right = left;
+              left = caffeine_karne_a_15;
+              
+              strength = 1;
+               var caffeine_karne_b_16 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = caffeine_karne_a_10;
+              right = left;
+              left = caffeine_karne_a_16;
+              
+              strength = 1;
+               var caffeine_karne_b_17 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = caffeine_karne_a_10;
+              right = left;
+              left = caffeine_karne_a_17;
+              
+              strength = 1;
+               var caffeine_karne_b_18 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = caffeine_karne_a_10;
+              right = left;
+              left = caffeine_karne_a_18;
+              
+              strength = 1;
+               var caffeine_karne_b_19 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = caffeine_karne_a_12;
+              right = left;
+              left = caffeine_karne_a_19;
+              
+              strength = 1;
+               var caffeine_karne_b_20 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = caffeine_karne_a_12;
+              right = left;
+              left = caffeine_karne_a_20;
+              
+              strength = 1;
+               var caffeine_karne_b_21 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = caffeine_karne_a_12;
+              right = left;
+              left = caffeine_karne_a_21;
+              
+              strength = 1;
+               var caffeine_karne_b_22 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = caffeine_karne_a_14;
+              right = left;
+              left = caffeine_karne_a_22;
+              
+              strength = 1;
+               var caffeine_karne_b_23 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = caffeine_karne_a_14;
+              right = left;
+              left = caffeine_karne_a_23;
+              
+              strength = 1;
+               var caffeine_karne_b_24 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = caffeine_karne_a_14;
+              right = left;
+              left = caffeine_karne_a_24;
+              
+              strength = 1;
+               var caffeine_karne_b_25 = new Bond(left, right, strength);
+  
+              RefreshScreen()
+              Rotate()
+            }
+            
+        </script>
+</defs>
+<g id="backdrop">
+<rect x="0" y="0" width="350" height="300" style="fill:white"/>
+</g>
+<g transform="translate(15, 0)">
+<g id="structure">
+<g id="shadows" transform="translate(175, 270)" style="fill:grey" />
+<g id="bonds" transform="translate(175, 125)" />
+<g id="atoms" transform="translate(175, 130)" style="text-anchor:middle;alignment-baseline:middle" />
+</g>
+</g>
+</svg>
+

@@ -1,0 +1,339 @@
+<!-- NOTICE:  Copyright [1999-2001] Adobe Systems Incorporated.  Adobe hereby grants you the rights to reproduce, modify and distribute this file and its contents, not including any fonts, audio files or raster images included or embedded in or linked to this file, (the "Software"), and to grant such rights to other parties subject to the following:  This notice shall be included in any copy of the Software or any portion thereof.  THE SOFTWARE IS PROVIDED TO YOU AS-IS, WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT.  IN NO EVENT SHALL ADOBE BE LIABLE TO YOU OR ANY OTHER PARTY FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE.
+-->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20001102//EN" "http://www.w3.org/TR/2000/CR-SVG-20001102/DTD/svg-20001102.dtd" [
+]>
+<svg xmlns="http://www.w3.org/2000/svg"
+xmlns:xlink="http://www.w3.org/2000/xlink/namespace/" width="350" height="300" viewBox="0 0 350 300" xml:space="preserve" onload="Initialize(evt)" onmousedown="MouseDown(evt)" onmousemove="MouseMove(evt)" onmouseup="MouseUp(evt)">
+<title>histamine.svg</title>
+<desc>An interactive 3d model of histamine</desc>
+<defs>
+<script language="Javascript" xlink:href="chemeleon.js" />
+<script language="Javascript">
+          
+          function GenerateStructure()
+            {
+              
+              x =       -1.7560;
+              y =       0.0000;
+              z =       0.3080;
+              charge =  0;
+              isotope = -1;
+        
+              var histamine_karne_a_1 = new Atom(x, y, z, "C", charge, isotope);
+  
+              x =       -0.3600;
+              y =       0.0760;
+              z =       0.2880;
+              charge =  0;
+              isotope = -1;
+        
+              var histamine_karne_a_2 = new Atom(x, y, z, "C", charge, isotope);
+  
+              x =       0.1400;
+              y =       -1.1520;
+              z =       0.5080;
+              charge =  0;
+              isotope = -1;
+        
+              var histamine_karne_a_3 = new Atom(x, y, z, "N", charge, isotope);
+  
+              x =       -0.9160;
+              y =       -1.9680;
+              z =       0.6520;
+              charge =  0;
+              isotope = -1;
+        
+              var histamine_karne_a_4 = new Atom(x, y, z, "C", charge, isotope);
+  
+              x =       -2.0640;
+              y =       -1.2800;
+              z =       0.5320;
+              charge =  0;
+              isotope = -1;
+        
+              var histamine_karne_a_5 = new Atom(x, y, z, "N", charge, isotope);
+  
+              x =       0.4520;
+              y =       1.3600;
+              z =       0.0640;
+              charge =  0;
+              isotope = -1;
+        
+              var histamine_karne_a_6 = new Atom(x, y, z, "C", charge, isotope);
+  
+              x =       1.9560;
+              y =       1.0720;
+              z =       0.1080;
+              charge =  0;
+              isotope = -1;
+        
+              var histamine_karne_a_7 = new Atom(x, y, z, "C", charge, isotope);
+  
+              x =       2.7360;
+              y =       2.3040;
+              z =       -0.1040;
+              charge =  0;
+              isotope = -1;
+        
+              var histamine_karne_a_8 = new Atom(x, y, z, "N", charge, isotope);
+  
+              x =       -2.4520;
+              y =       0.8120;
+              z =       0.1640;
+              charge =  0;
+              isotope = -1;
+        
+              var histamine_karne_a_9 = new Atom(x, y, z, "H", charge, isotope);
+  
+              x =       -0.8520;
+              y =       -3.0320;
+              z =       0.8400;
+              charge =  0;
+              isotope = -1;
+        
+              var histamine_karne_a_10 = new Atom(x, y, z, "H", charge, isotope);
+  
+              x =       0.1880;
+              y =       2.0880;
+              z =       0.8320;
+              charge =  0;
+              isotope = -1;
+        
+              var histamine_karne_a_11 = new Atom(x, y, z, "H", charge, isotope);
+  
+              x =       0.1840;
+              y =       1.7800;
+              z =       -0.9040;
+              charge =  0;
+              isotope = -1;
+        
+              var histamine_karne_a_12 = new Atom(x, y, z, "H", charge, isotope);
+  
+              x =       2.2240;
+              y =       0.3480;
+              z =       -0.6600;
+              charge =  0;
+              isotope = -1;
+        
+              var histamine_karne_a_13 = new Atom(x, y, z, "H", charge, isotope);
+  
+              x =       2.2240;
+              y =       0.6560;
+              z =       1.0840;
+              charge =  0;
+              isotope = -1;
+        
+              var histamine_karne_a_14 = new Atom(x, y, z, "H", charge, isotope);
+  
+              x =       2.4960;
+              y =       3.0320;
+              z =       0.6680;
+              charge =  0;
+              isotope = -1;
+        
+              var histamine_karne_a_15 = new Atom(x, y, z, "H", charge, isotope);
+  
+              x =       2.4920;
+              y =       2.7240;
+              z =       -1.0840;
+              charge =  0;
+              isotope = -1;
+        
+              var histamine_karne_a_16 = new Atom(x, y, z, "H", charge, isotope);
+  
+              x =       -3.0120;
+              y =       -1.7840;
+              z =       0.6240;
+              charge =  0;
+              isotope = -1;
+        
+              var histamine_karne_a_17 = new Atom(x, y, z, "H", charge, isotope);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = histamine_karne_a_17;
+              right = left;
+              left = histamine_karne_a_5;
+              
+              strength = 1;
+               var histamine_karne_b_1 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = histamine_karne_a_16;
+              right = left;
+              left = histamine_karne_a_8;
+              
+              strength = 1;
+               var histamine_karne_b_2 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = histamine_karne_a_15;
+              right = left;
+              left = histamine_karne_a_8;
+              
+              strength = 1;
+               var histamine_karne_b_3 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = histamine_karne_a_14;
+              right = left;
+              left = histamine_karne_a_7;
+              
+              strength = 1;
+               var histamine_karne_b_4 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = histamine_karne_a_13;
+              right = left;
+              left = histamine_karne_a_7;
+              
+              strength = 1;
+               var histamine_karne_b_5 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = histamine_karne_a_12;
+              right = left;
+              left = histamine_karne_a_6;
+              
+              strength = 1;
+               var histamine_karne_b_6 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = histamine_karne_a_11;
+              right = left;
+              left = histamine_karne_a_6;
+              
+              strength = 1;
+               var histamine_karne_b_7 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = histamine_karne_a_10;
+              right = left;
+              left = histamine_karne_a_4;
+              
+              strength = 1;
+               var histamine_karne_b_8 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = histamine_karne_a_9;
+              right = left;
+              left = histamine_karne_a_1;
+              
+              strength = 1;
+               var histamine_karne_b_9 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = histamine_karne_a_8;
+              right = left;
+              left = histamine_karne_a_7;
+              
+              strength = 1;
+               var histamine_karne_b_10 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = histamine_karne_a_7;
+              right = left;
+              left = histamine_karne_a_6;
+              
+              strength = 1;
+               var histamine_karne_b_11 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = histamine_karne_a_6;
+              right = left;
+              left = histamine_karne_a_2;
+              
+              strength = 1;
+               var histamine_karne_b_12 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = histamine_karne_a_5;
+              right = left;
+              left = histamine_karne_a_4;
+              
+              strength = 1;
+               var histamine_karne_b_13 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = histamine_karne_a_5;
+              right = left;
+              left = histamine_karne_a_1;
+              
+              strength = 1;
+               var histamine_karne_b_14 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = histamine_karne_a_4;
+              right = left;
+              left = histamine_karne_a_3;
+              
+              strength = 1;
+               var histamine_karne_b_15 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = histamine_karne_a_3;
+              right = left;
+              left = histamine_karne_a_2;
+              
+              strength = 1;
+               var histamine_karne_b_16 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = histamine_karne_a_2;
+              right = left;
+              left = histamine_karne_a_1;
+              
+              strength = 1;
+               var histamine_karne_b_17 = new Bond(left, right, strength);
+  
+              RefreshScreen()
+              Rotate()
+            }
+            
+        </script>
+</defs>
+<g id="backdrop">
+<rect x="0" y="0" width="350" height="300" style="fill:white;" />
+</g>
+<g transform="translate(-30, -75)">
+<g id="structure">
+<g id="shadows" transform="translate(200, 350)" style="fill:grey" />
+<g id="bonds" transform="translate(200, 200)" />
+<g id="atoms" transform="translate(200, 205)" style="text-anchor:middle;alignment-baseline:middle" />
+</g>
+</g>
+</svg>
+

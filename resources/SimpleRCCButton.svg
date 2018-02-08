@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+    "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd" [
+    <!ATTLIST svg
+              xmlns:a3 CDATA #FIXED "http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+              a3:scriptImplementation ( Adobe | browser | Microsoft | Netscape ) "Adobe">
+    <!ATTLIST script
+              a3:scriptImplementation ( Adobe | browser | Microsoft | Netscape ) "Adobe">
+]>
+<svg	xmlns="http://www.w3.org/2000/svg"
+			xmlns:ui="http://xmlns.fuchsia-design.com/ui/"
+			xmlns:ev="http://www.w3.org/2001/xml-events"
+			version="1.2">
+
+	<title>Simple RCC Button</title>
+
+	<extensionDefs namespace="http://xmlns.fuchsia-design.com/ui/">					
+		<elementDef name="button">
+			<prototype>
+				<svg id="root" width="0" height="26">
+					<rect	id="rect" style="stroke: black; fill: lightgray;"
+								x=".5" y=".5" rx="5" ry="5" width="0" height="25" />
+					<text x="50%" y="65%" style="pointer-events: none; text-anchor: middle;">
+						<refContent />
+					</text>
+				</svg>
+			</prototype>
+			<script ev:event="SVGBindEnd" type="text/ecmascript">
+				new SimpleRCCButton(evt.target);
+			</script>
+			<script type="text/ecmascript">	
+				function SimpleRCCButton (element) {
+					// keep pointers to useful bits
+					this.element = element;
+					var shadow = this.element.shadowTree;
+					this.root = shadow.getElementById('root');
+					this.rect = shadow.getElementById('rect');
+					// initialize the shadow tree
+					this.init();
+				};
+	
+				SimpleRCCButton.prototype.init = function () {
+					// register mutation events on the element instance
+					this.element.addEventListener('DOMAttrModified', this, false);
+					// register UI events on the shadow tree's rectangle
+					this.rect.addEventListener('mousedown', this, false);
+					this.rect.addEventListener('mouseup', this, false);
+					this.rect.addEventListener('click', this, false);
+					// update the position and width of the button
+					this.fixButtonPosition();
+					this.fixButtonWidth();
+				};
+	
+				SimpleRCCButton.prototype.handleEvent = function (evt) {
+					var type = evt.type;
+					if (type == 'DOMAttrModified') {
+						this.fixButtonPosition();
+						this.fixButtonWidth();
+					} else if (type == 'mousedown') {
+						this.rect.style.setProperty('fill', 'pink');
+						window.captureMouse(evt, this.rect);
+					} else if (type == 'mouseup') {
+						this.rect.style.setProperty('fill', 'lightgray');
+					} else if (type == 'click') {
+						var event = document.createEvent('ButtonPush');
+						this.element.dispatchEvent(event);
+					}
+				};
+	
+				SimpleRCCButton.prototype.fixButtonPosition = function () {
+					this.root.setAttribute('x', this.element.getAttribute('x'));
+					this.root.setAttribute('y', this.element.getAttribute('y'));
+				};
+	
+				SimpleRCCButton.prototype.fixButtonWidth = function () {
+					var width = parseInt(this.element.getAttribute('width'));
+					this.root.setAttribute('width', width + 1);
+					this.rect.setAttribute('width', width);
+				};
+			</script>		
+		</elementDef>
+	</extensionDefs>
+
+	<ui:button x="10" y="10" width="300">
+		&lt;ui:button&gt;
+		<script ev:event="ButtonPush">
+			var button = evt.target;
+			var width = parseInt(button.getAttribute('width'));
+			button.setAttribute('width', width - 10);
+		</script>
+	</ui:button>
+
+	<ui:button x="10" y="40" width="150">
+		Another &lt;ui:button&gt;
+		<script ev:event="ButtonPush">
+			var button = evt.target;
+			var width = parseInt(button.getAttribute('width'));
+			button.setAttribute('width', width + 10);
+		</script>
+	</ui:button>
+
+</svg>

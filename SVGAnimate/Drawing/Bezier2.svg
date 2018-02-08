@@ -1,0 +1,209 @@
+<svg width="100%" height="100%" onload="startup(evt);">
+<script>
+var Colors=new Array("#fff","#a03","#ff0","#f0f","#0ff","#f00","#0F0","#00F","#df8")
+//note: above may be used to cycle through predictable colors
+var svgDocument;
+var place;
+var count=-1;
+var armed=false;
+var finished=false
+var first=true
+var sp=""
+var X, Y, startX, startY, oldX, oldY, oldstX, oldstY, a0X, a0Y, asX,asY
+var A=new Array()
+function startup(evt){
+	svgDocument = evt.getTarget().getOwnerDocument();
+	place = svgDocument.getElementById("place");
+	EL = svgDocument.getElementById("EL");
+	STEL = svgDocument.getElementById("STEL");
+}
+
+function remove(U){
+	L=svgDocument.getElementById(U);
+	place.removeChild(L)
+	
+}
+function drag(U){
+	if (!svgDocument.getElementById(U)) return
+	L=svgDocument.getElementById(U);
+	place.setAttribute("onmouseup", "stopdrag('"+U+"')");
+	nX=evt.getClientX();
+	nY=evt.getClientY();
+	sT="translate("+(nX-X)+","+(nY-Y)+")"
+	L.setAttribute("transform", sT);
+}
+function stopdrag(U){
+	L=svgDocument.getElementById(U);
+	place.setAttribute("onmousemove", "draw(evt)");
+	place.setAttribute("onmouseup", "doneplace(evt)");
+	L.setAttribute("fill",color())
+	L.setAttribute("stroke", "black");
+	L.setAttribute("stroke-width", "1");
+	finished=false
+	first=true
+	sp=""
+	A=new Array()
+}
+function grab(U){
+	if (!((armed)||(first))) {
+		return
+	}
+	L=svgDocument.getElementById(U);
+	finished=true
+	first=false
+	gT="translate(0,0)"
+	if (L.getAttribute("transform")) {
+		gT=L.getAttribute("transform");
+	}
+	GT=gT.split(/[,\(]/)
+	X=evt.getClientX()-parseInt(GT[1]);
+	Y=evt.getClientY()-parseInt(GT[2]);
+	L.setAttribute("fill","#aFa")
+	L.setAttribute("stroke", "green");
+	L.setAttribute("stroke-width", "3");
+	place.setAttribute("onmousemove", "drag('"+U+"')");
+	L.setAttribute("onkeyup", "remove('"+U+"')");
+}
+function oplace(startX,startY){
+	a0X=startX
+	a0Y=startY
+	A[0]=a0X+" "+a0Y
+	count++
+	newline = svgDocument.createElement("line");
+	newline.setAttribute("id", "L"); 
+	newline.setAttribute("x1", startX); 
+	newline.setAttribute("y1", startY); 
+	newline.setAttribute("x2", startX+1); 
+	newline.setAttribute("y2", startY+1); 
+	newline.setAttribute("stroke", "black");
+	newline.setAttribute("stroke-width", "1");
+	place.appendChild(newline);
+	newcurve = svgDocument.createElement("path");
+	newcurve.setAttribute("id", "C"); 
+	sp="M "+startX+" "+startY
+	newcurve.setAttribute("d", sp)
+	newcurve.setAttribute("stroke", "blue");
+	newcurve.setAttribute("fill", "none");
+	newcurve.setAttribute("stroke-width", "1");
+	place.appendChild(newcurve);
+	newpath = svgDocument.createElement("path");
+	newpath.setAttribute("id", "P"+count); 
+	newpath.setAttribute("stroke", "black");
+	newpath.setAttribute("stroke-width", "1");
+	newpath.setAttribute("fill", "none");
+	newpath.setAttribute("opacity", .5);
+	newcurve.setAttribute("d", sp)
+	place.appendChild(newpath);
+	oldstX=startX
+	oldstY=startY
+	oldX=startX
+	oldY=startY
+	STEL.setAttribute("cx", startX); 
+	STEL.setAttribute("cy", startY); 
+	first=false
+}
+function doneplace(){
+	if(finished) return
+	s="M "+A[0]
+	sq=" C "+" "+oldstX+" "+oldstY+" "+stX+" "+stY+" "+startX+" "+startY
+	if (A.length==1) 
+	sq=" Q "+" "+oldstX+" "+oldstY+" "+startX+" "+startY
+	A.push(sq)
+	for (i=1;i!=A.length;i++){
+		s+=A[i]
+	}
+	sq=" Q "+X+" "+Y+" "+A[0]
+	s+=sq
+	newpath.setAttribute("d", s);
+	oldX=startX
+	oldY=startY
+	oldstX=X
+	oldstY=Y
+	armed=false
+}
+function draw(evt){
+	if (!armed) {
+		return
+	}
+	X=evt.getClientX();
+	Y=evt.getClientY();
+	stX=2*startX-X
+	stY=2*startY-Y
+	asX=2*a0X-X
+	asY=2*a0Y-Y
+	newline.setAttribute("x1", stX); 
+	newline.setAttribute("y1", stY); 
+	newline.setAttribute("x2", X); 
+	newline.setAttribute("y2", Y); 
+	sp="M "+oldX+" "+oldY+" C "+" "+oldstX+" "+oldstY+" "+stX+" "+stY+" "+startX+" "+startY+" Q "+X+" "+Y+" "+A[0]
+	newcurve.setAttribute("d",sp)
+	
+}
+
+function army(evt){
+	if (finished) return
+	startX=evt.getClientX();
+	startY=evt.getClientY();
+	if (first) oplace(startX, startY)
+	else{
+		EL.setAttribute("cx", startX); 
+		EL.setAttribute("cy", startY); 
+	}
+	armed=true;
+}
+function finish(evt){
+	finished=true
+	place.setAttribute("onmousemove", "lastcurve(evt)");
+	place.setAttribute("onmouseup", "lastfinish()");
+}
+function lastcurve(evt){
+	X=evt.getClientX();
+	Y=evt.getClientY();
+	staX=2*a0X-X
+	staY=2*a0Y-Y
+	EL.setAttribute("cx", staX); 
+	EL.setAttribute("cy", staY); 
+	A1=A[1].split(" ")
+	newline.setAttribute("x1", staX); 
+	newline.setAttribute("y1", staY); 
+	newline.setAttribute("x2", X); 
+	newline.setAttribute("y2", Y); 
+	sp="M "+oldX+" "+oldY+" C "+oldstX+" "+oldstY+" "+staX+" "+staY+" "+a0X+" "+a0Y
+	newcurve.setAttribute("d",sp)
+}
+function lastfinish(){
+	s="M "+A[0]
+	for (i=1;i!=A.length;i++) s+=A[i]
+	s+=sp
+	newpath.setAttribute("d", s);
+	L=svgDocument.getElementById("P"+count);
+	L.setAttribute("onmousedown", "grab('P"+count+"')"); 
+	STEL.setAttribute("cy", -100); 
+	EL.setAttribute("cy", -100); 
+	newline.setAttribute("x1", -100); 
+	newline.setAttribute("y1", -100); 
+	newline.setAttribute("x2", -100); 
+	newline.setAttribute("y2", -100); 
+	remove("C")
+	stopdrag("P"+count)
+	place.setAttribute("onmouseup", "doneplace(evt)");
+}
+function color(){
+	r=Math.floor(Math.random()*16)
+	R=r.toString(16)
+	g=Math.floor(Math.random()*16)
+	G=g.toString(16)
+	b=Math.floor(Math.random()*16)
+	B=b.toString(16)
+	return "#"+R+B+G
+}
+
+</script>
+
+<g id="place" onmouseup="doneplace(evt)" onmousedown="army(evt);" onmousemove="draw(evt)">
+<rect x="0" y="0" width="100%" height="100%" fill="#ffe" />
+<text x="350" y="20">ickClay agDray</text>
+<ellipse id="EL" cx="400" cy="-100" rx="4" ry="4" stroke="black" stroke-width="1" fill="green"></ellipse>
+</g>
+<ellipse id="STEL" cx="400" cy="-100" rx="5" ry="5" stroke="black" onmousedown="finish(evt)" stroke-width="1" fill="red"></ellipse>
+</svg>

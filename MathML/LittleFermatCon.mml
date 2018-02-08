@@ -1,0 +1,12 @@
+<math>
+  <apply>
+    <power/>
+    <ci>n</ci>
+    <apply>
+      <minus/>
+      <ci>p</ci>
+      <cn>1</cn>
+    </apply>
+  </apply>
+</math>
+

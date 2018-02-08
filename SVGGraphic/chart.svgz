@@ -1,0 +1,822 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 9.0, SVG Export Plug-In  -->
+<!-- NOTICE:  Copyright [1999-2001] Adobe Systems Incorporated.  Adobe hereby grants you the rights to reproduce, modify and distribute this file and its contents, not including any fonts, audio files or raster images included or embedded in or linked to this file, (the "Software"), and to grant such rights to other parties subject to the following:  This notice shall be included in any copy of the Software or any portion thereof.  THE SOFTWARE IS PROVIDED TO YOU AS-IS, WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT.  IN NO EVENT SHALL ADOBE BE LIABLE TO YOU OR ANY OTHER PARTY FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE.
+-->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20001102//EN" "http://www.w3.org/TR/2000/CR-SVG-20001102/DTD/svg-20001102.dtd" [
+	<!ENTITY st0 "opacity:0.1;fill:#6D3C00;stroke:none;">
+	<!ENTITY st1 "opacity:0.1;fill:#675507;stroke:none;">
+	<!ENTITY st2 "fill:#844800;stroke:none;">
+	<!ENTITY st3 "fill:#AF8300;stroke:none;">
+	<!ENTITY st4 "font-family:'Myriad-Roman';">
+	<!ENTITY st5 "opacity:0.15;fill:#AF8300;stroke:none;">
+	<!ENTITY st6 "opacity:0.1;fill:#C76891;stroke:none;">
+	<!ENTITY st7 "opacity:0.1;fill:#1B586A;stroke:none;">
+	<!ENTITY st8 "fill:#164858;stroke:none;">
+	<!ENTITY st9 "fill:#000000;stroke:none;">
+	<!ENTITY st10 "fill:#80435E;stroke:none;">
+	<!ENTITY st11 "fill:url(#aigrd11);stroke:none;">
+	<!ENTITY st12 "fill:#8C9F07;stroke:none;">
+	<!ENTITY st13 "opacity:0.15;fill:url(#aigrd1);stroke:none;">
+	<!ENTITY st14 "opacity:0.15;fill:#8C9F07;stroke:none;">
+	<!ENTITY st15 "fill:url(#aigrd9);stroke:none;">
+	<!ENTITY st16 "opacity:0.2;fill:url(#aigrd2);stroke:none;">
+	<!ENTITY st17 "fill:#3C560B;stroke:none;">
+	<!ENTITY st18 "fill-rule:nonzero;clip-rule:nonzero;fill:#996600;stroke:#000000;stroke-miterlimit:4;">
+	<!ENTITY st19 "opacity:0.15;">
+	<!ENTITY st20 "opacity:0.25;">
+	<!ENTITY st21 "fill:#24758D;stroke:none;">
+	<!ENTITY st22 "opacity:0.15;fill:#24758D;stroke:none;">
+	<!ENTITY st23 "opacity:0.1;fill:#C2A00E;stroke:none;">
+	<!ENTITY st24 "opacity:0.25;fill:#FF6666;stroke:none;">
+	<!ENTITY st25 "fill:#AD6136;stroke:none;">
+	<!ENTITY st26 "fill:url(#aigrd6);stroke:none;">
+	<!ENTITY st27 "opacity:0.15;fill:#AD6136;stroke:none;">
+	<!ENTITY st28 "fill-rule:nonzero;clip-rule:nonzero;fill:#9999CC;stroke:#999966;stroke-width:0.5;stroke-miterlimit:4;">
+	<!ENTITY st29 "fill:#71A214;stroke:none;">
+	<!ENTITY st30 "opacity:0.1;fill:#48680D;stroke:none;">
+	<!ENTITY st31 "fill:#6A374D;stroke:none;">
+	<!ENTITY st32 "fill-rule:nonzero;clip-rule:nonzero;fill:#999999;stroke:#000000;stroke-miterlimit:4;">
+	<!ENTITY st33 "fill:#2A89A5;stroke:none;">
+	<!ENTITY st34 "fill:#CC9999;stroke:none;">
+	<!ENTITY st35 "fill:#99CC99;stroke:none;">
+	<!ENTITY st36 "fill-rule:nonzero;clip-rule:nonzero;fill:none;stroke:#669999;stroke-width:0.75;stroke-miterlimit:4;">
+	<!ENTITY st37 "opacity:0.5;fill:none;stroke:#FF9966;stroke-width:1;stroke-dasharray:3;">
+	<!ENTITY st38 "fill:#7D6709;stroke:none;">
+	<!ENTITY st39 "opacity:0.1;fill:#CD7100;stroke:none;">
+	<!ENTITY st40 "opacity:0.5;stroke:#FF9966;stroke-width:1;stroke-dasharray:3;">
+	<!ENTITY st41 "fill:#6D3C00;stroke:none;">
+	<!ENTITY st42 "fill:#675507;stroke:none;">
+	<!ENTITY st43 "fill:url(#aigrd10);stroke:none;">
+	<!ENTITY st44 "opacity:0.25;fill:url(#aigrd3);stroke:none;">
+	<!ENTITY st45 "fill:url(#aigrd8);stroke:none;">
+	<!ENTITY st46 "fill:#CCCC99;stroke:none;">
+	<!ENTITY st47 "fill:#C76891;stroke:none;">
+	<!ENTITY st48 "fill:#1B586A;stroke:none;">
+	<!ENTITY st49 "fill:#FFFFFF;stroke:none;">
+	<!ENTITY st50 "opacity:0.5;">
+	<!ENTITY st51 "opacity:0.1;fill:#844800;stroke:none;">
+	<!ENTITY st52 "opacity:0.25;fill:#AF8300;stroke:none;">
+	<!ENTITY st53 "fill:url(#aigrd5);stroke:none;">
+	<!ENTITY st54 "opacity:0.1;fill:#164858;stroke:none;">
+	<!ENTITY st55 "opacity:0.2;fill:#AF8300;stroke:none;">
+	<!ENTITY st56 "opacity:0.1;fill:#80435E;stroke:none;">
+	<!ENTITY st57 "opacity:0.25;fill:#8C9F07;stroke:none;">
+	<!ENTITY st58 "opacity:0.15;fill:#9999CC;stroke:#999966;stroke-width:0.25;">
+	<!ENTITY st59 "opacity:0.1;fill:#3C560B;stroke:none;">
+	<!ENTITY st60 "fill:#C2A00E;stroke:none;">
+	<!ENTITY st61 "opacity:0.25;fill:#24758D;stroke:none;">
+	<!ENTITY st62 "opacity:0.2;fill:#8C9F07;stroke:none;">
+	<!ENTITY st63 "fill:#48680D;stroke:none;">
+	<!ENTITY st64 "opacity:0.25;fill:#AD6136;stroke:none;">
+	<!ENTITY st65 "opacity:0.15;fill:#FF9966;stroke:#996600;">
+	<!ENTITY st66 "fill:none;stroke:#24758D;stroke-width:2;">
+	<!ENTITY st67 "opacity:0.2;fill:#24758D;stroke:none;">
+	<!ENTITY st68 "font-size:14;">
+	<!ENTITY st69 "font-size:24;">
+	<!ENTITY st70 "opacity:0.1;fill:#71A214;stroke:none;">
+	<!ENTITY st71 "opacity:0.1;fill:#6A374D;stroke:none;">
+	<!ENTITY st72 "opacity:0.1;fill:#2A89A5;stroke:none;">
+	<!ENTITY st73 "opacity:0.2;fill:#AD6136;stroke:none;">
+	<!ENTITY st74 "opacity:0.25;fill:#97FF99;stroke:none;">
+	<!ENTITY st75 "fill-rule:nonzero;clip-rule:nonzero;stroke:#000000;stroke-miterlimit:4;">
+	<!ENTITY st76 "fill:url(#aigrd7);stroke:none;">
+	<!ENTITY st77 "fill:#CD7100;stroke:none;">
+	<!ENTITY st78 "stroke:none;">
+	<!ENTITY st79 "fill:none;stroke:#24758D;">
+	<!ENTITY st80 "opacity:0.1;fill:#7D6709;stroke:none;">
+	<!ENTITY st81 "opacity:0.15;fill:blue;stroke:#996600;">
+	<!ENTITY st82 "opacity:0.25;fill:#FFFF00;stroke:none;">
+	<!ENTITY st83 "fill:url(#aigrd4);stroke:none;">
+]>
+<svg xmlns="http://www.w3.org/2000/svg"
+xmlns:xlink="http://www.w3.org/2000/xlink/namespace/"  onload="Initialize(evt)" width="625" height="392.5" viewBox="0 0 625 392.5" xml:space="preserve">
+<title>chart.svg</title> 
+<desc>bar and pie chart</desc>
+	<style type="text/css">
+	<![CDATA[
+@font-face{font-family:'Myriad-Roman';src:url("data:;base64,\
+T1RUTwADACAAAQAQQ0ZGIMMtLgcAAAA8AAAGjUdQT1O1rsZ9AAAHcAAAAb5jbWFwBSwCnQAABswA\
+AACkAQAEAgABAQENTXlyaWFkLVJvbWFuAAEBASD4GwH4GARd+476+vnTBR0AAKQDDfd9D/eiEcUc\
+BlMSAAEBAapDb3B5cmlnaHQgKGMpIDE5OTIsIDE5OTQgQWRvYmUgU3lzdGVtcyBJbmNvcnBvcmF0\
+ZWQuICBBbGwgUmlnaHRzIFJlc2VydmVkLk15cmlhZCBpcyBhIHRyYWRlbWFyayBvZiBBZG9iZSBT\
+eXN0ZW1zIEluY29ycG9yYXRlZCBtYXkgYmUgcmVnaXN0ZXJlZCBpbiBjZXJ0YWluIGp1cmlzZGlj\
+dGlvbnMuAAAAAAEAIwAkACgAKgAxADQANwBCAEQARgBJAEoATwBRAFMAVQBXABMCAAEAAgADAHcA\
+vQEdATMBhQHdAhcCiQLKAyUDagOeA+YEUQSbBOEFGw4OfoXP95nM93TOEtfi93TkSOcT9NeNFYeo\
+uYfHG/cC15+2uR+urKK3xRrvQMBLmh6OBxP40aS3xM0awHWzaKUerWJTmjQbT06FgmUf4lEVjpmi\
+jrMb48ZrPUpVWjAfPAZKBNMGE/Tq2mQwKThqMWxzjI55Hw6kgNX4udQBr+cD+KXmFXpoVYBVG/s3\
+LPT3OvdF9PD3MsO6f3urH6HSBZd0VZ04G/tl+yP7Ivto+3L3IvsM91LdzJubqh8O5oTT92/R95LU\
+bHcSr+f4DOET7Pji9/YV+3JF9xz7XQaBd2SDUhv7MiXw9z/3Pfbx9zjPuH96rx8T3KHSBRPsmW5N\
+nD0b+3b7H/sn+10irzHFUx9Mzd9x8Rvm2aGash8O+9Cgdvk2dwHW4wPW+TYV/Tbj+TYHDnSgdvec\
+0feo0AHX4veF4wPXFuL3ogaGn6OKpRvg1qS8uR+urp27yBrHdLxmqx6vY0yfNRtFVIWDYR/iTRWO\
+mqiPsRvrymAxMExXIW9yjZB4Hw5NgNT4u9MBw+P3beMDtawVc6/Sd8wb9zPX5vPuUsH7BrgfLq9i\
+qsoaua7C58i4eH6gHqPSBZxuWJtHG/sXND0iLc9R9wJjH+Zpr2ZNGkZXXTJPU56kZB4OjovlRnb5\
+NncSjvjCE3D31Bb3hfk2BS4G+wb74QUTsGwzcDZ4PQiJBnjZct5v5iL34BgsBvdx/TYFDkKAzGp2\
+94vI9w7MEq7j91/jE7z4Mve9Fexn8PspTlB6cmMen1AFoq26mLkb7oyWQmMagQf7T4wjS/sJGkW9\
+Ru3QwK2xpR6OBhN8k04F2gaGrIm0tRo1uhUTvIKKgYiCHmJ9YmNLG19lpcXp9wGc64kfDiCA0vgB\
+0QGx5AP4J94VgHJqf1kbK0PQ9wTwx973A7usf4CgH5/OBZhzXZhXG/syJfsB+yn7Keoo9ybMvpyW\
+oh8OVYHQ/wCngAD/AD+AAPcjygGx4PeV4AP4Yvd2FY2VjJmdGuRi9x/7MvshNPsH+yf7JeUo9yjY\
+wZyZqh57yQV+a2SATBszQLz3C4kfjMoVyJKx3eUb7aMzVIofDougdvg61PdrdwHU4/eA4wPUFuP3\
+uAacjJiQlx67nLezxBveqEo8H/uq4/e0B/c7I7NKamyCe3EecH11dH1yCIn3wjMGDvvVoHb4eHf3\
+AfcFEsf3BSfjE+j3NRb4eDP8eAcT8Lb40RWuoaWqqnWkaWl0cmxsoXGsHw6LoHb4O9OAdxLU4/eA\
+4xPY1Bbj97gGmY2bj5YevJu4tMQb3qhJPR/7q+P3tQf3OiOzSDtTXl5zHokGE7iG2gU9Bo5jjGNY\
+Gg6Z+0V290/Q+APRgHcS1OP3ruQT7NT7WhXj95uNBluowm/MG/cF9uH3QvcnM+77Cj1RaU9oH4kG\
+E9yG3gU8Bo5djFlNGuNeFZaOmI2XHhPszZzEtccb6L04KvsDVT8uTVW1yHwfiJaKmJcaDvt4oHb4\
+MN6Ad6d3EtXiE8jUFuP3lgaajJmNmB7Ml7e6yRuXlIqKlR8TmN0HE8iNg4SMghtQVWJKdR+IBhOo\
+h+oFPgaOXoxaUhoO+3SA1GN2+DTOEujhE3Do+NEVMkBI1vucBxOwUpVgo3AedKCsfbQbraaRkZwf\
+h84Fh359iXMbWnqtxx/3mfcSzvsS9wgHDkGL40h2+Hh3Epj4XhNwmPh4FfdM/HgF3wb3Uvh4BS8G\
+LfujBROwe159Y4BjCIgGgbN+s3u4LPejGA6Alvk2lvtdl/culryWBveZkPxmkXCUBx6gYEWCmf8M\
+CR56CZmZnwwKzgrjC86RDAzjjwwN92gU+L8VAAAAAAAAAQAAAAMAAAAMAAQAmAAAACIAIAAEAAIA\
+IABDAEcASQBQAFMAVgBhAGMAZQBpAG4AcAByAHQAdv//AAAAIABCAEcASQBQAFMAVgBhAGMAZQBo\
+AG4AcAByAHQAdv///+H/wP+9/7z/tv+0/7L/qP+n/6b/pP+g/5//nv+d/5wAAQAAAAAAAAAAAAAA\
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAoAHgAsAAFERkxUAAgABAAAAAD//wABAAAAAWtl\
+cm4ACAAAAAEAAAABAAQAAgAAAAEACAABAXYABAAAABEALAAyAEwAagCEAJYAtADaAPgBAgEQARYB\
+IAEqATQBXgFoAAEACP/cAAYACAAEAAkAAgALAAQADAABAA0AAQAQAAEABwAD/+gABP/oAAn/+QAL\
+//QADP/9AA3//QAQ//8ABgAJAAgACwAKAAwAAgANAAMADgACABAAAgAEAAwACwANAAsAEQAQABIA\
+CQAHAAn/5gAL/+cADP/7AA3/+wAO/+8AEP/vABEABgAJAAkABQALAAYADP/9AA3//wAO//8AD///\
+ABD//wAR//wAEv/1AAcAA//8AAT//AAHAAYACf/cAAv/2wANAA0AEP/tAAIAEf/8ABL/8wADAAkA\
+AQAL//oAEQANAAEAEv/+AAIAEf/8ABL/7gACABH//AAS/+4AAgAKAAEACwABAAoACf/6AAr/+gAL\
+//oADAAFAA0ABAAOAAQADwAEABAABAARABgAEgAZAAIACv/6AAv/+gADAAn/8gAK//UAC//1AAIA\
+AgABAAwAAAAOABIADAAA")}
+	]]>
+	</style>
+      <defs>
+    <filter id="DropShadowFilter" filterUnits="objectBoundingBox" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2" result="BlurAlpha"/>
+      <feOffset in="BlurAlpha" dx="4" dy="4" result="OffsetBlurAlpha"/>
+      <feMerge>
+        <feMergeNode in="OffsetBlurAlpha"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <script>
+    <![CDATA[
+    
+      ColorArray = new Array("#FF9966", 
+                             "#C2A00E", 
+                             "#71A214", 
+                             "#3399CC", 
+                             "#CC99FF", 
+                             "#FF9999", 
+                             "#00CC99", 
+                             "#C2CC0E", 
+                             "#71CC14", 
+                             "#CC68CC", 
+                             "#66FFCC")
+                             
+      ActiveSegment = "Pie"
+          
+      CurrentColor = 0;
+      
+      SVGDocument = null
+    
+      BarChartHeight = 150
+      BarChartWidth  = 250
+      
+      PieChartSize = 140
+      
+      MoveDistance = 40
+    
+      Values = new Array()
+      Names = new Array()
+      PieElements = new Array()
+      BarElements = new Array()
+      BarTexts = new Array()
+      DeleteList = new Array()
+      
+      PieTotalSize = 0;
+      BarTotalSize = 0;
+      MaxSize = 0;
+      
+      AngleFactor = Math.pow(2, .5)
+      
+      Removed = false
+      
+      function ClearChart()
+        {
+          for (var I = 0; I < PieElements.length; I++)
+            {
+              ParentGroup1.removeChild(PieElements[I])
+              ParentGroup2.removeChild(BarElements[I])
+              SVGDocument.getElementById("labels").removeChild(Names[I])
+            }
+            
+          PieElements = new Array()
+          BarElements = new Array()
+          BarTexts = new Array()
+          Values = new Array()
+          Names = new Array()
+          PieTotalSize = 0;
+          BarTotalSize = 0;
+          MaxSize = 0;
+          if (!(Removed))
+            {
+              Grandparent1.removeChild(ParentGroup1)
+              Grandparent2.removeChild(ParentGroup2)
+            }
+          Removed = true
+          
+        }
+      
+      function Initialize(LoadEvent)
+        {
+          SVGDocument = LoadEvent.getTarget().getOwnerDocument()
+          ParentGroup1 = SVGDocument.getElementById("slices")
+          Grandparent1 = SVGDocument.getElementById("piechart")
+          ParentGroup2 = SVGDocument.getElementById("bars")
+          Grandparent2 = SVGDocument.getElementById("barchart")
+        }
+      
+      function AddChartValue(Value, Name, Repress)
+        {
+          Value = Value * 1
+          if ((Value <= 0) || (isNaN(Value)))
+            {
+              alert("Negative, textual or null values are not allowed")
+              return;
+            }
+            
+          Color = ColorArray[CurrentColor]
+          
+          CurrentColor++
+          if (CurrentColor >= ColorArray.length) CurrentColor = 0
+          
+          
+          if (!(Removed))
+            {
+              Grandparent1.removeChild(ParentGroup1)
+              Grandparent2.removeChild(ParentGroup2)
+            }
+          
+          DeleteList[DeleteList.length] = false
+          
+          Values[Values.length] = Value * 1
+          Names[Names.length] = SVGDocument.createElement("text")
+          PieElements[PieElements.length] = SVGDocument.createElement("path")
+          
+          PieElements[PieElements.length - 1].setAttribute("style", "stroke:black;fill:" + Color)
+          PieElements[PieElements.length - 1].setAttribute("onmouseover", "DisplayInfo('" + Name + "', '" + Value + "')")
+          PieElements[PieElements.length - 1].setAttribute("onmouseout", "DisplayInfo(' ', ' ')")
+          ParentGroup1.appendChild(PieElements[PieElements.length - 1])
+          
+          BarElements[BarElements.length] = SVGDocument.createElement("path")
+          BarTexts[BarTexts.length] = SVGDocument.createElement("text")
+          
+          BarElements[BarElements.length - 1].setAttribute("style", "stroke:black;fill:" + Color)
+          BarElements[BarElements.length - 1].setAttribute("onmouseover", "BarTexts[" + (BarTexts.length - 1) + "].getStyle().setProperty('visibility', 'show')")
+          BarElements[BarElements.length - 1].setAttribute("onmouseout",  "BarTexts[" + (BarTexts.length - 1) + "].getStyle().setProperty('visibility', 'hidden')")
+          ParentGroup2.appendChild(BarElements[BarElements.length - 1])
+          
+          BarTexts[BarTexts.length - 1].setAttribute("style", "text-anchor:end;font-weight:bold;font-size:13;visibility:hidden")
+          BarTexts[BarTexts.length - 1].setAttribute("x", "188")
+          BarTexts[BarTexts.length - 1].appendChild(SVGDocument.createTextNode(Value + " -"))
+          SVGDocument.getElementById("barsidetext").appendChild(BarTexts[BarTexts.length - 1])
+          Names[Names.length - 1].appendChild(SVGDocument.createTextNode(Name + ""))
+          Names[Names.length - 1].setAttribute("transform", "rotate(45)")
+          SVGDocument.getElementById("labels").appendChild(Names[Names.length - 1])
+          
+          Refresh()
+          
+          if (Repress)
+            Removed = true
+          else
+            {
+              Removed = false
+              Grandparent1.appendChild(ParentGroup1)
+              Grandparent2.appendChild(ParentGroup2)
+            }
+        }
+        
+      function Refresh()
+        {
+          PieTotalSize = 0
+          BarTotalSize = 0
+          MaxSize = 0
+          
+          for (var I = 0; I < Values.length; I++)
+            {
+              PieTotalSize += Values[I]
+              BarTotalSize++
+              if (Values[I] > MaxSize)
+                MaxSize = Values[I]
+            }
+          
+          PieStart = 0
+          BarStart = 0
+          if (PieTotalSize > 0)
+            for (var I = 0; I < Values.length; I++)
+              {
+                PieStart = DrawPieSegment(PieStart, Values[I] / PieTotalSize, PieElements[I], I)
+                BarStart = DrawBarSegment(BarStart, Values[I] / MaxSize, BarElements[I], BarTexts[I], Names[I])
+              }
+          
+          SVGDocument.getElementById("max").replaceChild(SVGDocument.createTextNode(MaxSize + ""), SVGDocument.getElementById("max").getFirstChild())
+          SVGDocument.getElementById("min").replaceChild(SVGDocument.createTextNode("0"), SVGDocument.getElementById("min").getFirstChild())
+        }
+        
+      function DeleteSegment()
+        {
+          if (ActiveSegment == "Pie")
+            {  
+              NewValues = new Array()
+              NewNames = new Array()
+              NewPieElements = new Array()
+              NewBarElements = new Array()
+              NewBarTexts = new Array()
+              NewDeleteList = new Array()
+              
+              SomethingDeleted = false
+              
+              CurrentCopySpot = 0
+              for (var I = 0; I < PieElements.length; I++)
+                {
+                  if (!(DeleteList[I]))
+                    {
+                      NewValues[CurrentCopySpot] = Values[I]
+                      NewNames[CurrentCopySpot] = Names[I]
+                      NewPieElements[CurrentCopySpot] = PieElements[I]
+                      NewBarElements[CurrentCopySpot] = BarElements[I]
+                      NewBarTexts[CurrentCopySpot] = BarTexts[I]
+                      NewDeleteList[CurrentCopySpot] = DeleteList[I]
+    
+                      NewBarElements[CurrentCopySpot].setAttribute("onmouseover", "BarTexts[" + CurrentCopySpot + "].getStyle().setProperty('visibility', 'show')")
+                      NewBarElements[CurrentCopySpot].setAttribute("onmouseout",  "BarTexts[" + CurrentCopySpot + "].getStyle().setProperty('visibility', 'hidden')")
+                      CurrentCopySpot++
+                    }
+                  else
+                    {
+                      SomethingDeleted = true
+                      
+                      PieElements[I].getParentNode().removeChild(PieElements[I])
+                      BarElements[I].getParentNode().removeChild(BarElements[I])
+                      BarTexts[I].getParentNode().removeChild(BarTexts[I])
+                      Names[I].getParentNode().removeChild(Names[I])
+                    }
+                }
+              
+              if (SomethingDeleted)
+                {            
+                  Values = NewValues
+                  Names = NewNames
+                  PieElements = NewPieElements
+                  BarElements = NewBarElements
+                  BarTexts = NewBarTexts
+                  DeleteList = NewDeleteList
+              
+                  Refresh()
+                }
+              else
+                alert("To delete segments, click on the segments to be deleted to pull them out, then click on the Delete button")
+            }
+          else
+            {
+              NewValues = new Array()
+              NewNames = new Array()
+              NewPieElements = new Array()
+              NewBarElements = new Array()
+              NewBarTexts = new Array()
+              NewDeleteList = new Array()
+              
+              SomethingDeleted = false
+              
+              CurrentCopySpot = 0
+              for (var I = 0; I < PieElements.length - 1; I++)
+                {
+                  NewValues[I] = Values[I]
+                  NewNames[I] = Names[I]
+                  NewPieElements[I] = PieElements[I]
+                  NewBarElements[I] = BarElements[I]
+                  NewBarTexts[I] = BarTexts[I]
+                  NewDeleteList[I] = DeleteList[I]
+    
+                  NewBarElements[I].setAttribute("onmouseover", "BarTexts[" + CurrentCopySpot + "].getStyle().setProperty('visibility', 'show')")
+                  NewBarElements[I].setAttribute("onmouseout",  "BarTexts[" + CurrentCopySpot + "].getStyle().setProperty('visibility', 'hidden')")
+                  CurrentCopySpot++
+                }
+              if (PieElements.length > 0)
+                {
+                  SomethingDeleted = true
+                      
+                  PieElements[PieElements.length - 1].getParentNode().removeChild(PieElements[PieElements.length - 1])
+                  BarElements[PieElements.length - 1].getParentNode().removeChild(BarElements[PieElements.length - 1])
+                  BarTexts[PieElements.length - 1].getParentNode().removeChild(BarTexts[PieElements.length - 1])
+                  Names[PieElements.length - 1].getParentNode().removeChild(Names[PieElements.length - 1])
+                }
+              
+              if (SomethingDeleted)
+                {            
+                  Values = NewValues
+                  Names = NewNames
+                  PieElements = NewPieElements
+                  BarElements = NewBarElements
+                  BarTexts = NewBarTexts
+                  DeleteList = NewDeleteList
+              
+                  Refresh()
+                }
+            }
+        }
+        
+      parent.deleteOuties = DeleteSegment
+      
+        
+      function DrawBarSegment(Start, Height, Element, Text, Label)
+        {
+          XOffset3D = 10
+          YOffset3D = 5
+        
+          PathData = "M" + (Start + (BarChartWidth / BarTotalSize)) + ",0"
+          PathData = PathData + "h" + (BarChartWidth / BarTotalSize * -1)
+          PathData = PathData + "v" + (Height * BarChartHeight * -1)
+          PathData = PathData + "l" + XOffset3D + ",-" + YOffset3D
+          PathData = PathData + "h" + (BarChartWidth / BarTotalSize)
+          PathData = PathData + "v" + (Height * BarChartHeight)
+          PathData = PathData + "l-" + XOffset3D + "," + YOffset3D
+          PathData = PathData + "v" + (Height * BarChartHeight * -1)
+          PathData = PathData + "h" + (BarChartWidth / BarTotalSize * -1)
+          PathData = PathData + "h" + (BarChartWidth / BarTotalSize)
+          PathData = PathData + "l" + XOffset3D + ",-" + YOffset3D
+          PathData = PathData + "l-" + XOffset3D + "," + YOffset3D
+          
+          Element.setAttribute("d", PathData)
+          
+          Label.setAttribute("x", Start / AngleFactor)
+          Label.setAttribute("y", Start * -1 / AngleFactor)
+          
+          Text.setAttribute("y", (275 - BarChartHeight * Height))
+          
+          return Start + BarChartWidth / BarTotalSize
+        }
+        
+      function DrawPieSegment(Start, Size, Element, ID)
+        {
+          PathData = "M0,0L" 
+          PathData = PathData + PieChartSize * Math.sin(Start * Math.PI * 2) + "," + PieChartSize * Math.cos(Start * Math.PI * 2)
+          if (Size >= .5)
+            PathData = PathData + "A" + PieChartSize + " " + PieChartSize + " 1 1 0 " + PieChartSize * Math.sin((Start + Size) * Math.PI * 2) + "," + PieChartSize * Math.cos((Start + Size) * Math.PI * 2)
+          else
+            PathData = PathData + "A" + PieChartSize + " " + PieChartSize + " 0 0 0 " + PieChartSize * Math.sin((Start + Size) * Math.PI * 2) + "," + PieChartSize * Math.cos((Start + Size) * Math.PI * 2)
+          PathData = PathData + "z"
+          
+          Element.setAttribute("d", PathData)
+          if (Start > 0)
+            Element.setAttribute("onclick", "MoveSegment(evt, " + (Start + Size / 2) + ", true, " + ID + ")")
+          else
+            {
+              DeleteList[ID] = true;
+              Angle = Start + Size / 2
+            
+              X = MoveDistance * Math.sin(Angle * 2 * Math.PI)
+              Y = MoveDistance * Math.cos(Angle * 2 * Math.PI)
+              Element.setAttribute("transform", "translate(" + X + "," + Y + ")")
+              Element.setAttribute("onclick", "MoveSegment(evt, " + ((Start + Size / 2) * -1) + ", false, " + ID + ")")
+            }
+          
+          return Start + Size
+        }
+        
+        
+      function MoveSegment(MouseEvent, Angle, CanBeDeleted, ID)
+        {
+          Element = MouseEvent.getTarget()
+          if (Angle < 0)
+            {
+              X = 0
+              Y = 0
+            }
+          else
+            {
+              X = MoveDistance * Math.sin(Angle * 2 * Math.PI)
+              Y = MoveDistance * Math.cos(Angle * 2 * Math.PI)
+            }
+            
+          DeleteList[ID] = CanBeDeleted
+          
+          Element.setAttribute("transform", "translate(" + X + "," + Y + ")")
+          Element.setAttribute("onclick", "MoveSegment(evt, " + (Angle * -1) + ", " + (!CanBeDeleted) + ", " + ID + ")")
+        }
+        
+      function DisplayInfo(Text, Value)
+        {
+          if (Text != " ")
+            Percent = " (" + Math.round(Value / PieTotalSize * 10000) / 100 + "%)"
+          else
+            Percent = ""
+          
+          NewItem = SVGDocument.createTextNode(Value + Percent)
+          SVGDocument.getElementById("labelamount").replaceChild(NewItem, SVGDocument.getElementById("labelamount").getFirstChild())
+          NewItem = SVGDocument.createTextNode(Text + "")
+          SVGDocument.getElementById("labelitem").replaceChild(NewItem, SVGDocument.getElementById("labelitem").getFirstChild())
+          if (Text + Value == "  ")
+            NewItem = SVGDocument.createTextNode(" ")
+          else
+            NewItem = SVGDocument.createTextNode(":")
+          SVGDocument.getElementById("labelcolon").replaceChild(NewItem, SVGDocument.getElementById("labelcolon").getFirstChild())
+        }
+        
+      function SetTitle(Text)
+        {
+          NewItem = SVGDocument.createTextNode(Text + "")
+          SVGDocument.getElementById("title").replaceChild(NewItem, SVGDocument.getElementById("title").getFirstChild())
+        }
+        
+      function SetAxis(Text)
+        {
+          NewItem = SVGDocument.createTextNode(Text + "")
+          SVGDocument.getElementById("axis").replaceChild(NewItem, SVGDocument.getElementById("axis").getFirstChild())
+          NewItem = SVGDocument.createTextNode(Text + "")
+          SVGDocument.getElementById("subtitle").replaceChild(NewItem, SVGDocument.getElementById("subtitle").getFirstChild())
+        }
+        
+      function ShowPie()
+        {
+          ActiveSegment = "Pie"
+          
+          SVGDocument.getElementById("showpierect").getStyle().setProperty("fill", "blue");
+          SVGDocument.getElementById("showbarrect").getStyle().setProperty("fill", "#FC8D4F");
+          SVGDocument.getElementById("barchart").getStyle().setProperty("visibility", "hidden");
+          SVGDocument.getElementById("subtitle").getStyle().setProperty("visibility", "show");
+          SVGDocument.getElementById("piechart").getStyle().setProperty("visibility", "show");
+          SVGDocument.getElementById("pieitemlabel").getStyle().setProperty("visibility", "show");
+          SVGDocument.getElementById("barsidetext").getStyle().setProperty("visibility", "hidden");
+        }
+        
+      function ShowBar()
+        {
+          ActiveSegment = "Bar"
+          
+          SVGDocument.getElementById("showpierect").getStyle().setProperty("fill", "#FC8D4F");
+          SVGDocument.getElementById("showbarrect").getStyle().setProperty("fill", "blue");
+          SVGDocument.getElementById("barchart").getStyle().setProperty("visibility", "show");
+          SVGDocument.getElementById("subtitle").getStyle().setProperty("visibility", "hidden");
+          SVGDocument.getElementById("piechart").getStyle().setProperty("visibility", "hidden");
+          SVGDocument.getElementById("pieitemlabel").getStyle().setProperty("visibility", "hidden");
+          SVGDocument.getElementById("barsidetext").getStyle().setProperty("visibility", "show");
+        }
+        
+      parent.clearChart = ClearChart
+      parent.addChartValue = AddChartValue
+      parent.setTitle = SetTitle
+      parent.setAxis = SetAxis
+    
+    ]]>
+  </script>
+	<g id="bgArea" style="&st28;">
+		<path id="leftDashLine" style="&st37;" d="M48,43.5v102"/>
+		<g id="boxBG">
+			<g>
+				<path style="&st7;" d="M148.9,261l305.6-58.5l152.8,117l-305.6,58.5L148.9,261z"/>
+				<path style="&st72;" d="M148.9,110v151l305.6-58.5v-151L148.9,110z"/>
+				<path style="&st54;" d="M481.9,72.5l-27.5-21v151l152.8,117v-151l-125.4-96z"/>
+			</g>
+			<g>
+				<path style="&st71;" d="M434.2,270.7V133.1l23.5,21.3V292l-23.5-21.3z"/>
+				<path style="&st56;" d="M457.7,154.4l-23.5-21.3l46.9-10.6l23.5,21.3l-46.9,10.6z"/>
+				<path style="&st6;" d="M457.7,292V154.4l46.9-10.6v137.6L457.7,292z"/>
+			</g>
+			<g>
+				<path style="&st39;" d="M390,303.7V245l43.5-9.9v58.7l-43.5,9.9z"/>
+				<path style="&st0;" d="M368.2,283.9v-58.7L390,245v58.7l-21.8-19.8z"/>
+				<path style="&st51;" d="M390,245l-21.8-19.7l43.5-9.9l21.8,19.8L390,245z"/>
+			</g>
+			<g>
+				<path style="&st70;" d="M323.4,318.3v-92.2l43.6-8.6v90.9l-43.6,9.9z"/>
+				<path style="&st30;" d="M323.4,226.2l-21.8-19.8l43.6-9.9l21.8,21l-43.6,8.6z"/>
+				<path style="&st59;" d="M301.6,298.6v-92.2l21.8,19.8v92.2l-21.8-19.8z"/>
+			</g>
+			<g>
+				<path style="&st1;" d="M235.1,312.4V195.1l21.8,19.8v117.3l-21.8-19.8z"/>
+				<path style="&st80;" d="M256.9,214.8l-21.8-19.8l43.6-9.9l21.8,19.8l-43.6,9.9z"/>
+				<path style="&st23;" d="M256.9,332.2V214.8l43.6-9.9v117.3l-43.6,9.9z"/>
+			</g>
+		</g>
+		<path style="&st19;" d="M71.5,105c0,1.7-1.3,3-3,3h-9c-1.7,0-3-1.3-3-3v-9c0-1.7,1.3-3,3-3h9c1.7,0,3,1.3,3,3v9z"/>
+		<path style="&st19;" d="M71.5,75c0,1.7-1.3,3-3,3h-9c-1.7,0-3-1.3-3-3v-9c0-1.7,1.3-3,3-3h9c1.7,0,3,1.3,3,3v9z"/>
+		<path style="&st19;" d="M71.5,135c0,1.7-1.3,3-3,3h-9c-1.7,0-3-1.3-3-3v-9c0-1.7,1.3-3,3-3h9c1.7,0,3,1.3,3,3v9z"/>
+	</g>
+	<g id="rightSideDecor" style="&st36;">
+		<path style="&st40;" d="M467,29.8h116c6.3,0,11.5,6.3,11.5,14v341.7"/>
+		<g id="pieWire" style="&st20;">
+			<g>
+				<path d="M621.2,260.7c5.8,6.9-12.5,13.6-40.8,15c-28.3,1.4-56-3-61.8-9.9c-5.8-6.9,12.5-13.6,40.8-15c28.3-1.4,56,3,61.8,9.9z"/>
+				<path d="M559.4,250.7v-6.1c-28.3,1.4-46.6,8.1-40.8,15v6.1c-5.8-6.9,12.5-13.6,40.8-15z"/>
+				<path d="M518.6,265.8v-6.1c5.8,6.9,33.5,11.3,61.8,9.9v6.1c-28.3,1.4-56-3-61.8-9.9z"/>
+				<path d="M530.9,271.7v-6.1"/>
+				<path d="M553,275.3v-6.1"/>
+				<path d="M580.4,275.7v-6.1c28.3-1.4,46.6-8.1,40.8-15v6.1c5.8,6.9-12.5,13.6-40.8,15z"/>
+				<path d="M604.8,272.7v-6.1"/>
+				<path d="M619.5,267.3v-6.1"/>
+				<path d="M621.2,260.7v-6.1c-5.8-6.9-33.5-11.3-61.8-9.9v6.1c28.3-1.4,56,3,61.8,9.9z"/>
+				<path d="M608.9,254.7v-6.1"/>
+				<path d="M586.7,251.2V245"/>
+				<path d="M559.4,250.7v-6.1c-28.3,1.4-46.6,8.1-40.8,15v6.1c-5.8-6.9,12.5-13.6,40.8-15z"/>
+				<path d="M534.9,253.7v-6.1"/>
+				<path d="M520.3,259.1V253"/>
+				<path d="M517.5,257.1c0-5.9,17.1-11.2,41.9-12.5c28.3-1.4,56,3,61.8,9.9"/>
+				<path d="M621.2,260.7c-5.8-6.9-33.5-11.3-61.8-9.9c-24.8,1.2-41.9,6.5-41.9,12.5c0-1.8,0-4.3,0-6.1"/>
+				<path d="M580.4,275.7v-6.1c28.3-1.4,46.6-8.1,40.8-15v6.1c5.8,6.9-12.5,13.6-40.8,15z"/>
+				<path d="M622.3,263.2c0-0.8-0.3-1.7-1.1-2.6"/>
+				<path d="M621.2,254.5c0.7,0.9,1.1,1.7,1.1,2.6c0,1.8,0,4.3,0,6.1"/>
+			</g>
+			<g>
+				<path style="&st34;" d="M569.3,257.3l-43.9-6.9c0,0,4.3-1.8,11.4-3.2c7.4-1.4,16.8-2.2,16.8-2.2l15.7,12.3z"/>
+				<path style="&st46;" d="M569.3,257.3L553.6,245c0,0,3.5-0.3,8.9-0.5c5.2-0.2,8.1-0.1,8.1-0.1l-1.4,12.9z"/>
+				<path style="&st35;" d="M569.3,257.3l1.3-12.9c0,0,1.7,0,3.6,0c1.8,0.1,3.6,0.1,3.6,0.1l-8.6,12.8z"/>
+			</g>
+		</g>
+		<g id="pie3d_3" style="&st50;">
+			<linearGradient id="aigrd1" gradientUnits="userSpaceOnUse" x1="518.3984" y1="193.646" x2="623.166" y2="193.646">
+				<stop  offset="0" style="stop-color:#24758D"/>
+				<stop  offset="0.4045" style="stop-color:#99FFFF"/>
+				<stop  offset="1" style="stop-color:#24758D"/>
+			</linearGradient>
+			<path style="&st13;" d="M614.1,191.4c-6.2,2.2-13.3,3.4-20.3,4.2c-7.3,0.9-14.7,1.2-22.1,1.3c-7.5,0-15.1-0.3-22.5-1.1c-7-0.8-14.1-1.9-20.4-3.9c-4.7-1.5-10.4-4-10.4-7.6c0,1.8,0,3.6,0,5.3c0,1.2,0.2,2.2,1.1,3.3c1.5,1.8,4.3,3.2,7.1,4.3
+				c6,2.3,13.2,3.6,20.1,4.4c7.3,0.9,14.8,1.3,22.2,1.4c7.4,0.1,14.9-0.2,22.2-1c7.1-0.7,14.3-1.8,20.7-3.8c4.9-1.5,11.1-4,11.3-7.6c0.1-1.8,0-3.6,0-5.4c0-0.3,0-0.6,0-0.8c0,3.2-4.8,5.6-9.1,7.1"/>
+			<path style="&st22;" d="M622.1,181.8c5.8,6.8-12.5,13.5-40.8,14.9c-28.3,1.4-56-3-61.8-9.8c-5.8-6.8,12.5-13.5,40.8-14.9c28.3-1.4,56,3,61.8,9.8z"/>
+			<path style="&st5;" d="M570.2,184.5l-43.7-7c0,0,5.8-2.2,12.7-3.4c8.6-1.4,15.3-1.9,15.3-1.9l15.7,12.2z"/>
+			<path style="&st27;" d="M570.2,184.5l-15.7-12.2c0,0,3.7-0.3,9.1-0.5c5.2-0.2,8.7-0.1,8.7-0.1l-2.1,12.8z"/>
+			<path style="&st14;" d="M570.1,184.6l2.2-12.9c0,0,1.2,0,3.4,0c2.1,0.1,3.2,0.1,3.2,0.1l-8.8,12.8z"/>
+		</g>
+		<g id="pie3d_2" style="&st50;">
+			<linearGradient id="aigrd2" gradientUnits="userSpaceOnUse" x1="518.3984" y1="149.896" x2="623.166" y2="149.896">
+				<stop  offset="0" style="stop-color:#24758D"/>
+				<stop  offset="0.4045" style="stop-color:#99FFFF"/>
+				<stop  offset="1" style="stop-color:#24758D"/>
+			</linearGradient>
+			<path style="&st16;" d="M614.1,147.6c-6.2,2.2-13.3,3.4-20.3,4.2c-7.3,0.9-14.7,1.2-22.1,1.3c-7.5,0-15.1-0.3-22.5-1.1c-7-0.8-14.1-1.9-20.4-3.9c-4.7-1.5-10.4-4-10.4-7.6c0,1.8,0,3.6,0,5.3c0,1.2,0.2,2.2,1.1,3.3c1.5,1.8,4.3,3.2,7.1,4.3
+				c6,2.3,13.2,3.6,20.1,4.4c7.3,0.9,14.8,1.3,22.2,1.4c7.4,0.1,14.9-0.2,22.2-1c7.1-0.7,14.3-1.8,20.7-3.8c4.9-1.5,11.1-4,11.3-7.6c0.1-1.8,0-3.6,0-5.4c0-0.3,0-0.6,0-0.8c0,3.2-4.8,5.6-9.1,7.1"/>
+			<path style="&st67;" d="M622.1,138c5.8,6.8-12.5,13.5-40.8,14.9c-28.3,1.4-56-3-61.8-9.8c-5.8-6.8,12.5-13.5,40.8-14.9c28.3-1.4,56,3,61.8,9.8z"/>
+			<path style="&st55;" d="M570.2,140.8l-43.7-7c0,0,5.8-2.2,12.7-3.4c8.6-1.4,15.3-1.9,15.3-1.9l15.7,12.2z"/>
+			<path style="&st73;" d="M570.2,140.8l-15.7-12.2c0,0,3.7-0.3,9.1-0.5c5.2-0.2,8.7-0.1,8.7-0.1l-2.1,12.8z"/>
+			<path style="&st62;" d="M570.1,140.8l2.2-12.9c0,0,1.2,0,3.4,0c2.1,0.1,3.2,0.1,3.2,0.1l-8.8,12.8z"/>
+		</g>
+		<g id="pie3d_1" style="&st50;">
+			<linearGradient id="aigrd3" gradientUnits="userSpaceOnUse" x1="518.3984" y1="106.146" x2="623.166" y2="106.146">
+				<stop  offset="0" style="stop-color:#24758D"/>
+				<stop  offset="0.4045" style="stop-color:#99FFFF"/>
+				<stop  offset="1" style="stop-color:#24758D"/>
+			</linearGradient>
+			<path style="&st44;" d="M614.1,103.9c-6.2,2.2-13.3,3.4-20.3,4.2c-7.3,0.9-14.7,1.2-22.1,1.3c-7.5,0-15.1-0.3-22.5-1.1c-7-0.8-14.1-1.9-20.4-3.9c-4.7-1.5-10.4-4-10.4-7.6c0,1.8,0,3.6,0,5.3c0,1.2,0.2,2.2,1.1,3.3c1.5,1.8,4.3,3.2,7.1,4.3
+				c6,2.3,13.2,3.6,20.1,4.4c7.3,0.9,14.8,1.3,22.2,1.4c7.4,0.1,14.9-0.2,22.2-1c7.1-0.7,14.3-1.8,20.7-3.8c4.9-1.5,11.1-4,11.3-7.6c0.1-1.8,0-3.6,0-5.4c0-0.3,0-0.6,0-0.8c0,3.2-4.8,5.6-9.1,7.1"/>
+			<path style="&st61;" d="M622.1,94.3c5.8,6.8-12.5,13.5-40.8,14.9c-28.3,1.4-56-3-61.8-9.8c-5.8-6.8,12.5-13.5,40.8-14.9c28.3-1.4,56,3,61.8,9.8z"/>
+			<path style="&st52;" d="M570.2,97l-43.7-7c0,0,5.8-2.2,12.7-3.4c8.6-1.4,15.3-1.9,15.3-1.9L570.2,97z"/>
+			<path style="&st64;" d="M570.2,97l-15.7-12.2c0,0,3.7-0.3,9.1-0.5c5.2-0.2,8.7-0.1,8.7-0.1L570.2,97z"/>
+			<path style="&st57;" d="M570.1,97.1l2.2-12.9c0,0,1.2,0,3.4,0c2.1,0.1,3.2,0.1,3.2,0.1l-8.8,12.8z"/>
+		</g>
+	</g>
+	<g id="Title" style="&st18;">
+		<path style="&st58;" d="M549.7,46H95.8c-8,0-14.5,5.9-14.5,13.3v291.6c0,7,6.5,12.8,14.5,12.8h453.8c8,0,14.5-5.7,14.5-12.8V59.3c0-7.3-6.5-13.3-14.5-13.3z"/>
+		<g id="topDecorBar" style="&st78;">
+			<path style="&st19;" d="M278.3,29.3c0-0.2-0.7-0.4-1.5-0.4h-27.6c-0.8,0-1.5,0.2-1.5,0.4v12.1c0,0.2,0.7,0.4,1.5,0.4h27.6c0.8,0,1.5-0.2,1.5-0.4V29.3z"/>
+			<path style="&st19;" d="M304.1,21.5c0-0.4-0.7-0.7-1.5-0.7H275c-0.8,0-1.5,0.3-1.5,0.7v19.7c0,0.4,0.7,0.7,1.5,0.7h27.6c0.8,0,1.5-0.3,1.5-0.7V21.5z"/>
+			<path style="&st19;" d="M329.4,34.9c0-0.1-0.7-0.2-1.5-0.2h-27.6c-0.8,0-1.5,0.1-1.5,0.2v6.7c0,0.1,0.7,0.2,1.5,0.2h27.6c0.8,0,1.5-0.1,1.5-0.2v-6.7z"/>
+			<path style="&st19;" d="M339,23.3c0-0.4-0.7-0.6-1.5-0.6h-27.6c-0.8,0-1.5,0.3-1.5,0.6v18c0,0.4,0.7,0.6,1.5,0.6h27.6c0.8,0,1.5-0.3,1.5-0.6v-18z"/>
+			<path style="&st19;" d="M372.9,26.8c0-0.3-0.7-0.5-1.5-0.5h-27.6c-0.8,0-1.5,0.2-1.5,0.5v14.5c0,0.3,0.7,0.5,1.5,0.5h27.6c0.8,0,1.5-0.2,1.5-0.5V26.8z"/>
+			<path style="&st19;" d="M362.8,14.8c0-0.5-0.7-0.9-1.5-0.9h-27.6c-0.8,0-1.5,0.4-1.5,0.9v26.1c0,0.5,0.7,0.9,1.5,0.9h27.6c0.8,0,1.5-0.4,1.5-0.9V14.8z"/>
+			<path style="&st19;" d="M399.7,22.8c0-0.4-0.7-0.7-1.5-0.7h-27.6c-0.8,0-1.5,0.3-1.5,0.7v18.4c0,0.4,0.7,0.7,1.5,0.7h27.6c0.8,0,1.5-0.3,1.5-0.7V22.8z"/>
+		</g>
+		<g id="topDecorPie">
+			<path style="&st65;" d="M458,37.3c0,7.9-11.4,14.2-25.3,14.2c-13.9-0.1-25.2-6.5-25.1-14.4c0-7.9,11.4-14.2,25.3-14.2C446.8,23,458,29.4,458,37.3z"/>
+			<path style="&st74;" d="M449.6,22.7c1.4,0.7,3.6,2.4,4.7,3.3l-21.5,11.2l16.8-14.5"/>
+			<path style="&st82;" d="M445.2,17.2c-6.9-2.3-14.3-2.5-21-1.1l8.6,21.1l12.4-20z"/>
+			<path style="&st24;" d="M451.9,22.6c-3.1-3-6.8-4.8-13.4-6.1l-5.7,20.7l19.1-14.6z"/>
+		</g>
+		<text transform="matrix(1 0 0 1 14 41.7061)"><tspan x="0" y="0" style="&st9; &st4; &st69;">SVG Interactive Chart</tspan></text>
+	</g>
+	<g id="buttons" style="&st32; &st4; &st68;">
+		<g id="bar" onclick="ShowBar()">
+			<g>
+				<path style="&st33;" d="M86.1,339.2L19.3,349v-25.4l66.7-9.8v25.4z"/>
+				<path style="&st8;" d="M119.4,358.8l-33.4-19.7v-25.4l33.4,19.7v25.4z"/>
+				<path style="&st48;" d="M19.3,349l66.7-9.8l33.4,19.7l-66.7,9.8L19.3,349z"/>
+			</g>
+			<g>
+				<path style="&st31;" d="M82.2,350.9v-29.3l5.6,4.5v29.3l-5.6-4.5z"/>
+				<path style="&st10;" d="M87.8,326.2l-5.6-4.5l11.1-2.3l5.5,4.5l-11.1,2.3z"/>
+				<path style="&st47;" d="M87.8,355.5v-29.3l11.1-2.3v29.3l-11.1,2.3z"/>
+			</g>
+			<g>
+				<path style="&st77;" d="M74.2,357.9v-12.5l10.3-2.1v12.5l-10.3,2.1z"/>
+				<path style="&st41;" d="M69.1,353.7v-12.5l5.2,4.2v12.5l-5.2-4.2z"/>
+				<path style="&st2;" d="M74.2,345.5l-5.2-4.2l10.3-2.1l5.2,4.2l-10.3,2.1z"/>
+			</g>
+			<g>
+				<path style="&st29;" d="M59.2,361.1v-19.6l10.3-2.1V359l-10.3,2.1z"/>
+				<path style="&st63;" d="M59.2,341.5l-5.2-4.2l10.3-2.1l5.2,4.2l-10.3,2.1z"/>
+				<path style="&st17;" d="M54,356.9v-19.6l5.2,4.2v19.6l-5.2-4.2z"/>
+			</g>
+			<g>
+				<path style="&st42;" d="M39.9,359.8v-25L45,339v25l-5.2-4.2z"/>
+				<path style="&st38;" d="M45,339l-5.2-4.2l10.3-2.1l5.2,4.2L45,339z"/>
+				<path style="&st60;" d="M45,364v-25l10.3-2.1v25L45,364z"/>
+			</g>
+			<text id="barChart" transform="matrix(1 0 0 1 67.7261 383.5)"><tspan x="0" y="0" style="fill:#000000;fill-opacity:.5;stroke:none">Bar Chart</tspan></text>
+			<path id="showbarrect" style="&st65;" d="M130.8,371.7c0,7.6-5.4,13.8-12,13.8h-98c-6.6,0-12-6.2-12-13.8v-47.3c0-7.6,5.4-13.8,12-13.8h98c6.6,0,12,6.2,12,13.8v47.3z"/>
+		</g>
+		<g id="pie" onclick="ShowPie()">
+			<linearGradient id="aigrd4" gradientUnits="userSpaceOnUse" x1="16.9731" y1="258.7749" x2="118.1533" y2="258.7749">
+				<stop  offset="0" style="stop-color:#24758D"/>
+				<stop  offset="0.4045" style="stop-color:#99FFFF"/>
+				<stop  offset="1" style="stop-color:#24758D"/>
+			</linearGradient>
+			<path style="&st83;" d="M109.4,255.1c-5.9,3.6-12.8,5.6-19.6,6.9c-7,1.4-14.2,2-21.3,2.1c-7.3,0.1-14.6-0.5-21.7-1.8c-6.8-1.3-13.6-3.1-19.7-6.4c-4.6-2.5-10.1-6.6-10.1-12.4c0,2.9,0,5.8,0,8.7c0,1.9,0.2,3.7,1,5.4c1.5,3,4.1,5.2,6.9,7c5.8,3.7,12.7,5.8,19.5,7.2
+				c7,1.5,14.2,2.2,21.4,2.3c7.2,0.1,14.4-0.4,21.5-1.6c6.9-1.2,13.8-3,20-6.2c4.7-2.4,10.7-6.6,10.9-12.5c0.1-2.9,0-5.9,0-8.9c0-0.5,0-0.9,0-1.4c0,5.2-4.7,9.1-8.8,11.6"/>
+			<path style="&st21;" d="M117.1,239.3c5.6,11.2-12,22.1-39.4,24.4c-27.4,2.3-54.1-4.9-59.7-16.1c-5.6-11.2,12-22.1,39.4-24.4c27.4-2.3,54.1,4.9,59.7,16.1z"/>
+			<path style="&st3;" d="M67,243.8l-42.2-11.4c0,0,5.6-3.6,12.3-5.5c8.3-2.3,14.8-3.1,14.8-3.1l15.2,20z"/>
+			<path style="&st25;" d="M67,243.8l-15.2-20c0,0,3.6-0.5,8.8-0.8c5.1-0.3,8.4-0.2,8.4-0.2l-2,21z"/>
+			<path style="&st12;" d="M66.9,244l2.1-21.1c0,0,1.2-0.1,3.3,0.1c2,0.1,3.1,0.2,3.1,0.2L66.9,244z"/>
+			<text id=" pieChart" transform="matrix(1 0 0 1 69 289.5)"><tspan x="0" y="0" style="fill:#000000;fill-opacity:.5;stroke:none">Pie Chart</tspan></text>
+			<path id="showpierect" style="&st81;" d="M130.8,279.9c0,7.6-5.4,13.8-12,13.8h-98c-6.6,0-12-6.2-12-13.8v-47.3c0-7.6,5.4-13.8,12-13.8h98c6.6,0,12,6.2,12,13.8v47.3z"/>
+		</g>
+		<g id="graph">
+		<a xlink:href="graphic.aspx">
+			<path style="&st66;" d="M117.2,180.9H20.7V133"/>
+			<path style="&st79;" d="M30.3,166l11.3-7.7l13.9-13.9l14.3,4.6h13.5h10.9l11.4,12"/>
+			<radialGradient id="aigrd5" cx="30.3467" cy="166.0317" r="3.5039" fx="30.3467" fy="166.0317" gradientUnits="userSpaceOnUse">
+				<stop  offset="0" style="stop-color:#24758D"/>
+				<stop  offset="0.4045" style="stop-color:#99FFFF"/>
+				<stop  offset="1" style="stop-color:#24758D"/>
+			</radialGradient>
+			<path style="&st53;" d="M33.9,166c0,1.9-1.6,3.5-3.5,3.5s-3.5-1.6-3.5-3.5s1.6-3.5,3.5-3.5s3.5,1.6,3.5,3.5z"/>
+			<radialGradient id="aigrd6" cx="42.3013" cy="158.9668" r="3.5039" fx="42.3013" fy="158.9668" gradientUnits="userSpaceOnUse">
+				<stop  offset="0" style="stop-color:#24758D"/>
+				<stop  offset="0.4045" style="stop-color:#99FFFF"/>
+				<stop  offset="1" style="stop-color:#24758D"/>
+			</radialGradient>
+			<path style="&st26;" d="M45.8,159c0,1.9-1.6,3.5-3.5,3.5s-3.5-1.6-3.5-3.5s1.6-3.5,3.5-3.5s3.5,1.6,3.5,3.5z"/>
+			<radialGradient id="aigrd7" cx="56.1841" cy="144.9668" r="3.5039" fx="56.1841" fy="144.9668" gradientUnits="userSpaceOnUse">
+				<stop  offset="0" style="stop-color:#24758D"/>
+				<stop  offset="0.4045" style="stop-color:#99FFFF"/>
+				<stop  offset="1" style="stop-color:#24758D"/>
+			</radialGradient>
+			<path style="&st76;" d="M59.7,145c0,1.9-1.6,3.5-3.5,3.5s-3.5-1.6-3.5-3.5s1.6-3.5,3.5-3.5s3.5,1.6,3.5,3.5z"/>
+			<radialGradient id="aigrd8" cx="71.0586" cy="148.9668" r="3.5039" fx="71.0586" fy="148.9668" gradientUnits="userSpaceOnUse">
+				<stop  offset="0" style="stop-color:#24758D"/>
+				<stop  offset="0.4045" style="stop-color:#99FFFF"/>
+				<stop  offset="1" style="stop-color:#24758D"/>
+			</radialGradient>
+			<path style="&st45;" d="M74.6,149c0,1.9-1.6,3.5-3.5,3.5s-3.5-1.6-3.5-3.5s1.6-3.5,3.5-3.5s3.5,1.6,3.5,3.5z"/>
+			<radialGradient id="aigrd9" cx="83.4536" cy="148.9668" r="3.5039" fx="83.4536" fy="148.9668" gradientUnits="userSpaceOnUse">
+				<stop  offset="0" style="stop-color:#24758D"/>
+				<stop  offset="0.4045" style="stop-color:#99FFFF"/>
+				<stop  offset="1" style="stop-color:#24758D"/>
+			</radialGradient>
+			<path style="&st15;" d="M87,149c0,1.9-1.6,3.5-3.5,3.5s-3.5-1.6-3.5-3.5s1.6-3.5,3.5-3.5S87,147,87,149z"/>
+			<radialGradient id="aigrd10" cx="94.3613" cy="148.9668" r="3.5039" fx="94.3613" fy="148.9668" gradientUnits="userSpaceOnUse">
+				<stop  offset="0" style="stop-color:#24758D"/>
+				<stop  offset="0.4045" style="stop-color:#99FFFF"/>
+				<stop  offset="1" style="stop-color:#24758D"/>
+			</radialGradient>
+			<path style="&st43;" d="M97.9,149c0,1.9-1.6,3.5-3.5,3.5s-3.5-1.6-3.5-3.5s1.6-3.5,3.5-3.5s3.5,1.6,3.5,3.5z"/>
+			<radialGradient id="aigrd11" cx="105.7651" cy="160.9502" r="3.5039" fx="105.7651" fy="160.9502" gradientUnits="userSpaceOnUse">
+				<stop  offset="0" style="stop-color:#24758D"/>
+				<stop  offset="0.4045" style="stop-color:#99FFFF"/>
+				<stop  offset="1" style="stop-color:#24758D"/>
+			</radialGradient>
+			<path style="&st11;" d="M109.3,161c0,1.9-1.6,3.5-3.5,3.5s-3.5-1.6-3.5-3.5s1.6-3.5,3.5-3.5s3.5,1.6,3.5,3.5z"/>
+		<text transform="matrix(1 0 0 1 85.73 195.5)"><tspan x="0" y="0" style="fill:#000000;fill-opacity:.5;stroke:none">Graph</tspan></text>
+			<path id="showGraph" style="&st65;" d="M130.8,187.7c0,7.6-5.4,13.8-12,13.8h-98c-6.6,0-12-6.2-12-13.8v-47.3c0-7.6,5.4-13.8,12-13.8h98c6.6,0,12,6.2,12,13.8v47.3z"/>
+		</a>
+		</g>
+	</g>
+<g id="hiddenChart" transform="translate(80, 15)">
+     <g>
+        <g id="barchart" transform="translate(190, 270)" style="visibility:hidden">
+          <path d="M0,0H-5 0V-150 h -5 10 -5 V 0H250 0" style="fill:none;stroke:black;filter:url(#DropShadowFilter)"/>
+          <g id="bars" style="filter:url(#DropShadowFilter)">
+          </g>
+          <g id="labels" transform="translate(12, 12)">
+          </g>
+        </g>
+        <g style="filter:url(#DropShadowFilter)">
+          <g id="piechart" transform="translate(300, 230) scale(1, .5)" style="">
+            <g id="slices">
+            </g>
+          </g>
+        </g>
+        <g id="pieitemlabel">
+          <text x="295" y="340" id="labelitem" style="text-anchor:end;font-size:13;font-weight:bold">
+          </text>
+          <text x="300" y="340" id="labelcolon" style="text-anchor:middle;font-size:13">
+          </text>
+          <text x="305" y="340" id="labelamount" style="text-anchor:begin;font-size:13">
+          </text>
+        </g>
+      </g>
+      <g>
+        <text x="320" y="70" style="font-weight:bold;text-anchor:middle;font-size:20" id="title">
+        </text>
+        <text x="300" y="130" style="font-weight:bold;text-anchor:middle;font-size:16" id="subtitle">
+        </text>
+      </g>
+      <g style="visibility:hidden" id="barsidetext">
+        <text x="-190" y="125" style="font-weight:bold;text-anchor:middle;font-size:13" id="axis" transform="rotate(-90)">
+        </text>
+        <text x="238" y="105" style="font-weight:bold;text-anchor:end;font-size:13" id="max"><![CDATA[ ]]>
+        </text>
+        <text x="208" y="285" style="font-weight:bold;text-anchor:end;font-size:13" id="min"><![CDATA[ ]]>
+        </text>
+       </g>
+  </g>
+</svg>
+

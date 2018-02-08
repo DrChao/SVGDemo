@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	width="100%" height="100%" 
+>
+
+<path id="curve" stroke="black" fill="inherit" stroke-width="3" 
+fill-opacity=".5" d="M 0,100 
+	C  50,100   50,50,  100,50 C  150,50 150,150 200,150
+	C 250,150  250,50,  300,50 C  350,50 350,100 400,100" >
+
+</path>
+
+<use xlink:href="#curve" transform="translate(0,20)" fill="cyan"/>
+<use xlink:href="#curve" transform="translate(0,-20)" fill="blue"/>
+
+<ellipse id="One" cx="0" cy="0" rx="16" ry="8" fill="orange" opacity="0" 
+stroke="black" stroke-width="2">
+	<set attributeName="opacity" to=".75" begin="G.click+3" />
+	<set attributeName="opacity" to="0" begin="AM.end" />
+	<animateMotion id="AM" dur="3s" rotate="auto" repeatCount="2" 
+begin="G.click+3">
+	    <mpath xlink:href="#curve"/>
+	</animateMotion>
+</ellipse>
+
+
+<g id="G">
+<set attributeName="opacity" to="0" begin="G.click" />
+<set attributeName="opacity" to="1" begin="AM.end" />
+<ellipse  cx="205" cy="30" rx="33" ry="15" fill="yellow"  
+stroke="black" stroke-width="2">
+<set attributeName="fill" to="green" begin="G.mouseover" />
+<set attributeName="fill" to="yellow" begin="G.mouseout" />
+</ellipse>
+<text x="180" y="41" font-size="31" fill="black" font-family="arial" 
+pointer-events="none">GO</text>
+</g>
+<text x="180" y="40" font-size="35" fill="black" font-family="arial"  
+display="none">
+<set attributeName="display" to="block" begin="G.click" />
+<set attributeName="display" to="none" begin="G.click+1" />
+-3</text>
+<text x="180" y="40" font-size="35" fill="black" font-family="arial" 
+display="none">
+<set attributeName="display" to="block" begin="G.click+1" />
+<set attributeName="display" to="none" begin="G.click+2" />
+-2</text>
+<text x="180" y="40" font-size="35" fill="black" font-family="arial" 
+display="none">
+<set attributeName="display" to="block" begin="G.click+2" />
+<set attributeName="display" to="none" begin="G.click+3" />
+-1</text>
+</svg>

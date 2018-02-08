@@ -1,0 +1,237 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Election Dashboard | FusionCharts and FusionMaps</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="JSClass/FusionMaps.js"></script>
+<script language="JavaScript" src="JSClass/FusionCharts.js"></script>
+<script language="JavaScript" src="ElectoralData.js"></script>
+<script language="javascript" type="text/javascript">
+		var ED=new ElectoralData();
+		ED.setMapSaveAsImageURL("Resources/FusionChartsSave.aspx");
+
+		function activeState(id){
+			ED.activateState(id);
+			document.getElementById("stateName").innerHTML="Select State: "+ED.SD[id].name;
+			document.getElementById("stateSeats").innerHTML=" - "+ ED.SD[id].seats;
+		}
+		
+		function predictWin(id){
+			ED.activateParty(id);
+			ED.applyPrediction();
+			update();
+			
+		}
+		
+		function update(){
+			var u_map=getMapFromId("USA");
+			var u_chartStked=getChartFromId("Stacked");
+			var u_chartPie=getChartFromId("Pie");
+			
+			if(u_map.setDataXML) u_map.setDataXML(ED.getMapXML());
+			if(u_chartStked.setXMLData) u_chartStked.setXMLData(ED.getStackedXML());
+			if(u_chartPie.setXMLData) u_chartPie.setXMLData(ED.getPieXML());
+			
+			updateHTML();
+		}
+
+		function updateHTML(){
+			var data=ED.getPartyData();
+			for(var i in data){
+				if(document.getElementById(i+"_T")) document.getElementById(i+"_T").innerHTML=data[i].total;
+				if(document.getElementById(i+"_N")) document.getElementById(i+"_N").innerHTML=data[i].needed;
+				
+			}
+		}
+		
+		function FC_Event(domId,eventType,objParams){
+		
+			if(domId="USA"){
+				if(eventType=="rollOver"){
+					var winner=ED.SD[objParams.id].winner=="clear"?"Unalloted":ED.PD[ED.SD[objParams.id].winner].name;
+					document.getElementById("rolloverHeader").innerHTML="Currently selected candidate for "+objParams.lName+"("+ED.SD[objParams.id].seats+"): "+winner ;
+				}
+			}
+		}
+		function updateRolloverHeader(){
+			
+		}
+		
+		function printMap(){
+			var objMap=getMapFromId("USA");
+			objMap.print();
+		}
+		
+		function saveAsImage(){
+			var objMap=getMapFromId("USA");
+			objMap.saveAsImage();
+		
+		}
+		
+</script>
+
+
+</head>
+<body>
+
+<table width="958" border="0" align="center" cellpadding="0" cellspacing="0">
+ <tr>
+    <td align="left" valign="middle" class="header">
+	<table width="928" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="230" align="left" valign="middle" height="83"><a href="http://www.fusioncharts.com/" alt="Go to Fusioncharts home" ><img src="images/fusioncharts-logo.gif" alt="Go to Fusioncharts home" width="230" height="83" border="0" /></a></td>
+        <td width="698" align="left" valign="top" class="caption" height="83">US Elections &ndash; Make your predictions
+		
+		<div class="helptext">To predict winner for a state, click on the state and choose a candidate from the list on right side</div>
+		</td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top" bgcolor="#FFFFFF" class="body-part">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td align="center" valign="middle" class="helptext"><strong><div id="rolloverHeader" >&nbsp;</div></strong></td>
+		
+        <td align="center" valign="middle" class="left-cap" height="20" ><span id="stateName">Your Prediction </span><span id="stateSeats">Summary</span></td>
+      </tr>
+      <tr>
+        <td align="center" valign="top" class="body-left">
+		<table cellpadding="0" cellspacing="0" border="0" width="100%">
+			<tr>
+				<td height="450" align="left" valign="top">
+					   <div id='USMAP_DIV' align="center">USA</div>
+	<script language="javascript" type="text/javascript">
+		var strXML=ED.getMapXML();
+		
+		var FMUSA=new FusionMaps("Maps/FCMap_USA.swf","USA","650","430","0","1");
+		FMUSA.setDataXML(strXML);
+		FMUSA.render("USMAP_DIV");
+		
+		
+	</script>	   
+				</td>
+			</tr>
+			<tr>
+				<td align="right" valign="top" style="padding:0px 20px 0px 0px;">
+				<input class="clear_button" style="width:90px;" type="button" name="SaveImage" value="Save As Image" onclick="JavaScript:saveAsImage()" />&nbsp;&nbsp;
+				<input class="clear_button"  style="width:90px;"  type="button" name="Print" value="Print Map" onclick="JavaScript:printMap()" /></td>
+			</tr>
+		</table>
+</td>
+        <td align="center" valign="top" class="body-right"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+		
+		<tr>
+            <td>
+			
+			
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+              
+              <tr>
+                <td width="129" height="20" align="left" valign="middle">&nbsp;</td>
+                <td width="63" height="25" align="right" valign="middle">Total</td>
+                <td width="62" height="25" align="right" valign="middle">Needed</td>
+              </tr>
+              <tr>
+                <td width="129" height="25" align="left" valign="middle" class="winner-border" style="cursor:pointer;">&nbsp;&nbsp;<img src="images/blue.gif" alt="" width="12" height="12" onclick="javascript:predictWin('D');" />&nbsp;&nbsp;<a href="javascript:predictWin('D');" class="winner">Gora-Lieberman (D)</a></td>
+                <td width="63" height="25" align="right" valign="middle" class="winner-border" id="D_T">0</td>
+                <td width="62" height="25" align="right" valign="middle" class="winner-border" id="D_N">0</td>
+              </tr>
+              <tr>
+                <td width="129" height="25" align="left" valign="middle" class="winner-border" style="cursor:pointer;">&nbsp;&nbsp;<img src="images/red.gif" alt="" width="12" height="12" onclick="javascript:predictWin('Rp');" />&nbsp;&nbsp;<a href="javascript:predictWin('Rp');" class="winner">Bush-Cheney (Rp)</a></td>
+                <td width="63" height="25" align="right" valign="middle" class="winner-border"  id="Rp_T">0</td>
+                <td width="62" height="25" align="right" valign="middle" class="winner-border"  id="Rp_N">0</td>
+              </tr>
+              <tr>
+                <td width="129" height="25" align="left" valign="middle" class="winner-border" style="cursor:pointer;">&nbsp;&nbsp;<img src="images/green.gif" alt="" width="12" height="12" onclick="javascript:predictWin('G');" />&nbsp;&nbsp;<a href="javascript:predictWin('G');" class="winner">Nader-La_Duke (G)</a></td>
+                <td width="63" height="25" align="right" valign="middle" class="winner-border"  id="G_T">0</td>
+                <td width="62" height="25" align="right" valign="middle" class="winner-border"  id="G_N">0</td>
+              </tr>
+              <tr>
+               <td width="129" height="25" align="left" valign="middle" class="winner-border"  style="cursor:pointer;">&nbsp;&nbsp;<img src="images/yellow.gif" alt="Buchanan-Foster (Rf)" title="Buchanan-Foster (Rf)" width="12" height="12" onclick="javascript:predictWin('Rf');" />&nbsp;&nbsp;<a href="javascript:predictWin('Rf');" class="winner">Buchanan-Foster (Rf)</a></td>
+                <td width="63" height="25" align="right" valign="middle" class="winner-border" id="Rf_T">0</td>
+                <td width="62" height="25" align="right" valign="middle" class="winner-border" id="Rf_N">0</td>
+              </tr>
+              <tr>
+                <td width="129" height="25" align="left" valign="middle" >&nbsp;&nbsp;<img src="images/violet.gif" alt="Clear State"  title="Clear State"  />&nbsp;&nbsp;<input type="button" value="Clear State" onclick="javascript:predictWin('clear');" id="clear_it" class="clear_button"/></td>
+                <td width="63" height="25" align="right" valign="middle">&nbsp;</td>
+                <td width="62" height="25" align="right" valign="middle">&nbsp;</td>
+              </tr>
+              <tr>
+                <td height="15" align="left" valign="middle" >&nbsp;</td>
+                <td height="15" align="right" valign="middle">&nbsp;</td>
+                <td height="15" align="right" valign="middle">&nbsp;</td>
+              </tr>
+            </table>			</td>
+          </tr>
+		
+          <tr>
+            <td height="25" align="center" valign="middle" class="helptext"><strong>Breakdown  of votes</strong></td>
+          </tr>
+          
+          <tr>
+            <td align="center" valign="middle">&nbsp;</td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle">
+		  <div id='STACKED_DIV'>STACKED</div>
+				<script language="javascript" type="text/javascript">
+					var strXML=ED.getStackedXML();
+					var FCStacked=new FusionCharts("Charts/StackedColumn2D.swf","Stacked","210","95","0","1");
+					FCStacked.setXMLData(strXML);
+					FCStacked.render("STACKED_DIV");
+				</script>		  </td>
+          </tr>
+          <tr>
+            <td height="30" align="center" valign="middle"><table width="85%" border="0" cellspacing="0" cellpadding="0" class="dot-border">
+              <tr>
+                <td height="20" align="left" valign="middle" style="padding:0px 0px 0px 4px;"><img src="images/gray.gif" alt="" width="12" height="12" />&nbsp;&nbsp;Additional Votes Required to win</td>
+              </tr>
+            </table></td>
+          </tr>
+          <tr>
+            <td height="20" align="center" valign="middle">&nbsp;</td>
+          </tr>
+          <tr>
+            <td height="120" align="center" valign="middle">
+		  <div id='PIE_DIV'>PIE</div>
+				<script language="javascript" type="text/javascript">
+					var strXML=ED.getPieXML();
+					var FCPie=new FusionCharts("Charts/Pie2D.swf","Pie","210","115","0","1");
+					FCPie.setXMLData(strXML);
+					FCPie.render("PIE_DIV");
+				</script>		  </td>
+          </tr>
+          
+          
+        </table></td>
+      </tr>
+    </table></td>
+  </tr>
+  
+  <tr>
+    <td align="center" valign="middle" class="footer">This dashboard was built using <a href="http://www.fusioncharts.com/products/suite/fusioncharts-xt/">FusionCharts XT</a> and <a href="http://www.fusioncharts.com/products/suite/fusionmaps/">FusionMaps v3</a><br />
+      You are free to reproduce and distribute this demo in its original form, without changing any content, whatsoever.<br />
+    &copy; <script type="text/javascript">
+var d=new Date();
+document.write(d.getFullYear());
+</script>, FusionCharts. All rights reserved.</td>
+  </tr>
+</table>
+
+<script type="text/javascript" language="javascript">updateHTML();</script>
+<!-- Google Analytics Tracker Code Starts -->
+<script type="text/javascript">
+// analytics
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost 
+	+ "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+if (typeof(_gat) == "object") {
+	var pageTracker = _gat._getTracker("UA-215295-3"); pageTracker._initData(); pageTracker._trackPageview();
+}
+</script>
+<!-- Google Analytics Tracker Code Ends --></body>
+</html>

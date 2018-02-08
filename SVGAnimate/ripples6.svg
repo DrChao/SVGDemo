@@ -1,0 +1,39 @@
+<svg	xmlns="http://www.w3.org/2000/svg" width="100%"
+	xmlns:xlink="http://www.w3.org/2000/xlink/namespace/" viewBox="0 0 100 100" preserveAspectRatio="none"
+>
+<script><![CDATA[
+xmlns="http://www.w3.org/2000/svg"
+//]]>
+</script>
+<defs>
+<clipPath id="CP">
+<text font-family="serif" font-size="52" font-weight="bold" transform="scale(.4,1)" 
+ x="0" y="42"  stroke-width="3" stroke="#056"
+stroke-opacity=".6" >Ripples<tspan dy="1.6em" x="20" font-size="27" >in the</tspan>
+<tspan dy=".1em" dx="-2">Water</tspan></text></clipPath>
+</defs>
+<filter id="d" x="0%" y="0" height="100%" width="110%">
+   <feDisplacementMap scale="3" in2="BackgroundImage" xChannelSelector="B"/>
+</filter>
+<filter id="twoF">
+	<feTurbulence baseFrequency=".01" numOctaves="2" seed="200">
+	</feTurbulence>
+</filter>
+
+
+<rect  y="-40" width="100" height="140" fill="#0ff" />
+
+
+<g enable-background="new">
+
+<rect x="0" y="0" filter="url(#twoF)" height="100" width="100"/>
+<image xlink:href="../images/water1413.jpg" x="-10" y="-40" width="110" height="140"  preserveAspectRatio="none" opacity=".3"/>
+<g filter='url(#d)'> 
+<image xlink:href="../images/water1413.jpg" x="-10" y="-40" width="110" height="140"  preserveAspectRatio="none" opacity=".5" />
+<image xlink:href="../images/water1413.jpg" x="-10" clip-path="url(#CP)" y="-40" width="110" height="140"  preserveAspectRatio="none">
+</image>
+
+</g>
+</g>
+
+</svg>

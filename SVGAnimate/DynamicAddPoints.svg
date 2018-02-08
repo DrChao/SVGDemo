@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+ width="100%" height="100%" 
+ onload="startup(evt)"
+>
+<script>
+<![CDATA[
+var q;
+var n=8
+var maxn=16
+var minn=5
+var incr=1
+var bunch
+var animate=false
+xmlns="http://www.w3.org/2000/svg"
+var O
+function startup(evt){
+ q=evt.target.ownerDocument
+ B=q.getElementById("B")
+ AN=q.getElementById("AN")
+ bunch=q.getElementById("bunch")
+}
+Col=new Array("red","magenta","blue","cyan","green","yellow","orange")
+function hilight(o,act){
+ O=q.getElementById(o)
+ if(act=="over")
+  O.setAttribute("stroke","yellow")
+ else
+  O.setAttribute("stroke","white")
+}
+function populate(n){
+ if ((n>maxn)||(n<minn)) {
+  incr=-incr
+  AN.setAttribute("style","font-size:16;visibility:visible")
+  maxn=60
+ }
+ var v=n+incr
+ var p="M 10 150 C 200 "+(5*n)+" 350 "+(300-5*n)+" 450 100"
+ B.setAttribute("d",p)
+ O.setAttribute("d",p)
+ var l=B.getTotalLength()
+ if (bunch.childNodes.length>0) DOs(bunch)
+ for (i=0;i<n+1;i++){
+  P=B.getPointAtLength(l*i/n)
+  px=Math.ceil(P.x)
+  py=Math.ceil(P.y)
+  newone=q.createElementNS(xmlns,"ellipse");
+  newone.setAttribute("cx", px);
+  newone.setAttribute("cy", py);
+  newone.setAttribute("rx", 10);
+  newone.setAttribute("ry", 6);
+  newone.setAttribute("opacity",.75);
+  newone.setAttribute("fill", Col[i%Col.length]);
+  newone.setAttribute("stroke", "black");
+  newone.setAttribute("stroke-width", "2");
+  bunch.appendChild(newone);
+ }
+ 
+ if (animate) window.setTimeout("populate("+v+")",10)
+}
+function DOs(s){
+ num=s.childNodes.length
+ for (i=s.childNodes.length;i>0;i--){
+  s.removeChild(s.childNodes.item(i-1));
+ }
+}
+//]]>
+</script>
+<text id="T" x="100" y="40" style="font-size:16" fill="#820">Click on the curve several times to create points</text>
+<text id="AN" x="200" y="340" style="font-size:16;visibility:hidden" fill="#820" onclick="animate=!animate;populate(7)">Animate?</text>
+<g onclick="populate(n=n+incr)" onmouseover="hilight('M','over')" onmouseout="hilight('M','out')">
+<path d="M 10 150 C 200 80 350 300 450 100" id="M"
+stroke="none" fill="white" stroke-width="15"/>
+<path d="M 10 150 C 200 80 350 300 450 100" id="B"
+stroke="black" fill="none" stroke-width="4"/>
+<g id="bunch"></g>
+</g>
+</svg>

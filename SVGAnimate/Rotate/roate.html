@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Automated SVG</title>
+    <script language="javascript" type="text/javascript">
+        var SVGDocument = null;
+        var Circle, Polygon, Rect, AllObjects;
+        var CurrentAngle = 0;
+        var AngleDelta = 0.0;
+
+        function InitializeObjects() {
+            SVGDocument = window.document.getElementById("SVGEmbed").getSVGDocument();
+            Circle = SVGDocument.getElementById("oCircle");
+            Polygon = SVGDocument.getElementById("oPolygon");
+            Rect = SVGDocument.getElementById("oRect");
+            AllObjects = SVGDocument.getElementById("oAll");
+        }
+
+        function RotateSVG() {
+            window.setTimeout("RotateSVG();", 10);
+            if (AngleDelta == 0.0) return;
+            if (!SVGDocument) {
+                InitializeObjects();
+            }
+            CurrentAngle = CurrentAngle + AngleDelta;
+            if (CurrentAngle > 359) CurrentAngle = CurrentAngle - 360;
+            if (CurrentAngle < 0) CurrentAngle = CurrentAngle + 360;
+            AllObjects.setAttribute("transform", "rotate(" + CurrentAngle + " 210 150)");
+        }
+
+        function ShiftLeft() {
+            if (!SVGDocument) InitializeObjects();
+            var CircleFill = Circle.getAttribute('fill');
+            Circle.setAttribute('fill', Polygon.getAttribute('fill'));
+            Polygon.setAttribute('fill', Rect.getAttribute('fill'));
+            Rect.setAttribute('fill', CircleFill);
+        }
+
+        function ShiftRight() {
+            if (!SVGDocument) InitializeObjects();
+            var PolygonFill = Polygon.getAttribute('fill');
+            Polygon.setAttribute('fill', Circle.getAttribute('fill'));
+            Circle.setAttribute('fill', Rect.getAttribute('fill'));
+            Rect.setAttribute('fill', PolygonFill);
+        }
+
+    </script>
+</head>
+<body onload="RotateSVG();">
+    <center>
+        <h1>SVG Automation</h1>
+        <object id="SVGEmbed" data="roate.svg" codebase="http://www.adobe.com/svg/viewer/install/" width="600" height="450" type="image/svg+xml">
+        <param name="src" value="roate.svg"/>
+        </object>
+            <br />
+            <input type="button" value="Spin Left" onclick="AngleDelta=AngleDelta-0.5;" />
+            <input type="button" value="Color Shift Left" onclick="ShiftLeft();" />
+            <input type="button" value="Color Shift Right" onclick="ShiftRight();" />
+            <input type="button" value="Spin Right" onclick="AngleDelta=AngleDelta+0.5;" />
+            <input type="button" value="Stop" onclick="AngleDelta=0;" />
+    </center>
+</body>
+</html>

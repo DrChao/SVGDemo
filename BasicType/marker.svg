@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN"
+       "http://www.w3.org/TR/2001/REC-SVG-20050904/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="600" height="600">
+  <defs>
+    <marker style="overflow:visible;fill:inherit;stroke:inherit"
+            id="Arrow1Mend" refX="0.0" refY="0.0" orient="auto">
+      <path transform="scale(0.4) rotate(180) translate(20,0)"
+            style="fill-rule:evenodd;stroke-width:2.0pt;marker-start:none;"
+            d="M 0.0,-15.0 L -20.5,0.0 L 0.0,15.0 "/>
+    </marker>
+      <line marker-end="url(#Arrow1Mend)" id="systemthread" x1="40" y1="10" x2="40" y2="410" style="stroke: black; stroke-dasharray: 5, 5; stroke-width: 1; "/>
+  </defs>
+  <title>Draw</title>
+  <use xlink:href="#systemthread" transform="translate(50,40)" />
+  <use xlink:href="#systemthread" transform="translate(150,40)" />
+  <use xlink:href="#systemthread" transform="translate(250,40)" />
+</svg>

@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	width="100%" height="100%" viewBox="0,0,800,800"
+	onload="startup(evt)"
+>
+<script>
+<![CDATA[
+var xmlns="http://www.w3.org/2000/svg"
+var Doc;
+var O;
+var Boo=false
+function T(Boo){
+	if (Boo)O.pauseAnimations()
+	else O.unpauseAnimations()
+	return !Boo
+}
+function startup(evt){
+	O=evt.target
+	Doc=O.ownerDocument
+	SVGRoot = Doc.documentElement;
+	O.setAttribute("onclick","Boo=T(Boo);")
+	O.pauseAnimations()
+}
+//]]>
+</script>
+<rect x="0" y="0" height="100%" width="100%" fill="white"/>
+<text x="35%" y="35%" font-size="10" fill="magenta" >Click</text>
+<g id="stripes">
+<rect x="30%" y="20%" height="100%" width="2%" fill="thistle"/>
+<rect x="25%" y="20%" height="100%" width="2%" fill="black"/>
+<rect x="20%" y="20%" height="100%" width="2%" fill="tomato"/>
+</g>
+<clipPath id="CPST" >
+<path  id="ST" d="M 204 247 24 189 135 343 135 152 24 306 z">
+<animateTransform attributeName="transform" type="rotate" dur="4s" from="0 104 247" to="360 104 247" repeatCount="indefinite"/>
+</path>
+</clipPath>
+<image xlink:href='image/p76.jpg' y="140" x="-30" id="I"
+width="35%" height="40%" clip-path="url(#CPST)"/>
+<rect id="R" x="0%" y="215" height="16%" width="100%" fill="#734" opacity=".4"/>
+<clipPath id="C2">
+<use xlink:href="#R"/>
+</clipPath>
+<use xlink:href="#I" clip-path="url(#C2)" transform="translate(416,0) scale(-1,1)"/>
+<clipPath id="ST2" >
+<use xlink:href="#ST" transform="translate(370,0)"/>
+</clipPath>
+<clipPath id="C3" clip-path="url(#ST2)">
+<use xlink:href="#R"/>
+</clipPath>
+<image xlink:href='../p76.jpg' y="150" x="350"
+width="35%" height="40%" clip-path="url(#C3)"/>
+</svg>
+

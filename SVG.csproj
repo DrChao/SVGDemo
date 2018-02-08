@@ -1,0 +1,507 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C0BBD55A-77AC-4096-8649-CD03EAF65F96}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SVG</RootNamespace>
+    <AssemblyName>SVG</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BasicType\BasicType.aspx" />
+    <Content Include="BasicType\BasicTypeDoc.aspx" />
+    <Content Include="BasicType\circle.svg" />
+    <Content Include="BasicType\ellipse.svg" />
+    <Content Include="BasicType\flowers.svg" />
+    <Content Include="BasicType\marker.svg" />
+    <Content Include="BasicType\pattern.svg" />
+    <Content Include="BasicType\polygon.svg" />
+    <Content Include="BasicType\polyline.svg" />
+    <Content Include="BasicType\rect.svg" />
+    <Content Include="BasicType\tiger.svg" />
+    <Content Include="Default.aspx" />
+    <Content Include="FeChange\feColorMatrix.svg" />
+    <Content Include="FeChange\feComponentTransfer.svg" />
+    <Content Include="FeChange\feComposite.svg" />
+    <Content Include="FeChange\feImage.svg" />
+    <Content Include="FeChange\felend.svg" />
+    <Content Include="FeChange\feMorphology.svg" />
+    <Content Include="FeChange\feSVGDoc.aspx" />
+    <Content Include="FeChange\FeSVGImage.aspx" />
+    <Content Include="FeChange\feTurbulence.svg" />
+    <Content Include="FeChange\filters00.svg" />
+    <Content Include="FeChange\filters01.svg" />
+    <Content Include="Frame\LeftFrame.aspx" />
+    <Content Include="Frame\MainFrame.aspx" />
+    <Content Include="Frame\toolBar.aspx" />
+    <Content Include="Gradiental\enable-background-01.svg" />
+    <Content Include="Gradiental\GradDoc.aspx" />
+    <Content Include="FeChange\gradient7.svg" />
+    <Content Include="Gradiental\GradImage.aspx" />
+    <Content Include="Gradiental\lingrad01.svg" />
+    <Content Include="Gradiental\mask01.svg" />
+    <Content Include="Gradiental\opacity01.svg" />
+    <Content Include="Gradiental\radgrad01.svg" />
+    <Content Include="images\direct_blue.gif" />
+    <Content Include="images\flowers.png" />
+    <Content Include="images\left_nav_bg.jpg" />
+    <Content Include="images\list_title.gif" />
+    <Content Include="images\list_title_onclick.gif" />
+    <Content Include="images\manage_r2_c13.jpg" />
+    <Content Include="images\manage_r2_c14.jpg" />
+    <Content Include="images\manage_r3_c11.jpg" />
+    <Content Include="images\manage_r6_c2.jpg" />
+    <Content Include="images\manage_r7_c2.jpg" />
+    <Content Include="images\nav_bg.jpg" />
+    <Content Include="images\switch_left.gif" />
+    <Content Include="images\switch_right.gif" />
+    <Content Include="images\water1413.jpg" />
+    <Content Include="JS\balloon.js" />
+    <Content Include="JS\beforeonload.js" />
+    <Content Include="JS\chemeleon.js" />
+    <Content Include="JS\Graphics.js" />
+    <Content Include="JS\nav.js" />
+    <Content Include="JS\ref.js" />
+    <Content Include="JS\svg.js" />
+    <Content Include="MathML\ctop.xsl" />
+    <Content Include="MathML\LittleFermat.xml" />
+    <Content Include="MathML\mathml.xsl" />
+    <Content Include="MathML\matrixintegral.xml" />
+    <Content Include="MathML\pmathml.xsl" />
+    <Content Include="MathML\pmathmlcss.xsl" />
+    <Content Include="RePosidition\drag.svg" />
+    <Content Include="ShowSVGPage\cffn.html" />
+    <Content Include="ShowSVGPage\chlstrl.html" />
+    <Content Include="ShowSVGPage\Default.aspx" />
+    <Content Include="ShowSVGPage\ethnl.html" />
+    <Content Include="ShowSVGPage\hstmn.html" />
+    <Content Include="ShowSVGPage\index.html" />
+    <Content Include="ShowSVGPage\rbflvn.html" />
+    <Content Include="style.css" />
+    <Content Include="SVGAnimate\Animate\animate.svg" />
+    <Content Include="SVGAnimate\Animate\animateMotion.svg" />
+    <Content Include="SVGAnimate\Animate\animateTransform.svg" />
+    <Content Include="SVGAnimate\Animate\set.svg" />
+    <Content Include="SVGAnimate\AnimSVGDoc.aspx" />
+    <Content Include="SVGAnimate\AnimSVGImage.aspx" />
+    <Content Include="SVGAnimate\balloon.svg" />
+    <Content Include="SVGAnimate\clipPath.svg" />
+    <Content Include="SVGAnimate\Drawing\Bezier2.svg" />
+    <Content Include="SVGAnimate\Drawing\DrawLine.svg" />
+    <Content Include="SVGAnimate\Flower\flower.svg" />
+    <Content Include="SVGAnimate\Flower\flowerSvg.svg" />
+    <Content Include="SVGAnimate\graphs30.svg" />
+    <Content Include="SVGAnimate\image\p45.jpg" />
+    <Content Include="SVGAnimate\image\p55.jpg" />
+    <Content Include="SVGAnimate\image\p84.jpg" />
+    <Content Include="SVGAnimate\image\p95.jpg" />
+    <Content Include="SVGAnimate\image\p99.jpg" />
+    <Content Include="SVGAnimate\knife.svg" />
+    <Content Include="SVGAnimate\MoveWithMouse.svg" />
+    <Content Include="SVGAnimate\image\p76.jpg" />
+    <Content Include="SVGAnimate\ripples6.svg" />
+    <Content Include="SVGAnimate\Rotate\roate.html" />
+    <Content Include="SVGAnimate\Rotate\roate.svg" />
+    <Content Include="SVGAnimate\DynamicAddPoints.svg" />
+    <Content Include="SVGAnimate\blockGame.svg" />
+    <Content Include="SVGAnimate\stars3.svg" />
+    <Content Include="SVGDataPass\clips.svg" />
+    <Content Include="SVGDataPass\Drag.js" />
+    <Content Include="SVGDataPass\fishBone.svg" />
+    <Content Include="SVGDataPass\PassData.html" />
+    <Content Include="SVGDataPass\PassDataPage.aspx" />
+    <Content Include="SVGDataPass\ReceiveDataPage.aspx" />
+    <Content Include="SVGDataPass\ref.js" />
+    <Content Include="SVGDataPass\test1.aspx" />
+    <Content Include="SVGDataPass\thesoul2.jpg" />
+    <Content Include="SVGFile\caffeine.svgz" />
+    <Content Include="SVGFile\cffnDesc.svgz" />
+    <Content Include="SVGFile\chlstrlDesc.svgz" />
+    <Content Include="SVGFile\cholesterol.svgz" />
+    <Content Include="SVGFile\cml2svg_hdr.svgz" />
+    <Content Include="SVGFile\ethanol.svgz" />
+    <Content Include="SVGFile\ethnlDesc.svgz" />
+    <Content Include="SVGFile\histamine.svgz" />
+    <Content Include="SVGFile\hstmnDesc.svgz" />
+    <Content Include="SVGFile\rbflvnDesc.svgz" />
+    <Content Include="SVGFile\riboflavin.svgz" />
+    <Content Include="SVGGraphic\chart.svgz" />
+    <Content Include="SVGGraphic\graphic.aspx" />
+    <Content Include="SVGGraphic\graphic.htm" />
+    <Content Include="SVGGraphic\graphic.svgz" />
+    <Content Include="SVGGraphic\GraphicCtrl.aspx" />
+    <Content Include="SVGParameter\defaultView.aspx" />
+    <Content Include="SVGParameter\frame1.htm" />
+    <Content Include="SVGParameter\frame2.htm" />
+    <Content Include="SVGParameter\objectSrc.htm" />
+    <Content Include="SVGParameter\param.js" />
+    <Content Include="SVGParameter\paramFun.svg" />
+    <Content Include="SVGParameter\oboject.html" />
+    <Content Include="SVGParameter\paramPass.svg" />
+    <Content Include="SVGParameter\praramPass.htm" />
+    <Content Include="SVGParameter\ReceiveParam.svg" />
+    <Content Include="SVGParameter\paramFun.htm" />
+    <Content Include="SVGParameter\ref.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BasicType\BasicType.aspx.cs">
+      <DependentUpon>BasicType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BasicType\BasicType.aspx.designer.cs">
+      <DependentUpon>BasicType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BasicType\BasicTypeDoc.aspx.cs">
+      <DependentUpon>BasicTypeDoc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BasicType\BasicTypeDoc.aspx.designer.cs">
+      <DependentUpon>BasicTypeDoc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Convertor\convert2png.ashx.cs">
+      <DependentUpon>convert2png.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Electoral\Resources\FusionChartsSave.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FeChange\feSVGDoc.aspx.cs">
+      <DependentUpon>feSVGDoc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FeChange\feSVGDoc.aspx.designer.cs">
+      <DependentUpon>feSVGDoc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FeChange\FeSVGImage.aspx.cs">
+      <DependentUpon>FeSVGImage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FeChange\FeSVGImage.aspx.designer.cs">
+      <DependentUpon>FeSVGImage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Frame\LeftFrame.aspx.cs">
+      <DependentUpon>LeftFrame.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Frame\LeftFrame.aspx.designer.cs">
+      <DependentUpon>LeftFrame.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Frame\MainFrame.aspx.cs">
+      <DependentUpon>MainFrame.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Frame\MainFrame.aspx.designer.cs">
+      <DependentUpon>MainFrame.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Frame\toolBar.aspx.cs">
+      <DependentUpon>toolBar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Frame\toolBar.aspx.designer.cs">
+      <DependentUpon>toolBar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gradiental\GradDoc.aspx.cs">
+      <DependentUpon>GradDoc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Gradiental\GradDoc.aspx.designer.cs">
+      <DependentUpon>GradDoc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gradiental\GradImage.aspx.cs">
+      <DependentUpon>GradImage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Gradiental\GradImage.aspx.designer.cs">
+      <DependentUpon>GradImage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShowSVGPage\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShowSVGPage\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SVGAnimate\AnimSVGDoc.aspx.cs">
+      <DependentUpon>AnimSVGDoc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SVGAnimate\AnimSVGDoc.aspx.designer.cs">
+      <DependentUpon>AnimSVGDoc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SVGAnimate\AnimSVGImage.aspx.cs">
+      <DependentUpon>AnimSVGImage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SVGAnimate\AnimSVGImage.aspx.designer.cs">
+      <DependentUpon>AnimSVGImage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SVGDataPass\PassDataPage.aspx.cs">
+      <DependentUpon>PassDataPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SVGDataPass\PassDataPage.aspx.designer.cs">
+      <DependentUpon>PassDataPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SVGDataPass\ReceiveDataPage.aspx.cs">
+      <DependentUpon>ReceiveDataPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SVGDataPass\ReceiveDataPage.aspx.designer.cs">
+      <DependentUpon>ReceiveDataPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SVGDataPass\test1.aspx.cs">
+      <DependentUpon>test1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SVGDataPass\test1.aspx.designer.cs">
+      <DependentUpon>test1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SVGGraphic\graphic.aspx.cs">
+      <DependentUpon>graphic.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SVGGraphic\graphic.aspx.designer.cs">
+      <DependentUpon>graphic.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SVGGraphic\GraphicCtrl.aspx.cs">
+      <DependentUpon>GraphicCtrl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SVGGraphic\GraphicCtrl.aspx.designer.cs">
+      <DependentUpon>GraphicCtrl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SVGParameter\defaultView.aspx.cs">
+      <DependentUpon>defaultView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SVGParameter\defaultView.aspx.designer.cs">
+      <DependentUpon>defaultView.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Convertor\convert2png.ashx" />
+    <Content Include="Electoral\Charts\Pie2D.swf" />
+    <Content Include="Electoral\Charts\StackedColumn2D.swf" />
+    <Content Include="Electoral\ElectoralData.js" />
+    <Content Include="Electoral\images\blank.gif" />
+    <Content Include="Electoral\images\blue.gif" />
+    <Content Include="Electoral\images\dot-1.gif" />
+    <Content Include="Electoral\images\footer-strip.gif" />
+    <Content Include="Electoral\images\fusioncharts-logo.gif" />
+    <Content Include="Electoral\images\gray.gif" />
+    <Content Include="Electoral\images\green.gif" />
+    <Content Include="Electoral\images\logo.jpg" />
+    <Content Include="Electoral\images\red.gif" />
+    <Content Include="Electoral\images\violet.gif" />
+    <Content Include="Electoral\images\yellow.gif" />
+    <Content Include="Electoral\Index.html" />
+    <Content Include="Electoral\JSClass\firebug-lite.js" />
+    <Content Include="Electoral\JSClass\FusionCharts.HC.Charts.js" />
+    <Content Include="Electoral\JSClass\FusionCharts.HC.js" />
+    <Content Include="Electoral\JSClass\FusionCharts.HC.Maps.js" />
+    <Content Include="Electoral\JSClass\FusionCharts.HC.PowerCharts.js" />
+    <Content Include="Electoral\JSClass\FusionCharts.HC.Widgets.js" />
+    <Content Include="Electoral\JSClass\FusionCharts.jQueryPlugin.js" />
+    <Content Include="Electoral\JSClass\FusionCharts.js" />
+    <Content Include="Electoral\JSClass\FusionChartsExportComponent.js" />
+    <Content Include="Electoral\JSClass\FusionMaps.js" />
+    <Content Include="Electoral\JSClass\highcharts.js" />
+    <Content Include="Electoral\JSClass\jquery.min.js" />
+    <Content Include="Electoral\Maps\FCMap_USA.swf" />
+    <Content Include="Electoral\Resources\FusionChartsSave.aspx" />
+    <Content Include="Electoral\style.css" />
+    <Content Include="fishBone\fishBone.htm" />
+    <Content Include="fishBone\fishBone.svg" />
+    <Content Include="fishBone\ref1.js" />
+    <Content Include="Game\images\bgsheet.png" />
+    <Content Include="Game\images\endscene.gif" />
+    <Content Include="Game\images\enemysheet.png" />
+    <Content Include="Game\images\firemariosheet.png" />
+    <Content Include="Game\images\font.gif" />
+    <Content Include="Game\images\gameovergost.gif" />
+    <Content Include="Game\images\itemsheet.png" />
+    <Content Include="Game\images\logo.gif" />
+    <Content Include="Game\images\mapsheet.png" />
+    <Content Include="Game\images\mariosheet.png" />
+    <Content Include="Game\images\particlesheet.png" />
+    <Content Include="Game\images\racoonmariosheet.png" />
+    <Content Include="Game\images\smallmariosheet.png" />
+    <Content Include="Game\images\title.gif" />
+    <Content Include="Game\images\worldmap.png" />
+    <Content Include="Game\index.htm" />
+    <Content Include="Game\Scripts\enjine.min.js.pagespeed.ce.wNGu2CtEMx.js" />
+    <Content Include="Game\Scripts\jquery.min.js" />
+    <Content Include="Game\Scripts\mario.min.js.pagespeed.ce._QAuIByrkL.js" />
+    <Content Include="Game\Stylesheets\silkscreen,_stylesheet.css+reset.css+style.css.pagespeed.cc.VNkyVaVxUV.css" />
+    <Content Include="resources\StylableComboBox\Demo\pattern.png" />
+    <Content Include="SVGFile\chemeleon.js" />
+    <Content Include="Wahl-Atlas\atlas.svgz" />
+    <Content Include="Wahl-Atlas\dump\atlas.svgz" />
+    <Content Include="Wahl-Atlas\dump\ladeError.svg" />
+    <Content Include="Wahl-Atlas\dump\pluginError.svg" />
+    <Content Include="Wahl-Atlas\dump\wkr2005.svg" />
+    <Content Include="Wahl-Atlas\framework\comboBoxes.js" />
+    <Content Include="Wahl-Atlas\framework\createDetailDiagram.js" />
+    <Content Include="Wahl-Atlas\framework\createHisto.js" />
+    <Content Include="Wahl-Atlas\framework\framework-common.js" />
+    <Content Include="Wahl-Atlas\framework\framework-script.js" />
+    <Content Include="Wahl-Atlas\framework\Node_Builder.js" />
+    <Content Include="Wahl-Atlas\framework\selectionList.js" />
+    <Content Include="Wahl-Atlas\framework\svgcheck.js" />
+    <Content Include="Wahl-Atlas\framework\svgcheck.vbs" />
+    <Content Include="Wahl-Atlas\framework\Textbox.js" />
+    <Content Include="Wahl-Atlas\images\btwAtlas.gif" />
+    <Content Include="Wahl-Atlas\images\favicon.ico" />
+    <Content Include="Wahl-Atlas\images\ladeError.svg" />
+    <Content Include="Wahl-Atlas\images\pluginError.svg" />
+    <Content Include="Wahl-Atlas\map\data\statistikAuswahl.js" />
+    <Content Include="Wahl-Atlas\map\data\xml\Data009010110.xml" />
+    <Content Include="Wahl-Atlas\map\data\xml\Data009020110.xml" />
+    <Content Include="Wahl-Atlas\map\data\xml\Data009030110.xml" />
+    <Content Include="Wahl-Atlas\map\data\xml\Data009040110.xml" />
+    <Content Include="Wahl-Atlas\map\data\xml\Data009050110.xml" />
+    <Content Include="Wahl-Atlas\map\data\xml\Data009060110.xml" />
+    <Content Include="Wahl-Atlas\map\data\xml\Data009110110.xml" />
+    <Content Include="Wahl-Atlas\map\data\xml\Data009120110.xml" />
+    <Content Include="Wahl-Atlas\map\data\xml\Data009130110.xml" />
+    <Content Include="Wahl-Atlas\map\data\xml\Data009140110.xml" />
+    <Content Include="Wahl-Atlas\map\data\xml\Data009150110.xml" />
+    <Content Include="Wahl-Atlas\map\data\xml\Data009160110.xml" />
+    <Content Include="Wahl-Atlas\map\data\xml\Data010010080.xml" />
+    <Content Include="Wahl-Atlas\map\data\xml\Data010020080.xml" />
+    <Content Include="Wahl-Atlas\map\data\xml\Data010030080.xml" />
+    <Content Include="Wahl-Atlas\map\data\xml\Data010040080.xml" />
+    <Content Include="Wahl-Atlas\map\data\xml\Data010050080.xml" />
+    <Content Include="Wahl-Atlas\map\data\xml\Data010060080.xml" />
+    <Content Include="Wahl-Atlas\map\data\xml\Data020030100.xml" />
+    <Content Include="Wahl-Atlas\map\data\xml\Data020033100.xml" />
+    <Content Include="Wahl-Atlas\map\data\xml\Data020040100.xml" />
+    <Content Include="Wahl-Atlas\map\data\xml\Data020051080.xml" />
+    <Content Include="Wahl-Atlas\map\data\xml\Data020052080.xml" />
+    <Content Include="Wahl-Atlas\map\data\xml\Data020053080.xml" />
+    <Content Include="Wahl-Atlas\map\data\xml\Data020054080.xml" />
+    <Content Include="Wahl-Atlas\map\data\xml\Data020055080.xml" />
+    <Content Include="Wahl-Atlas\map\data\xml\Data020056080.xml" />
+    <Content Include="Wahl-Atlas\map\data\xml\Data020061090.xml" />
+    <Content Include="Wahl-Atlas\map\data\xml\Data020062090.xml" />
+    <Content Include="Wahl-Atlas\map\data\xml\Data020063090.xml" />
+    <Content Include="Wahl-Atlas\map\data\xml\Data020064090.xml" />
+    <Content Include="Wahl-Atlas\map\data\xml\Data020065090.xml" />
+    <Content Include="Wahl-Atlas\map\data\xml\Data030010100.xml" />
+    <Content Include="Wahl-Atlas\map\data\xml\Data030011090.xml" />
+    <Content Include="Wahl-Atlas\map\data\xml\Data030020100.xml" />
+    <Content Include="Wahl-Atlas\map\data\xml\Data030021100.xml" />
+    <Content Include="Wahl-Atlas\map\data\xml\Data030022100.xml" />
+    <Content Include="Wahl-Atlas\map\data\xml\Data030023100.xml" />
+    <Content Include="Wahl-Atlas\map\data\xml\Data030024100.xml" />
+    <Content Include="Wahl-Atlas\map\data\xml\Data040010070.xml" />
+    <Content Include="Wahl-Atlas\map\data\xml\Data040020070.xml" />
+    <Content Include="Wahl-Atlas\map\data\xml\Data050010080.xml" />
+    <Content Include="Wahl-Atlas\map\data\xml\Data050020080.xml" />
+    <Content Include="Wahl-Atlas\map\data\xml\Data060010080.xml" />
+    <Content Include="Wahl-Atlas\map\data\xml\Data060020080.xml" />
+    <Content Include="Wahl-Atlas\map\data\xml\Data070010090.xml" />
+    <Content Include="Wahl-Atlas\map\data\xml\Data080010080.xml" />
+    <Content Include="Wahl-Atlas\map\data\xml\Data080011080.xml" />
+    <Content Include="Wahl-Atlas\map\data\xml\Data080012080.xml" />
+    <Content Include="Wahl-Atlas\map\data\xml\Data080013080.xml" />
+    <Content Include="Wahl-Atlas\map\data\xml\Data080014080.xml" />
+    <Content Include="Wahl-Atlas\map\data\xml\karussell.xml" />
+    <Content Include="Wahl-Atlas\map\scripts\germany-script.js" />
+    <Content Include="Wahl-Atlas\map\wkr2005.svg" />
+    <None Include="BasicType\PowerStation.svg" />
+    <None Include="BasicType\map.svg" />
+    <None Include="DOC\MatriX总结.doc" />
+    <None Include="DOC\Path.doc" />
+    <None Include="DOC\svg中的動畫技術.doc" />
+    <None Include="Electoral\images\Thumbs.db" />
+    <None Include="Game\Scripts\stat.php" />
+    <None Include="MathML\LittleFermat.mml" />
+    <None Include="MathML\LittleFermatCon.mml" />
+    <None Include="MathML\matrixintegral.mml" />
+    <None Include="resources\.DS_Store" />
+    <None Include="resources\SimpleRCCButton.svg" />
+    <None Include="resources\StylableComboBox\.DS_Store" />
+    <None Include="resources\StylableComboBox\Common\RCCBase.es" />
+    <None Include="resources\StylableComboBox\Common\SVGUtil.es" />
+    <None Include="resources\StylableComboBox\Demo\.DS_Store" />
+    <None Include="resources\StylableComboBox\Demo\StylableComboBox.svg" />
+    <None Include="resources\StylableComboBox\UI\.DS_Store" />
+    <None Include="resources\StylableComboBox\UI\Button.es" />
+    <None Include="resources\StylableComboBox\UI\ComboBox.es" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="SVGPageXML\" />
+    <Folder Include="WaitLoad\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>63724</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

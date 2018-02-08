@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 9.0, SVG Export Plug-In  -->
+<!-- NOTICE:  Copyright [1999-2001] Adobe Systems Incorporated.  Adobe hereby grants you the rights to reproduce, modify and distribute this file and its contents, not including any fonts, audio files or raster images included or embedded in or linked to this file, (the "Software"), and to grant such rights to other parties subject to the following:  This notice shall be included in any copy of the Software or any portion thereof.  THE SOFTWARE IS PROVIDED TO YOU AS-IS, WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT.  IN NO EVENT SHALL ADOBE BE LIABLE TO YOU OR ANY OTHER PARTY FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE.
+-->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20001102//EN" "http://www.w3.org/TR/2000/CR-SVG-20001102/DTD/svg-20001102.dtd" [
+	<!ENTITY st0 "opacity:0.5;fill:#CCCCCC;stroke:none;">
+	<!ENTITY st1 "font-family:'AdobeCorpID-MyriadRgScn';">
+	<!ENTITY st2 "font-family:'AdobeCorpID-MyriadSbScnIt';">
+	<!ENTITY st3 "font-family:'AdobeCorpID-MyriadBdScn';">
+	<!ENTITY st4 "opacity:0.5;fill:#FFFFFF;stroke:none;">
+	<!ENTITY st5 "font-size:10;">
+	<!ENTITY st6 "font-size:14;">
+	<!ENTITY st7 "font-size:18;">
+	<!ENTITY st8 "fill:#CCCCFF;stroke:none;">
+	<!ENTITY st9 "font-family:'AdobeCorpID-MyriadRg';">
+	<!ENTITY st10 "fill-rule:nonzero;clip-rule:nonzero;stroke:#000000;stroke-miterlimit:4;">
+	<!ENTITY st11 "stroke:none;">
+	<!ENTITY st12 "fill:#FFFFFF;stroke:#000066;stroke-width:0.25;">
+]>
+<svg  width="300" height="250" viewBox="0 0 300 250" xml:space="preserve">
+<title>ethnlDesc.svg</title>
+<desc>Ethanol title and chemical information</desc>
+	<style type="text/css">
+	<![CDATA[
+		@font-face{font-family:'AdobeCorpID-MyriadBdScn';src:url(MyriadBd.cef)}
+		@font-face{font-family:'AdobeCorpID-MyriadRgScn';src:url(MyriadRgScn.cef)}
+		@font-face{font-family:'AdobeCorpID-MyriadSbScnIt';src:url(MyriadSbScnIt.cef)}
+		@font-face{font-family:'AdobeCorpID-MyriadRg';src:url(MyriadRg.cef)}
+	]]>
+	</style>
+	<g id="Layer_x0020_1" style="&st10;">
+		<path style="&st8;" d="M300,250H0V0h300v250z"/>
+		<path style="&st0;" d="M155.3,172.5c-11.5-22.5,11.3,1.2,0,0z M296.8,127.5l-2.7-2.6c-0.8,1,0.3,2.8,2.7,2.6z M274,250h-14.6c8.8-0.9,13.1-0.7,14.6,0z M285.5,230c6.6-0.6,11.3-1.5,14.5-2.6v-11.9c-10.6-5.8-30.2-6.6-14.5,14.6z M300,135.8v-2.3
+			c-10.2-8.8-21,14.5,0,2.3z M299.4,0c0.2,0.2,0.4,0.5,0.6,0.7V0h-0.6z M300,27.5v3.9c-0.4-1.5-0.4-2.8,0-3.9z M284.8,0c-10.6,5.3-8.3,27.8,15.2,15.4V2.8c-1.8-1.2-3.5-2.2-5.1-2.8h-10.1z M294.9,207.5c2-1.1,3.6-2.2,5.1-3.1v-7.8c-4.5,2-8.5,6-5.1,10.9z
+			 M251.3,246.3c2.5-2.1,4.9-4.1,7.4-6.2v-0.2c-2.5,2-5,3.9-7.5,5.9c-0.9-5.3-7.3-12.3-21.4-11.1c5.1,8.4,9.6,13.1,13.1,15.3h7.5c0.7-0.9,1-2.2,0.9-3.7z M271.5,153.3c-7.3-9.2-21.7,13.3,0,0z M200.5,250h9.8c-4.5-3.1-8.5-2-9.8,0z M267.6,190.3
+			c11.9-10.6,18.2-16.9,20.8-20.2c9-0.1,16.8-8.2,2.1-28.4c-23.3,14.4-16,25.5-6.3,27.9c-10.7,6.7-31.3,24-16.7,20.7z M291.4,202.5c-27.4-39.9-38.9,26.2,0,0z M286.4,135.9c-20.3-28.1-43.9,30.8,0,0z M273.9,214.4c-16.6-22.6-63.6,43.8,0,0z M282.1,75.8
+			c19.3-12.4-12-15.6,0,0z M223.3,146.5c10.8-18.9-2-2.6,0,0z M230.3,140.5c9.9-2.4,19.4-5.8,26.4-10.4c-8.7,2.3-17.5,5.7-26.4,10.4z M253.9,87.6l13.9,13c-6.9-5.4-12.4-9.7-15.2-12.1c-7.5,5.2-15,10.3-22.5,15.4c0.1,0,0.1,0.1,0.2,0.1c0.3-0.2,0.6-0.5,1-0.8
+			c0.7,0.8,0.9,1.5,0.8,2.1c3.7,2.9,7.1,6.4,9.9,10.6c-19.2,7.2-38.3,13.3-57.4,18.6c-2.6,1.7-5.2,3.5-7.8,5.2c3.5,5.7,6.6,12.5,4.1,13.1c-2.7-4.8-4.8-8.6-6.3-11.6c-29.2,19.3-58.6,38.3-88.1,56.9c32.9,3.7,57.8,10.8,1.7,15.1c-3.2,0.2-6.4,0.5-9.7,0.9
+			c-3.5-0.8-6.7-1.5-9.8-2.2c-1.2,1.2-2.4,2.5-3.6,3.7c4.5-0.5,9-1,13.4-1.5c9.6,2.1,20.8,4.4,33.8,7c10-8,20-16,29.8-23.9c0.9-5.3,5.1-7.9,11-8.8c21.1-17,41.2-33.1,58.5-46.9c-5.1-5.1-9.5-12.4-2.8-13.8c3.3,4.2,5.6,7.5,7.4,10.1c10.7-8.5,20.2-16,27.9-21.9
+			c-1.1,0.3-1.9,0.3-2.1,0.1c1.4-0.5,2.7-1,3.9-1.4c5.1-3.9,9.4-7.2,12.7-9.5v1.1c-1.9,2-3.9,3.9-5.8,5.9c7.9-2.7,3.9-0.6-1.4,1.4c-10.4,10.5-21,20.6-31.8,30.4c1,2.8-0.2,3.1-2.3,2c-16.5,14.8-33.5,28.8-50.7,42.4c10.4,1,21.9,3.8,29.5,5.2c2.3-1.2,4.6-2.4,7-3.5
+			c0-0.1-0.1-0.2-0.1-0.2c-6.5,2.9-5.1,1.9-0.3-0.6c-1.3-3.4-0.7-6.2,2.1-5.3c0.1,1.4,0.1,2.8,0.1,4.1c9-4.6,25-12.3,29.1-13.4c1.2-1.2,7-4.7,7.8-3.6c-3.5,2-5.7,3.1-6.9,3.6c0,0,0,0,0,0c-15.1,7.2-24.5,11.7-30,14.2c0,0.1,0,0.1,0,0.2c12.6-6.2,25.3-11.8,38-16.7
+			c-0.4-0.4-0.8-0.9-1.1-1.4c42.3-23.9,25.5,16.3,6.9,6.3c-15.7,14.4-36.8,35.3-60.6,57.6c2.5,0.4,5,0.9,7.6,1.3c21-13.8,41.9-27.6,62.9-41.5v1.1c-15.1,14.8-31.4,29.6-48.6,44.1c3.2,1.7,1.9,3.3-5.2,4.7c0.2-0.2,0.3-0.5,0.4-0.8c-0.4,0.3-0.7,0.6-1.1,0.9
+			c0.2,0,0.5-0.1,0.7-0.1c-0.4,0.4-0.9,0.6-1.5,0.8c-1.8,1.5-3.7,3-5.6,4.5h-22.9c5.9-3.9,11.8-7.8,17.7-11.7c-3.1,0.4-6.3,0.8-9.4,1.2c-3.7,3.5-7.5,6.9-11.3,10.4h-68.5c1-0.7,2.1-1.4,3.1-2.1c-5.9,0.5-11.7,1-17.6,1.5c0.3,0.2,0.5,0.4,0.7,0.6H0v-42.7
+			c21.6-15.6,43.1-31.7,64.9-47.9c-2.6,0.4-5.1,0.8-7.7,1.1C38.8,172.6,19.5,183,0,192.2v-19.8c2.5-1.8,5-3.6,7.5-5.4c-2.5,0.3-5,0.6-7.5,0.9v-42.5c0.4-0.3,0.7-0.7,1.1-1c-0.4,0-0.7,0.1-1.1,0.1v-3.8c2.4-0.6,4.7-1.2,7.1-1.9c15.3-14.3,30.7-28.5,46.3-42.4
+			c-8.6,1.8-17,3.7-25.3,5.5C17.6,90.2,8.3,97.6,0,104.1V93.6c3.3-2.7,6.7-5.3,10-7.9c-3.3,0.7-6.7,1.3-10,2V13.8c2.9-1.4,5.7-2.7,8.6-3.9C13.8,6.8,18.8,3.5,23.8,0h70.8h40.8h98h1.4h15.6c-5.4,2.2-10.8,4.3-16.2,6.4c7.9,1.9,16.1,8.5,24.4,19.8v7.5c-4,3-8,6-12.1,9
+			c4.7,2.3,8.9,5.2,12.6,9.1c-3.5-3.6-10.8-4.3-20.7-3.1c-20.1,15-40.2,29.9-60.3,44.9c14.7-0.9,28.5,0.1,40.1,4.4c3.1-1.5,6.2-2.9,9.3-4.3c-3.8-1.5-7.8-4.1-11.7-8.3c22.7-7.5,31.6-4.2,32.4,0.5c3.5-1.1,6.9-2.1,10.3-2.9v1.6c-1.6,1.1-3.1,2.1-4.7,3.2z
+			 M120.6,222.8c5.9,1.1,12.1,2.3,18.7,3.5c12.4-7.8,24.8-15.4,37.4-22.4c-9.9,3.6-19.9,7.1-29.8,10.7c-1.7-3.2-2.8-5.9-3.6-8.4c-7.5,5.6-15.1,11.2-22.7,16.7z M102.7,51.9c-1.7,2.1-3.5,4.1-5.2,6.2c8.5-0.8,18-2.6,28.2-4.9c2.7-1.9,5.4-3.9,8.2-5.8
+			c-1.8,1.7-3.7,3.4-5.5,5.2c5.4-1.3,11-2.6,16.6-4c5.3-5.3,10.5-10.8,15.7-16.3c-1.6,4.7-3.3,9.2-5.1,13.7c13.1-3.1,26.4-6.1,39.2-7.8c5.1-9.9,10.2-17.5,15.5-22.9c-16.7,5.9-33.5,11.6-50.2,17.1c-3,1.9-3.9,2.4-2,0.7c-18.6,6.2-37.1,12.3-55.3,18.8z M105,67.8
+			c-6,0.7-11.9,1.5-17.7,2.4C80.2,78.6,73.2,87,66.1,95.5c13-9.2,26-18.5,39-27.7z M97.3,129.4c4-2.1,5.9-3.9,5.7-5.3c-1.9,1.8-3.8,3.6-5.7,5.3z M103.3,75.6c4.7-2.9,9.3-5.9,14-9.1c-1.5,0.1-3,0.3-4.4,0.4c-3.2,2.9-6.3,5.8-9.5,8.7z M70.1,25.3
+			c17.7-4.9,33.8-9.6,46.5-14.2c-12.5,2.1-25.1,4.1-37.6,6c-3,2.7-5.9,5.5-8.9,8.2z M67.1,18.9c-12.6,1.9-25.1,3.7-37.7,5.5C20.6,31,11.9,37.6,3.1,44.2C17,40,31.1,36,44.9,32.2c7.3-4.6,14.8-9,22.2-13.3z M67.7,120.1c-5.1,0.1-10.7,0.4-16.8,0.7
+			C34.8,134,18.6,146.7,2.1,159c9-2.3,17.5-4.6,25.3-6.7c13.6-10.3,26.9-21,40.2-32.2z M78.9,110.6c2.5-2.2,5-4.4,7.5-6.6c-8.4,3.5-15.1,6.1-19.2,7.3c3.5,0.1,7.4-0.2,11.7-0.7z M143.1,145.1c-8.9,2-17.9,3.9-26.8,5.6c-10.1,17.9-21.9,33.4-35,47
+			c0.4,0,0.9,0.1,1.3,0.1c16.9-17.1,37.9-35.5,60.4-52.7z M183.6,64.1c-15.5,5.7-31.6,12.2-47,18.6c-4.4,6.8-9,13.3-13.9,19.5c16.7-3.6,34.4-7.1,51.2-8.5c3.2-10.9,6.4-20.8,9.7-29.6z M274.5,65.8c-68.2,22.8,12.1,15.7,0,0z M298.3,125.1c-5.4-4.5-10.8-9-16.1-13.1
+			c-0.1,0-0.2,0-0.2,0.1c-0.1-0.2-0.2-0.3-0.3-0.5c-4.9-4-9.6-7.7-13.8-10.9l26.2,24.4c0.5-0.6,1.8-0.9,4.2,0.1z M213.9,83.1c8.1,7.6,83-50.1,0,0z M223.5,146.8c29,38.2,47.7-9.4,0,0z M296.8,127.5l3.2,2.9v-3.9c-0.1,0-0.1-0.1-0.1-0.1c-1.1,0.7-2.2,1-3,1.1z
+			 M268.8,48.2c-11.2-11.8-10.5,6.8,0,0z M296,30.4c-14.2-14-13.9,9.1,0,0z M292.3,114.1c3.2-2.1,5.7-4.1,7.7-6.1v-18c-9.4-5.5-26.9-0.6-7.7,24z M268.8,48.2c14.2,15,30.8-20,0,0z M263.7,51.5c-12.7,8.2,2.2,2.9,0,0z M269.7,84c5.6-1.2,11.2-2.3,16.9-3.4
+			c1.2-3.5-2.8-4.6-16.9,3.4z M223.5,146.8c-0.5,0.1-0.3-0.4,0,0z M284.3,64.7c13.8-9.9-3.2-3.5,0,0z"/>
+		<path style="&st4;" d="M245,185H0V35h245v150z"/>
+	</g>
+	<g id="Ethanol" style="&st10; &st2; &st6;">
+		<text transform="matrix(1 0 0 1 46 111)" style="&st11;"><tspan x="0" y="0">Formula: </tspan><tspan x="48.4" y="0" style="&st1;">C2 H6 O</tspan><tspan x="0" y="17">Molecule Weight</tspan><tspan x="85.1" y="17" style="&st9;">: </tspan><tspan x="90" y="17" style="&st1;">46.07</tspan></text>
+		<text transform="matrix(1 0 0 1 46 83)"><tspan x="0" y="0" style="&st11; &st3; &st7;">Ethanol</tspan></text>
+	</g>
+<g id="viewSourceButton" style="&st11;">
+		<text id="clickHereCML" transform="matrix(1 0 0 1 25 236.0952)"><tspan x="0" y="0" style="&st11; &st2; &st6;">Click here for source data.</tspan></text>
+		<path id="arrowCML" style="&st11;" d="M159,237.1V227l9.8,5.1l-9.8,4.9z"/>
+   <!--<a xlink:href="../html/ethnl_bttm.html" target="ethnl_footer">-->
+	<g id="viewCMLbutton">
+		<path id="cmlRect" style="&st12;" d="M236.5,243.5h-60v-23h60v23z"/>
+		<text id="viewCML" transform="matrix(1 0 0 1 181.6152 236.0669)"><tspan x="0" y="0" style="&st11; &st1; &st6;">View CML</tspan></text>
+	<animateColor xlink:href="#cmlRect" attributeName="fill" type="CSS" values="#FFCC99" begin="viewCMLbutton.mouseover" end="viewCMLbutton.mouseout"/>
+	<animateColor xlink:href="#clickHereCML" attributeName="fill" type="CSS" values="#000066" begin="viewCMLbutton.mouseover" end="viewCMLbutton.mouseout"/>
+	<animateColor xlink:href="#arrowCML" attributeName="fill" type="CSS" values="#000066" begin="viewCMLbutton.mouseover" end="viewCMLbutton.mouseout"/>
+	<animateColor xlink:href="#viewCML" attributeName="fill" type="CSS" values="#000066" begin="viewCMLbutton.mouseover" end="viewCMLbutton.mouseout"/>
+	</g>
+   <!--</a>-->
+</g>
+<g id="arrow" style="&st10;">
+		<text transform="matrix(1 0 0 1 25 211.8018)"><tspan x="0" y="0" style="&st11; &st3; &st6;">Click and drag to spin the model.</tspan></text>
+		<path style="&st11;" d="M16.8,202.6v10.1L7,207.5l9.8-4.9z"/>
+</g></svg>
+

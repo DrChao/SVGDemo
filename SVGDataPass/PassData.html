@@ -1,0 +1,157 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"/>
+<!-- saved from url=(0057)http://srufaculty.sru.edu/david.dailey/svg/clipembed.html -->
+<html>
+<head>
+    <title>Àtµõ¯B°Ê®ÄªG</title>
+    <meta http-equiv="Content-Type" content="text/html" />
+    <script type="text/javascript">
+        A = new Array()
+        size = 10
+        groundhog = 2
+        bigx = 480
+        bigy = 360
+        sx = 30
+        sy = 5
+        chunkx = bigx / size
+        chunky = bigy / size
+        Pmute = 1
+        FILE = "A"
+        found = false
+        function arrdo() {
+            A = new Array()
+            //if (found) FILE=document.f.newfile.value
+            if (Pmute == 4) resize()
+            for (i = 0; i != size * size; i++) A[i] = i
+            if (Pmute == 2) for (i = 0; i != size * size; i++) A[i] = size * size - i - 1
+            if (Pmute == 3) A = permute(A)
+            if (Pmute == 5) { A = apart(document.f.key.value, size * size); }
+            return A
+        }
+        function apart(s, outsize) {
+            var O = new Array()
+            var B = new Array()
+            var C = new Array()
+            var M = s.replace(/\W/g, "").toLowerCase()
+            if (M.length > outsize) M = M.substring(0, outsize - 1)
+            for (var i = 0; i < M.length; i++) {
+                var P = new pair(M.charAt(i), i)
+                O.push(P)
+            }
+            O.sort(compare)
+            for (i in O) { B.push(O[i].num) }
+            var Q = M.length
+            for (i = Q; i < outsize; i++) {
+                if (i < Q * Math.floor(outsize / Q)) B[i] = B[i % Q] + Q * (Math.floor(i / Q))
+                else B[i] = i
+            }
+            alert(B)
+            return B
+        }
+        function pair(l, n) {
+            this.let = l
+            this.num = n
+        }
+        function compare(x, y) {
+            if (x.let < y.let) return -1
+            else return 1
+        }
+        function remember(v) {
+            Pmute = v
+        }
+        function resize() {
+            if (document.f.size.value == "") {
+                size = Math.ceil(Math.random() * 12) + 1
+                document.f.size.value = size
+            }
+            else size = document.f.size.value
+            chunkx = bigx / size
+            chunky = bigy / size
+        }
+        function ask(Q) {
+            //alert(FILE+found)
+            if (found) return FILE;
+            else return Q
+        }
+        function permute(A) {
+            C = new Array()
+            while (A.length > 0) {
+                r = Math.floor(Math.random() * A.length)
+                C.push(A[r])
+                A.splice(r, 1)
+            }
+            return C
+        }
+        function another(F) {
+            found = true
+            FILE = F
+            sv.reload()
+        }
+        function sclick() {
+            //scramble has been clicked
+            remember(5);
+            if (document.f.key.value == "") document.f.key.value = 'thekey';
+            document.f.key.select()
+        }
+        function rclick() {
+            //resize has been clicked
+            remember(4)
+            if (document.f.size.value == "") document.f.size.value = size;
+            document.f.size.select()
+        }
+    </script>
+</head>
+<body onload="sv.reload()">
+    <div align="center">
+        <form name="f">
+        <table bgcolor="#ccdee8" border="1">
+            <tbody>
+                <tr>
+                    <td bgcolor="#ddddaa" rowspan="3" >
+                    <input onclick="sv.reload()" type="button" value="redo" />
+                    </td>
+                    <td align="center" >
+                    <input onclick="remember(1);blur();" type="radio" checked="checked" value="1" name="r" />
+                    </td>
+                    <td align="center" >
+                    <input onclick="remember(2);blur();" type="radio" value="2" name="r" />
+                    </td>
+                    <td align="center" >
+                    <input onclick="remember(3);blur();" type="radio" value="3" name="r" />
+                    </td>
+                    <td align="center" >
+                    <input onclick="rclick();blur();" type="radio" value="4" name="r" />
+                    </td>
+                    <td align="center" >
+                    <input onclick="sclick();blur()" type="radio" value="5" name="r" />
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" >
+                    simple </td>
+                    <td align="center" >
+                    inverse </td>
+                    <td align="center" >
+                    permute </td>
+                    <td align="center">
+                    resize
+                    <td align="center" >
+                    scramble </td>
+                </tr>
+                <tr>
+                    <td align="center" colspan="3" />
+                    <input type="file" onchange="another(this.value)" name="newfile" />
+                    </td>
+                    <td align="center" >
+                    <input onclick="this.select()" maxlength="2" size="2" name="size" />
+                    </td> </TD>
+                    <td align="center" >
+                    <input onclick="this.select()" maxlength="200" name="key" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        </form>
+        <embed id="sv" src="clips.svg" width="800" height="600" type="image/svg+xml" />
+    </div>
+</body>
+</html>

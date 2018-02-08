@@ -1,0 +1,191 @@
+<svg id="root" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"  onload="startup(evt);">
+
+<script>
+var svgDocument;
+var body; 
+
+ic=0
+pattern=0
+var xlinkns = "http://www.w3.org/1999/xlink";
+var svgns="http://www.w3.org/2000/svg"
+var FILE="thesoul2.jpg"
+	sx=30
+	sy=5
+	size=10
+	groundhog=2
+	bigx=480
+	bigy=360
+	sx=30
+	sy=5
+	chunkx=bigx/size
+	chunky=bigy/size
+	var svgDocument
+	var Root
+	var A
+var body
+function startup(evt) {
+	svgDocument = document
+	svgRoot = document.documentElement;
+    body = svgDocument.getElementById("body");
+	clip=svgDocument.getElementById("C");
+	R=svgDocument.getElementById("R");
+	D=svgDocument.getElementById("D");
+	FILE=top.ask("thesoul2.jpg")
+
+	R.setAttribute("x", sx-2);
+	R.setAttribute("y", sy-2);
+	R.setAttribute("width", bigx+size+2);
+	R.setAttribute("height", bigy+size+2);
+	//FILE="thesoul2.jpg"
+		
+	makehappen()
+}
+
+function resize(){
+	size=Math.ceil(Math.random()*4)+1
+	chunkx=bigx/size
+	chunky=bigy/size
+	makehappen()
+}
+
+function simple(){
+	for (i=0;i!=size*size;i++) A[i]=i
+	affiliate()
+}
+function makehappen(){
+	
+	A=top.arrdo()
+	
+	for (i=0;i!=size;i++){
+		
+		for (j=0;j!=size;j++) {
+			newpic(i,j)
+		}
+	}
+
+	
+	affiliate()
+}
+function affiliate(){
+	for (i=0;i!=size*size;i++){
+		svgDocument.getElementById("I"+A[i]).setAttribute("style", "clip-path:url(#C"+i+")");
+	}
+}
+function destroy(){
+	//for (i in body.getChildNodes()) body.removeChild(i)
+	for (i=0;i!=size;i++){
+		L=svgDocument.getElementById("I"+i);
+		body.removeChild(L)
+		L=svgDocument.getElementById("C"+i);
+		D.removeChild(L)
+	}
+	L=svgDocument.getElementById("body");
+	svgRoot.removeChild(L)
+	body = svgDocument.createElement("g");
+	body.setAttribute("id","body")
+	svgRoot.appendChild(body)
+	ic=0
+}
+function newpic(ix,iy){
+
+	var x=ix*(chunkx)
+	var y=iy*(chunky)
+	mc=A[size*ix+iy]
+	mx=Math.floor(mc/size)
+	my=(mc%size)
+	var im1 = svgDocument.createElementNS(svgns,"image");
+
+	px=sx+x-(mx)*(chunkx)
+	py=sy+y-(my)*(chunky)
+	im1.setAttribute("x", px);
+	im1.setAttribute("y", py);
+	im1.setAttribute("width", bigx);
+	im1.setAttribute("height", bigy);
+	im1.setAttribute("id", "I"+ic);
+	im1.setAttribute("onclick", "swap('"+ic+"')");
+	im1.setAttribute("preserveAspectRatio","none")
+    im1.setAttributeNS(xlinkns, "xlink:href", FILE);
+	
+	newrect(ix,iy,ic)
+    body.appendChild(im1);
+	
+	buildanimations(px,py)
+	ic++
+}
+function swap(p){
+	//alert(p)
+	clp=svgDocument.getElementById("C"+p);
+	imp=svgDocument.getElementById("I"+p);
+	rp=svgDocument.getElementById("C"+p);
+	//svgDocument.getElementById("swap").appendChild(clp)
+	imp.setAttribute("x", sx);
+	imp.setAttribute("y", sy);
+	//rp.setAttribute("x", sx);
+	//rp.setAttribute("y", sy);
+	
+	//mx=Math.floor(p/size)
+	//my=(p%size)
+	//newrect(mx,my,p)
+	//var x=mx*(chunkx)
+	//var y=my*(chunky)
+	//px=sx+x-(mx)*(chunkx)
+	//py=sy+y-(my)*(chunky)
+	//buildanimations(px,py)
+}
+function newrect(ix,iy,n){
+	mc=A[size*ix+iy]
+	mx=Math.floor(mc/size)
+	my=(mc%size)
+	Rect = svgDocument.createElementNS(svgns,"rect");
+	Rect.setAttribute("x", (sx)+(chunkx+1)*mx); 
+	Rect.setAttribute("y", (sy)+(chunky+1)*my); 
+	Rect.setAttribute("width", chunkx); 
+	Rect.setAttribute("height", chunky); 
+	Rect.setAttribute("id", "R"+n); 
+	CP = svgDocument.createElementNS(svgns,"clipPath");
+	CP.setAttribute("id","C"+n)
+	CP.appendChild(Rect)
+	svgDocument.getElementById("D").appendChild(CP)
+}
+function buildanimations(x,y){
+	var an = svgDocument.createElementNS(svgns,"animate");
+	an.setAttribute("attributeName","x")
+	//an.setAttribute("begin","MS.mouseup")
+	an.setAttribute("end","MS.mouseup")
+	p=Math.random()*5+2
+	q=Math.random()*p+.5
+	r=Math.random()*q+.5
+	an.setAttribute("keyTimes","0s; "+r+"0s; "+q+"s; "+p+"s")
+	x20=Math.floor((600/(size/1.5+2))*(Math.random()-.5))
+	an.setAttribute("values",x-x20+"; "+(x+x20)+"; "+(x+x20/3)+"; "+(x-x20))
+	an.setAttribute("dur",p+"s")
+	an.setAttribute("repeatCount","indefinite")
+	var any = svgDocument.createElementNS(svgns,"animate");
+	any.setAttribute("attributeName","y")
+	//any.setAttribute("begin","MS.mouseup")
+	//any.setAttribute("end","MS.mousedown")
+	//any.setAttribute("begin","root.load")
+	any.setAttribute("end","MS.mouseup")
+	p=Math.random()*5+1
+	q=Math.random()*p+.5
+	any.setAttribute("keyTimes","0s; "+q+"s; "+p+"s")
+	y20=Math.floor((480/(size/1.5+2))*(Math.random()-.5))
+	any.setAttribute("values",y-y20+"; "+(y+y20)+"; "+(y-y20))
+	any.setAttribute("dur","4s")
+	any.setAttribute("repeatCount","indefinite")
+	svgDocument.getElementById("I"+ic).appendChild(an)
+	svgDocument.getElementById("I"+ic).appendChild(any)
+}
+</script>
+<rect id="R" onclick="window.reload()" x="199" y="149" width="490" height="370" fill="#d89"/>
+<defs id="D">
+</defs>
+<g id="MS" transform="translate(440,100)">
+<path d="M 105 20 120 10 150 10 165 20 165 40 150 50 120 50 105 40z" fill="#fc8"/>
+<text x="110" y="35" style="font-family:courier; font-size:20">Stop</text>
+</g>
+<g id="body">
+</g>
+<rect id="swap" x="100" y="480" height="40" width="50" style="visibility:hidden"/>
+</svg>

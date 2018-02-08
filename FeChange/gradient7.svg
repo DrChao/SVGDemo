@@ -1,0 +1,140 @@
+<svg width="100%" height="100%"
+	xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/2000/xlink/namespace/"
+	 onload="startup(evt)">
+<script>
+<![CDATA[
+var svgDocument;
+var svgDocument;
+var xmlns="http://www.w3.org/2000/svg"
+count=0
+off=0
+id=0
+var xlinkns = "http://www.w3.org/2000/xlink/namespace/";
+function startup(evt) {
+	O=evt.target
+	O.setAttributeNS(null,"onclick","running=!running;animate()")
+	svgDocument = O.ownerDocument;
+	svgRoot = svgDocument.documentElement;
+	A=getDisplaySize()
+	rightedge=A.width
+	bottomedge=A.height
+	gg = svgDocument.getElementById("gg");
+	path= svgDocument.getElementById("P");
+	P=path.getAttribute("d").split(" ")
+	xs=300;
+	ys=173.2;
+	offa = svgDocument.getElementById("offa");
+	offb = svgDocument.getElementById("offb");
+	offc = svgDocument.getElementById("offc");
+	while (off*xs/4<rightedge) makeNew()
+	animate()
+
+}
+
+function stopit(){
+	running=false
+
+}
+function getDisplaySize()
+{
+//function due to G. Wade Johnson <svg-developers.yahoogroups.com>
+//Date: Mon, 12 Dec 2005 20:57:49 -0600
+//Subject: Re: [svg-developers] Screen extents
+    var extents = null;
+    try
+    {
+        var view = document.documentElement.viewport;
+        extents = {
+            width: view.width,
+            height: view.height
+        };
+    }
+    catch(e)
+    {
+        extents = {
+            width: window.innerWidth,
+            height: window.innerHeight
+        };
+    }
+    return extents;
+}
+
+
+limit=300
+origblu=10
+blu=10
+running=true
+function animate(){
+	if (!running) return
+	rate=6
+	onestep(rate)
+	window.setTimeout("animate()",10)
+}
+old1=color()
+old2=color()
+function onestep(i){
+	if ((blu>limit)) {redo();blu=blu%limit}
+	T="scale("+(.25+blu*.06/limit)+") rotate("+blu+" 50 158) "
+	gg.setAttribute ("transform", T);
+	offa.setAttribute ("offset", blu/(2*limit));
+	blu=blu+i
+	
+}
+function redo(){
+		new1=color()
+		
+		offc.setAttribute("stop-color","#"+new1)
+		offa.setAttribute("stop-color","#"+old1)
+		offb.setAttribute("stop-color","#"+old2)
+		old2=old1
+		old1=new1
+}
+
+function makeNew() {
+	count++
+	id++
+	if (ys*(count-(off%2)/2)/2>bottomedge) {off++; count=0}
+	var use1 = svgDocument.createElementNS(xmlns,"use");
+	use1.setAttribute("x", off*xs/4);
+    use1.setAttribute("y", (ys)*(count-(off%2)/2)/2);
+	ut="uu"+count
+	use1.setAttribute("id", id);
+	offb.setAttribute("stop-color","#"+color())
+	use1.setAttribute("onclick", "redo('"+id+"')");
+    use1.setAttributeNS(xlinkns, "xlink:href", "#gg");
+    svgRoot.appendChild(use1);
+}
+
+
+function color(){
+	r=Math.floor(Math.random()*16)
+	R=r.toString(16)
+	g=Math.floor(Math.random()*16)
+	G=g.toString(16)
+	b=Math.floor(Math.random()*16)
+	B=b.toString(16)
+	return R+B+G
+}
+//]]>
+</script>
+
+<defs>
+<radialGradient id="g">
+	<stop id="offc" offset="0" stop-color="#444"/>
+	<stop id="offa" offset=".1" stop-color="#ff8"/>
+	<stop id="offb" offset="1" stop-color="#f0f"/>
+</radialGradient> 
+
+<path id="P" d="M 0 173.2 L 200 173.2 L 300 0 L 100 0 z" />
+</defs>
+<rect x="0" y="0" width="100%" height="100%" fill="#444"/>
+<g id="gg" onclick="redo(0)" fill="url(#g)" >
+<use xlink:href="#P" transform="translate(-150 0)"/>
+<use xlink:href="#P" transform="translate(0 -86) rotate(120 100 173.2)" />
+<use xlink:href="#P" transform="translate(0 87) rotate(240 100 173.2)" />
+</g>
+</svg>
+
+
+

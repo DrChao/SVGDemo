@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="no"?>
+<!--<?xml-stylesheet href="./styles/allStyles.css" type="text/css"?>-->
+<!--xmlns:a3="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" a3:scriptImplementation="Adobe"-->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN"
+ "http://www.w3.org/TR/SVG/DTD/svg10.dtd" [
+  <!--<!ATTLIST svg
+            a3:scriptImplementation CDATA #IMPLIED
+            xmlns:a3 CDATA #IMPLIED>
+  <!ATTLIST script
+            a3:scriptImplementation CDATA #IMPLIED>-->
+
+]>
+<?AdobeSVGViewer resolution="600"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+xmlns:xlink="http://www.w3.org/2000/xlink/namespace/"
+
+width="350" height="300" viewBox="0 0 350 300" xml:space="preserve" display="all" zoomAndPan="disable"
+onload="Initialize(evt)"  onmousedown="MouseDown(evt)" onmousemove="MouseMove(evt)" onmouseup="MouseUp(evt)" >
+<title>ethanol.svg</title>
+<!--<script a3:scriptImplementation="Adobe" type="text/ecmascript" xlink:href="../JS/chemeleon.js"/>
+<script a3:scriptImplementation="Adobe" type="text/ecmascript" xlink:href="./chemeleon.js"/>
+<script a3:scriptImplementation="Adobe" type="text/ecmascript" xlink:href="chemeleon.js"/>-->
+  <script language="Javascript" xlink:href="chemeleon.js" />
+<desc>An interactive 3d model of ethanol.</desc>
+<defs>
+  
+<script><![CDATA[
+          function GenerateStructure()
+            {
+              
+              x =       1.0303;
+              y =       0.8847;
+              z =       0.9763;
+              charge =  0;
+              isotope = -1;
+        
+              var ethanol_karne_a_1 = new Atom(x, y, z, "C", charge, isotope);
+  
+              x =       1.8847;
+              y =       1.9889;
+              z =       1.5717;
+              charge =  0;
+              isotope = -1;
+        
+              var ethanol_karne_a_2 = new Atom(x, y, z, "C", charge, isotope);
+  
+              x =       3.1883;
+              y =       1.4807;
+              z =       1.7425;
+              charge =  0;
+              isotope = -1;
+        
+              var ethanol_karne_a_3 = new Atom(x, y, z, "O", charge, isotope);
+  
+              x =       0.0000;
+              y =       1.2330;
+              z =       0.8324;
+              charge =  0;
+              isotope = -1;
+        
+              var ethanol_karne_a_4 = new Atom(x, y, z, "H", charge, isotope);
+  
+              x =       0.9949;
+              y =       0.0000;
+              z =       1.6255;
+              charge =  0;
+              isotope = -1;
+        
+              var ethanol_karne_a_5 = new Atom(x, y, z, "H", charge, isotope);
+  
+              x =       1.4097;
+              y =       0.5558;
+              z =       0.0000;
+              charge =  0;
+              isotope = -1;
+        
+              var ethanol_karne_a_6 = new Atom(x, y, z, "H", charge, isotope);
+  
+              x =       1.9050;
+              y =       2.8742;
+              z =       0.9059;
+              charge =  0;
+              isotope = -1;
+        
+              var ethanol_karne_a_7 = new Atom(x, y, z, "H", charge, isotope);
+  
+              x =       1.4753;
+              y =       2.3225;
+              z =       2.5456;
+              charge =  0;
+              isotope = -1;
+        
+              var ethanol_karne_a_8 = new Atom(x, y, z, "H", charge, isotope);
+  
+              x =       3.7056;
+              y =       2.1820;
+              z =       2.1139;
+              charge =  0;
+              isotope = -1;
+        
+              var ethanol_karne_a_9 = new Atom(x, y, z, "H", charge, isotope);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = ethanol_karne_a_1;
+              right = left;
+              left = ethanol_karne_a_2;
+              
+              strength = 1;
+               var ethanol_karne_b_1 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = ethanol_karne_a_1;
+              right = left;
+              left = ethanol_karne_a_4;
+              
+              strength = 1;
+               var ethanol_karne_b_2 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = ethanol_karne_a_1;
+              right = left;
+              left = ethanol_karne_a_5;
+              
+              strength = 1;
+               var ethanol_karne_b_3 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = ethanol_karne_a_1;
+              right = left;
+              left = ethanol_karne_a_6;
+              
+              strength = 1;
+               var ethanol_karne_b_4 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = ethanol_karne_a_2;
+              right = left;
+              left = ethanol_karne_a_3;
+              
+              strength = 1;
+               var ethanol_karne_b_5 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = ethanol_karne_a_2;
+              right = left;
+              left = ethanol_karne_a_7;
+              
+              strength = 1;
+               var ethanol_karne_b_6 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = ethanol_karne_a_2;
+              right = left;
+              left = ethanol_karne_a_8;
+              
+              strength = 1;
+               var ethanol_karne_b_7 = new Bond(left, right, strength);
+  
+              left  = null;
+              right = null;
+              right = left;
+              left = ethanol_karne_a_3;
+              right = left;
+              left = ethanol_karne_a_9;
+              
+              strength = 1;
+               var ethanol_karne_b_8 = new Bond(left, right, strength);
+  
+              RefreshScreen()
+              Rotate()
+            }
+            ]]>
+        </script>
+</defs>
+<g id="backdrop">
+<rect x="0" y="0" width="350" height="300" style="fill:white;" />
+</g>
+<g transform="translate(-30, -85)">
+<g id="structure">
+<g id="shadows" transform="translate(200, 350)" style="fill:grey" />
+<g id="bonds" transform="translate(200, 215)" />
+<g id="atoms" transform="translate(200, 220)" style="text-anchor:middle;alignment-baseline:middle" />
+</g>
+</g>
+</svg>
